@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { getAllTeachers, punchAttendance, markLeave, batchSync, createTeacher, getTodayAttendance } from '../services/api';
+import { getAllTeachers, punchAttendance, markLeave, markAbsent, batchSync, createTeacher, getTodayAttendance } from '../services/api';
 import { ShieldCheck, UserPlus, UserCheck, Zap, CheckSquare, Square, Search, Filter, RefreshCw, Clock, Lock, Key, Eye, EyeOff, LogOut } from 'lucide-react';
 
 const ADMIN_SECRET = 'admin123';
@@ -132,9 +132,9 @@ export default function AdminPanelPage() {
         return { teacherId: tId, time: timeStr };
       });
 
-      await batchSync({ punches });
+      await batchSync({ punches, replace: true });
       const absentCount = teachers.length - selectedForBatch.size;
-      alert(`Success! Recorded ${punches.length} PRESENT punches. ${absentCount} teacher(s) will be detected as ABSENT.`);
+      alert(`Success! Recorded ${punches.length} PRESENT punches. ${absentCount} teacher(s) marked ABSENT. Main Dashboard is now synchronized.`);
       loadData();
     } catch (err) {
       alert('Batch sync failed: ' + (err.response?.data?.error || err.message));
@@ -154,24 +154,22 @@ export default function AdminPanelPage() {
         await punchAttendance({
           deviceId: 'ADMIN_CONSOLE',
           teacherId: selectedTeacherId,
-          timestamp: `2026-10-19T${punchTime}:00Z`,
+          punchTime: punchTime,
+          timestamp: new Date().toISOString(),
           punchType: 'CHECK_IN'
         });
         alert(`Recorded PRESENT for ${selectedTeacherId} at ${punchTime}`);
       } else if (punchStatus === 'ON_LEAVE') {
         await markLeave({
           teacherId: selectedTeacherId,
-          date: '2026-10-19',
           reason: leaveReason
         });
         alert(`Marked ON LEAVE for ${selectedTeacherId}: ${leaveReason}`);
       } else {
-        await markLeave({
-          teacherId: selectedTeacherId,
-          date: '2026-10-19',
-          reason: 'Absent (Unreported)'
+        await markAbsent({
+          teacherId: selectedTeacherId
         });
-        alert(`Marked ABSENT for ${selectedTeacherId}`);
+        alert(`Marked ABSENT for ${selectedTeacherId}. Punch cleared.`);
       }
       loadData();
     } catch (err) {
@@ -468,8 +466,13 @@ export default function AdminPanelPage() {
                       <Square className="w-5 h-5 text-rose-400 dark:text-rose-600 flex-shrink-0" />
                     )}
                     <div className="min-w-0">
-                      <p className="font-bold text-xs text-slate-900 dark:text-white truncate">
-                        {t.name}
+                      <p className="font-bold text-xs text-slate-900 dark:text-white truncate flex items-center gap-1.5">
+                        <span className="truncate">{t.name}</span>
+                        {t.isClassTeacher && (
+                          <span className="flex-shrink-0 text-[9px] font-extrabold px-1.5 py-0.2 rounded bg-amber-500/20 text-amber-700 dark:text-amber-300 border border-amber-500/40">
+                            CT: {t.classTeacherOf}
+                          </span>
+                        )}
                       </p>
                       <p className="text-[11px] text-slate-500 truncate">
                         {t.id} • {t.department} ({t.designation || 'Faculty'})
@@ -514,7 +517,7 @@ export default function AdminPanelPage() {
               >
                 {teachers.map(t => (
                   <option key={t.id} value={t.id}>
-                    {t.id} — {t.name} ({t.department})
+                    {t.id} — {t.name} ({t.department}){t.isClassTeacher ? ` [★ CT: ${t.classTeacherOf}]` : ''}
                   </option>
                 ))}
               </select>

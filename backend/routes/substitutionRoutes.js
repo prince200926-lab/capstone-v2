@@ -210,6 +210,8 @@ function generateSubstitutions(date, absentTeachers, timetable, allTeachers, tod
           matchType: selectedMatchType || 'NONE',
           reason: reason || 'No suitable substitute found',
           candidatesConsidered: candidatesConsidered.map(c => c.id),
+          isCTPeriod: Boolean(slot.isCTPeriod || slot.period === 1),
+          isAbsentTeacherCT: Boolean(absentTeacher.isClassTeacher && absentTeacher.classTeacherOf === classSection),
           createdAt: new Date().toISOString(),
         };
 

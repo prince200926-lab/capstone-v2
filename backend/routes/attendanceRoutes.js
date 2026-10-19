@@ -70,9 +70,12 @@ router.post('/punch', (req, res) => {
 
     if (!attendance[today]) attendance[today] = {};
 
-    // Derive a human-friendly punch time from the provided timestamp or now
-    const punchDate = timestamp ? new Date(timestamp) : new Date();
-    const punchTime = `${String(punchDate.getHours()).padStart(2, '0')}:${String(punchDate.getMinutes()).padStart(2, '0')}`;
+    // Derive a human-friendly punch time from the provided punchTime, timestamp, or now
+    let punchTime = req.body.punchTime;
+    if (!punchTime) {
+      const punchDate = timestamp ? new Date(timestamp) : new Date();
+      punchTime = `${String(punchDate.getHours()).padStart(2, '0')}:${String(punchDate.getMinutes()).padStart(2, '0')}`;
+    }
 
     attendance[today][teacherId] = {
       status: 'PRESENT',
@@ -116,7 +119,7 @@ router.post('/punch', (req, res) => {
  */
 router.post('/batch-sync', (req, res) => {
   try {
-    let { date, punches } = req.body;
+    let { date, punches, replace = true } = req.body;
     if (!date) date = getToday();
 
     if (!Array.isArray(punches)) {
@@ -127,6 +130,21 @@ router.post('/batch-sync', (req, res) => {
     const attendance = readJSON(ATTENDANCE_FILE);
 
     if (!attendance[date]) attendance[date] = {};
+
+    const punchedIds = new Set(punches.map(p => p.teacherId));
+
+    // When replace is true (default):
+    // Remove old PRESENT punches for teachers who are not in the current punches list.
+    // Retain ON_LEAVE entries if any.
+    if (replace) {
+      for (const tId of Object.keys(attendance[date])) {
+        if (!punchedIds.has(tId)) {
+          if (attendance[date][tId].status !== 'ON_LEAVE') {
+            delete attendance[date][tId];
+          }
+        }
+      }
+    }
 
     let recorded = 0;
     let skipped  = 0;
@@ -153,7 +171,7 @@ router.post('/batch-sync', (req, res) => {
 
     writeJSON(ATTENDANCE_FILE, attendance);
 
-    log('INFO', `Batch sync for ${date}: ${recorded} recorded, ${skipped} skipped`, {
+    log('INFO', `Batch sync for ${date}: ${recorded} recorded, ${skipped} skipped (replace: ${replace})`, {
       method: 'POST', url: '/batch-sync',
     });
 
@@ -188,13 +206,17 @@ router.get('/today', (req, res) => {
     const result = (Array.isArray(teachers) ? teachers : []).map(t => {
       const record = todayData[t.id];
       return {
+        id:          t.id,
         teacherId:   t.id,
+        name:        t.name,
         teacherName: t.name,
         department:  t.department,
         subject:     t.subject,
         status:      record ? record.status : 'ABSENT',
         punchTime:   record ? record.punchTime : null,
         punchType:   record ? record.punchType : null,
+        isClassTeacher: Boolean(t.isClassTeacher),
+        classTeacherOf: t.classTeacherOf || null,
       };
     });
 
@@ -217,10 +239,11 @@ router.get('/today', (req, res) => {
  */
 router.post('/leave', (req, res) => {
   try {
-    const { teacherId, date, reason } = req.body;
+    let { teacherId, date, reason } = req.body;
+    if (!date) date = getToday();
 
-    if (!teacherId || !date) {
-      return res.status(400).json({ success: false, error: 'teacherId and date are required' });
+    if (!teacherId) {
+      return res.status(400).json({ success: false, error: 'teacherId is required' });
     }
 
     const teachers = readJSON(TEACHERS_FILE, []);
@@ -256,6 +279,42 @@ router.post('/leave', (req, res) => {
     });
   } catch (err) {
     log('ERROR', `Leave recording error: ${err.message}`);
+    return res.status(500).json({ success: false, error: 'Internal server error' });
+  }
+});
+
+// ---------------------------------------------------------------------------
+// POST /absent
+// ---------------------------------------------------------------------------
+/**
+ * Mark a teacher as ABSENT for a date.
+ *
+ * Body: { teacherId, date }
+ */
+router.post('/absent', (req, res) => {
+  try {
+    let { teacherId, date } = req.body;
+    if (!date) date = getToday();
+
+    if (!teacherId) {
+      return res.status(400).json({ success: false, error: 'teacherId is required' });
+    }
+
+    const attendance = readJSON(ATTENDANCE_FILE);
+    if (attendance[date] && attendance[date][teacherId]) {
+      delete attendance[date][teacherId];
+      writeJSON(ATTENDANCE_FILE, attendance);
+    }
+
+    log('INFO', `Teacher ${teacherId} marked as ABSENT for ${date}`);
+
+    return res.status(200).json({
+      success: true,
+      message: `Teacher ${teacherId} marked as ABSENT for ${date}`,
+      data: { teacherId, date, status: 'ABSENT' },
+    });
+  } catch (err) {
+    log('ERROR', `Mark absent error: ${err.message}`);
     return res.status(500).json({ success: false, error: 'Internal server error' });
   }
 });

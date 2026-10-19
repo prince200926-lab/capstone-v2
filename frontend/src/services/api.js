@@ -32,6 +32,9 @@ export const getTodayAttendance = () => api.get('/attendance/today');
 /** Mark a teacher as on-leave for a given date. */
 export const markLeave = (data) => api.post('/attendance/leave', data);
 
+/** Mark a teacher as absent for a given date. */
+export const markAbsent = (data) => api.post('/attendance/absent', data);
+
 // ──────────────────────────────────────────────
 // Substitution endpoints
 // ──────────────────────────────────────────────
@@ -59,6 +62,9 @@ export const getTeacherSchedule = (teacherId) =>
 
 /** Get all classes' timetable for a specific day (e.g., "Monday"). */
 export const getDayTimetable = (day) => api.get(`/timetable/day/${day}`);
+
+/** Get all teacher assignments for a specific period on a specific day. */
+export const getPeriodTimetable = (day, period) => api.get(`/timetable/period/${day}/${period}`);
 
 // ──────────────────────────────────────────────
 // Teacher endpoints

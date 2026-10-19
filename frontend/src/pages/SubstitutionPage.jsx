@@ -129,6 +129,11 @@ export default function SubstitutionPage() {
                         <span className="font-mono text-xs font-bold px-2 py-1 rounded bg-slate-100 dark:bg-slate-700">
                           Period {s.period}
                         </span>
+                        {(s.period === 1 || s.isCTPeriod) && (
+                          <span className="text-[10px] font-extrabold px-1.5 py-0.5 rounded bg-amber-500/20 text-amber-700 dark:text-amber-300 border border-amber-500/40">
+                            ★ CT Period
+                          </span>
+                        )}
                         <span className="font-bold text-slate-900 dark:text-white">{s.classSection}</span>
                         <span className="text-slate-500">•</span>
                         <span className="font-medium text-slate-700 dark:text-slate-300">{s.subject}</span>
@@ -136,7 +141,9 @@ export default function SubstitutionPage() {
 
                       <div className="flex items-center gap-3 flex-wrap">
                         <div className="flex items-center gap-2 text-xs">
-                          <span className="text-rose-600 line-through font-medium">{absentName}</span>
+                          <span className="text-rose-600 line-through font-medium">
+                            {absentName} {s.isAbsentTeacherCT ? '(CT)' : ''}
+                          </span>
                           <ArrowRight className="w-3.5 h-3.5 text-slate-400" />
                           <span className="font-bold text-emerald-600 bg-emerald-50 dark:bg-emerald-950/50 px-2.5 py-1 rounded-md border border-emerald-200 dark:border-emerald-800">
                             {subName}
@@ -196,6 +203,11 @@ export default function SubstitutionPage() {
                         <span className="font-mono text-xs font-bold px-2 py-1 rounded bg-slate-100 dark:bg-slate-700">
                           Period {s.period}
                         </span>
+                        {(s.period === 1 || s.isCTPeriod) && (
+                          <span className="text-[10px] font-extrabold px-1.5 py-0.5 rounded bg-amber-500/20 text-amber-700 dark:text-amber-300 border border-amber-500/40">
+                            ★ CT Period
+                          </span>
+                        )}
                         <span className="font-bold text-slate-900 dark:text-white">{s.classSection}</span>
                         <span className="text-slate-500">•</span>
                         <span className="font-medium text-slate-700 dark:text-slate-300">{s.subject}</span>
@@ -203,7 +215,9 @@ export default function SubstitutionPage() {
 
                       <div className="flex items-center gap-3 flex-wrap">
                         <div className="flex items-center gap-2 text-xs">
-                          <span className="text-rose-600 line-through font-medium">{absentName}</span>
+                          <span className="text-rose-600 line-through font-medium">
+                            {absentName} {s.isAbsentTeacherCT ? '(CT)' : ''}
+                          </span>
                           <ArrowRight className="w-3.5 h-3.5 text-slate-400" />
                           <span className="font-bold text-emerald-600 bg-emerald-50 dark:bg-emerald-950/50 px-2.5 py-1 rounded-md border border-emerald-200 dark:border-emerald-800">
                             {subName}
@@ -262,6 +276,11 @@ export default function SubstitutionPage() {
                         <span className="font-mono text-xs font-bold px-2 py-1 rounded bg-slate-100 dark:bg-slate-700">
                           Period {s.period}
                         </span>
+                        {(s.period === 1 || s.isCTPeriod) && (
+                          <span className="text-[10px] font-extrabold px-1.5 py-0.5 rounded bg-amber-500/20 text-amber-700 dark:text-amber-300 border border-amber-500/40">
+                            ★ CT Period
+                          </span>
+                        )}
                         <span className="font-bold text-slate-900 dark:text-white">{s.classSection}</span>
                         <span className="text-slate-500">•</span>
                         <span className="font-medium text-slate-700 dark:text-slate-300">{s.subject}</span>
@@ -269,7 +288,9 @@ export default function SubstitutionPage() {
 
                       <div className="flex items-center gap-3 flex-wrap">
                         <div className="flex items-center gap-2 text-xs">
-                          <span className="text-rose-600 line-through font-medium">{absentName}</span>
+                          <span className="text-rose-600 line-through font-medium">
+                            {absentName} {s.isAbsentTeacherCT ? '(CT)' : ''}
+                          </span>
                           <ArrowRight className="w-3.5 h-3.5 text-slate-400" />
                           <span className="font-bold text-emerald-600 bg-emerald-50 dark:bg-emerald-950/50 px-2.5 py-1 rounded-md border border-emerald-200 dark:border-emerald-800">
                             {subName}

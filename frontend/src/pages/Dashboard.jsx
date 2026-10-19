@@ -47,7 +47,7 @@ export default function Dashboard() {
     }
   };
 
-  const totalTeachers = attendance.length || 31;
+  const totalTeachers = attendance.length || 32;
   const presentCount = attendance.filter(a => a.status === 'PRESENT').length;
   const absentCount = attendance.filter(a => a.status === 'ABSENT').length;
   const leaveCount = attendance.filter(a => a.status === 'ON_LEAVE').length;
@@ -146,7 +146,7 @@ export default function Dashboard() {
             Hardware Stream Connected
           </span>
         </div>
-        <BiometricPunchFeed />
+        <BiometricPunchFeed attendanceData={attendance} onRefresh={fetchStats} />
       </div>
     </div>
   );

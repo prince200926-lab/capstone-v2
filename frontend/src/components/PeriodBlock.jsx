@@ -62,6 +62,7 @@ const PeriodBlock = ({
   isDouble = false,
   doublePosition = null,
   isEmpty = false,
+  isCT = false,
 }) => {
   // Empty / free period cell
   if (isEmpty || !subject) {
@@ -87,19 +88,30 @@ const PeriodBlock = ({
       className={`
         relative flex min-h-[80px] flex-col justify-between rounded-lg border p-2
         transition-shadow duration-200 hover:shadow-md
+        ${isCT ? 'ring-1 ring-amber-400/60 shadow-xs' : ''}
         ${colors.bg} ${colors.border} ${doubleBorderClass}
       `}
     >
-      {/* Subject name + color dot */}
-      <div className="flex items-start gap-1.5">
-        <span className={`mt-1 h-2 w-2 flex-shrink-0 rounded-full ${colors.dot}`} />
-        <span className={`text-sm font-semibold leading-tight ${colors.text}`}>
-          {subject}
-        </span>
+      {/* Subject name + color dot + CT badge */}
+      <div className="flex items-start justify-between gap-1">
+        <div className="flex items-start gap-1.5 min-w-0">
+          <span className={`mt-1 h-2 w-2 flex-shrink-0 rounded-full ${colors.dot}`} />
+          <span className={`text-sm font-semibold leading-tight truncate ${colors.text}`}>
+            {subject}
+          </span>
+        </div>
+        {isCT && (
+          <span
+            className="flex-shrink-0 text-[9px] font-extrabold uppercase px-1.5 py-0.2 rounded bg-amber-500 text-white shadow-xs tracking-wider"
+            title="Class Teacher's Fixed Period 1"
+          >
+            CT
+          </span>
+        )}
       </div>
 
       {/* Teacher name */}
-      <p className="mt-1 text-xs text-slate-600 truncate">{teacher}</p>
+      <p className="mt-1 text-xs text-slate-600 font-medium truncate">{teacher}</p>
 
       {/* Room badge (bottom-right) */}
       {room && (

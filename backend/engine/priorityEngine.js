@@ -287,6 +287,11 @@ function generateSubstitutions(
         daySchedule
           .filter((slot) => slot.teacherId === absentId)
           .forEach((slot) => {
+            const absentTeacherObj = allTeachers.find((t) => t.id === absentId);
+            const isAbsentTeacherCT = Boolean(
+              absentTeacherObj?.isClassTeacher &&
+              absentTeacherObj?.classTeacherOf === classSection
+            );
             vacantPeriods.push({
               period: slot.period,
               classSection,
@@ -295,6 +300,8 @@ function generateSubstitutions(
               absentTeacherName: absentName,
               type: slot.type || "single",
               linkedPeriod: slot.linkedPeriod || null,
+              isCTPeriod: Boolean(slot.isCTPeriod || slot.period === 1),
+              isAbsentTeacherCT,
             });
           });
       });
@@ -479,6 +486,8 @@ function generateSubstitutions(
       reason: candidate.reasons.join(". ") + ".",
       isDoublePeriod: vacancy.type === "double",
       linkedSubstitutionId: linkedSubId,
+      isCTPeriod: Boolean(vacancy.isCTPeriod),
+      isAbsentTeacherCT: Boolean(vacancy.isAbsentTeacherCT),
       candidates: [], // will be populated below
     };
 

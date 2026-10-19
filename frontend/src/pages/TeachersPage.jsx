@@ -68,9 +68,16 @@ export default function TeachersPage() {
                     <p className="text-xs text-slate-500">{t.id} • {t.designation || 'Faculty'}</p>
                   </div>
                 </div>
-                <span className="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded-md bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300">
-                  {t.type}
-                </span>
+                <div className="flex flex-col items-end gap-1">
+                  <span className="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded-md bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300">
+                    {t.type}
+                  </span>
+                  {t.isClassTeacher && (
+                    <span className="inline-flex items-center gap-1 text-[10px] font-extrabold px-2 py-0.5 rounded-md bg-amber-500/15 text-amber-700 dark:text-amber-300 border border-amber-500/30">
+                      ★ CT: {t.classTeacherOf}
+                    </span>
+                  )}
+                </div>
               </div>
 
               <div className="space-y-2 my-4 text-xs">

@@ -55,55 +55,51 @@ const borderColor = (status) => {
   }
 };
 
-const BiometricPunchFeed = () => {
-  const [teachers, setTeachers] = useState([]);
-  const [loading, setLoading] = useState(true);
+const BiometricPunchFeed = ({ attendanceData, onRefresh }) => {
+  const [internalTeachers, setInternalTeachers] = useState([]);
+  const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
-  const [lastRefresh, setLastRefresh] = useState(null);
+  const [lastRefresh, setLastRefresh] = useState(new Date());
   const [isRefreshing, setIsRefreshing] = useState(false);
+
+  // If parent supplies attendanceData, use it; otherwise fallback to self-fetched
+  const teachers = attendanceData && attendanceData.length > 0 ? attendanceData : internalTeachers;
 
   /**
    * Fetch today's attendance data from the API.
-   * On failure, populate with demo data so the UI is still functional.
    */
   const fetchAttendance = useCallback(async () => {
+    if (onRefresh) {
+      setIsRefreshing(true);
+      await onRefresh();
+      setIsRefreshing(false);
+      setLastRefresh(new Date());
+      return;
+    }
+
     try {
       setIsRefreshing(true);
       const res = await getTodayAttendance();
       const data = res.data?.attendance || res.data || [];
-      setTeachers(Array.isArray(data) ? data : []);
+      setInternalTeachers(Array.isArray(data) ? data : []);
       setError(null);
     } catch (err) {
       console.warn('BiometricPunchFeed: API unavailable, using demo data.', err.message);
-      // Demo fallback data for development / offline mode
-      setTeachers([
-        { id: 'T001', name: 'Asha Sharma', department: 'Mathematics', status: 'PRESENT', punchTime: '07:42' },
-        { id: 'T002', name: 'Rajesh Kumar', department: 'Physics', status: 'PRESENT', punchTime: '07:38' },
-        { id: 'T003', name: 'Priya Singh', department: 'English', status: 'ABSENT', punchTime: null },
-        { id: 'T004', name: 'Sunil Verma', department: 'Chemistry', status: 'ON_LEAVE', punchTime: null, leaveReason: 'Medical' },
-        { id: 'T005', name: 'Meena Gupta', department: 'Hindi', status: 'PRESENT', punchTime: '07:50' },
-        { id: 'T006', name: 'Vikram Patel', department: 'Social Science', status: 'PRESENT', punchTime: '07:55' },
-        { id: 'T007', name: 'Anita Desai', department: 'Biology', status: 'ABSENT', punchTime: null },
-        { id: 'T008', name: 'Kiran Rao', department: 'Computer Science', status: 'PRESENT', punchTime: '07:44' },
-        { id: 'T009', name: 'Deepak Joshi', department: 'Physical Education', status: 'PRESENT', punchTime: '07:30' },
-        { id: 'T010', name: 'Nisha Agarwal', department: 'Sanskrit', status: 'ON_LEAVE', punchTime: null, leaveReason: 'Personal' },
-        { id: 'T011', name: 'Ramesh Tiwari', department: 'Mathematics', status: 'PRESENT', punchTime: '07:48' },
-        { id: 'T012', name: 'Sanjay Mishra', department: 'Physics', status: 'PRESENT', punchTime: '07:52' },
-      ]);
-      setError('Using offline demo data');
     } finally {
       setIsRefreshing(false);
       setLoading(false);
       setLastRefresh(new Date());
     }
-  }, []);
+  }, [onRefresh]);
 
-  // Initial fetch + auto-refresh every 5 seconds
+  // Initial fetch + auto-refresh every 5 seconds if no parent props
   useEffect(() => {
-    fetchAttendance();
+    if (!attendanceData || attendanceData.length === 0) {
+      fetchAttendance();
+    }
     const interval = setInterval(fetchAttendance, 5000);
     return () => clearInterval(interval);
-  }, [fetchAttendance]);
+  }, [fetchAttendance, attendanceData]);
 
   // Count summaries
   const presentCount = teachers.filter((t) => t.status === 'PRESENT').length;

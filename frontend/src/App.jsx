@@ -1,10 +1,11 @@
 import React from 'react';
 import { Routes, Route, Link, useLocation } from 'react-router-dom';
-import { LayoutDashboard, UserCheck, Calendar, ArrowLeftRight, Users, Bell } from 'lucide-react';
+import { LayoutDashboard, UserCheck, Calendar, ArrowLeftRight, Users, Bell, Clock } from 'lucide-react';
 
 import Dashboard from './pages/Dashboard';
 import AttendancePage from './pages/AttendancePage';
 import TimetablePage from './pages/TimetablePage';
+import TeacherRoutinePage from './pages/TeacherRoutinePage';
 import SubstitutionPage from './pages/SubstitutionPage';
 import TeachersPage from './pages/TeachersPage';
 import AdminPanelPage from './pages/AdminPanelPage';
@@ -14,8 +15,9 @@ export default function App() {
 
   const navItems = [
     { label: 'Dashboard', path: '/', icon: LayoutDashboard },
-    { label: 'Biometric Attendance', path: '/attendance', icon: UserCheck },
+    { label: 'Faculty Routine', path: '/routine', icon: Clock },
     { label: 'Master Timetable', path: '/timetable', icon: Calendar },
+    { label: 'Biometric Attendance', path: '/attendance', icon: UserCheck },
     { label: 'Auto-Substitution', path: '/substitution', icon: ArrowLeftRight },
     { label: 'Faculty Directory', path: '/teachers', icon: Users },
   ];
@@ -77,6 +79,7 @@ export default function App() {
         <main className="flex-1 min-w-0">
           <Routes>
             <Route path="/" element={<Dashboard />} />
+            <Route path="/routine" element={<TeacherRoutinePage />} />
             <Route path="/attendance" element={<AttendancePage />} />
             <Route path="/timetable" element={<TimetablePage />} />
             <Route path="/substitution" element={<SubstitutionPage />} />

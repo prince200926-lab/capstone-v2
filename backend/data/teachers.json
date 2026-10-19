@@ -13,7 +13,9 @@
       "12B",
       "11C"
     ],
-    "contact": "9876543001"
+    "contact": "9876543001",
+    "isClassTeacher": true,
+    "classTeacherOf": "12A"
   },
   {
     "id": "T002",
@@ -29,7 +31,9 @@
       "11A",
       "11B"
     ],
-    "contact": "9876543002"
+    "contact": "9876543002",
+    "isClassTeacher": true,
+    "classTeacherOf": "12C"
   },
   {
     "id": "T003",
@@ -45,7 +49,9 @@
       "12C",
       "11B"
     ],
-    "contact": "9876543003"
+    "contact": "9876543003",
+    "isClassTeacher": false,
+    "classTeacherOf": null
   },
   {
     "id": "T004",
@@ -61,7 +67,9 @@
       "11A",
       "11C"
     ],
-    "contact": "9876543004"
+    "contact": "9876543004",
+    "isClassTeacher": true,
+    "classTeacherOf": "12B"
   },
   {
     "id": "T005",
@@ -77,7 +85,9 @@
       "12B",
       "11C"
     ],
-    "contact": "9876543005"
+    "contact": "9876543005",
+    "isClassTeacher": false,
+    "classTeacherOf": null
   },
   {
     "id": "T006",
@@ -92,7 +102,9 @@
       "11A",
       "11B"
     ],
-    "contact": "9876543006"
+    "contact": "9876543006",
+    "isClassTeacher": true,
+    "classTeacherOf": "11B"
   },
   {
     "id": "T007",
@@ -107,7 +119,9 @@
       "12C",
       "11C"
     ],
-    "contact": "9876543007"
+    "contact": "9876543007",
+    "isClassTeacher": false,
+    "classTeacherOf": null
   },
   {
     "id": "T008",
@@ -122,7 +136,9 @@
       "12C",
       "11C"
     ],
-    "contact": "9876543008"
+    "contact": "9876543008",
+    "isClassTeacher": false,
+    "classTeacherOf": null
   },
   {
     "id": "T009",
@@ -138,7 +154,9 @@
       "12B",
       "11A"
     ],
-    "contact": "9876543009"
+    "contact": "9876543009",
+    "isClassTeacher": true,
+    "classTeacherOf": "11A"
   },
   {
     "id": "T010",
@@ -154,7 +172,9 @@
       "11B",
       "11C"
     ],
-    "contact": "9876543010"
+    "contact": "9876543010",
+    "isClassTeacher": true,
+    "classTeacherOf": "11C"
   },
   {
     "id": "T011",
@@ -171,7 +191,9 @@
       "9A",
       "8A"
     ],
-    "contact": "9876543011"
+    "contact": "9876543011",
+    "isClassTeacher": true,
+    "classTeacherOf": "10A"
   },
   {
     "id": "T012",
@@ -188,7 +210,9 @@
       "9B",
       "8B"
     ],
-    "contact": "9876543012"
+    "contact": "9876543012",
+    "isClassTeacher": true,
+    "classTeacherOf": "10B"
   },
   {
     "id": "T013",
@@ -204,7 +228,9 @@
       "9B",
       "8C"
     ],
-    "contact": "9876543013"
+    "contact": "9876543013",
+    "isClassTeacher": true,
+    "classTeacherOf": "9B"
   },
   {
     "id": "T014",
@@ -220,7 +246,9 @@
       "10C",
       "9A"
     ],
-    "contact": "9876543014"
+    "contact": "9876543014",
+    "isClassTeacher": true,
+    "classTeacherOf": "9A"
   },
   {
     "id": "T015",
@@ -236,7 +264,9 @@
       "9A",
       "8A"
     ],
-    "contact": "9876543015"
+    "contact": "9876543015",
+    "isClassTeacher": true,
+    "classTeacherOf": "8A"
   },
   {
     "id": "T016",
@@ -252,7 +282,9 @@
       "9B",
       "8B"
     ],
-    "contact": "9876543016"
+    "contact": "9876543016",
+    "isClassTeacher": true,
+    "classTeacherOf": "8B"
   },
   {
     "id": "T017",
@@ -268,7 +300,9 @@
       "10B",
       "9A"
     ],
-    "contact": "9876543017"
+    "contact": "9876543017",
+    "isClassTeacher": false,
+    "classTeacherOf": null
   },
   {
     "id": "T018",
@@ -284,7 +318,9 @@
       "8A",
       "8B"
     ],
-    "contact": "9876543018"
+    "contact": "9876543018",
+    "isClassTeacher": false,
+    "classTeacherOf": null
   },
   {
     "id": "T019",
@@ -301,7 +337,9 @@
       "9A",
       "8A"
     ],
-    "contact": "9876543019"
+    "contact": "9876543019",
+    "isClassTeacher": false,
+    "classTeacherOf": null
   },
   {
     "id": "T020",
@@ -318,7 +356,9 @@
       "9B",
       "8B"
     ],
-    "contact": "9876543020"
+    "contact": "9876543020",
+    "isClassTeacher": false,
+    "classTeacherOf": null
   },
   {
     "id": "T021",
@@ -335,7 +375,9 @@
       "9C",
       "8C"
     ],
-    "contact": "9876543021"
+    "contact": "9876543021",
+    "isClassTeacher": true,
+    "classTeacherOf": "10C"
   },
   {
     "id": "T022",
@@ -352,7 +394,9 @@
       "9C",
       "8C"
     ],
-    "contact": "9876543022"
+    "contact": "9876543022",
+    "isClassTeacher": true,
+    "classTeacherOf": "8C"
   },
   {
     "id": "T023",
@@ -369,7 +413,9 @@
       "9C",
       "8C"
     ],
-    "contact": "9876543023"
+    "contact": "9876543023",
+    "isClassTeacher": true,
+    "classTeacherOf": "9C"
   },
   {
     "id": "T024",
@@ -385,7 +431,9 @@
     "assignedClasses": [
       "All"
     ],
-    "contact": "9876543024"
+    "contact": "9876543024",
+    "isClassTeacher": false,
+    "classTeacherOf": null
   },
   {
     "id": "T025",
@@ -401,7 +449,9 @@
     "assignedClasses": [
       "All"
     ],
-    "contact": "9876543025"
+    "contact": "9876543025",
+    "isClassTeacher": false,
+    "classTeacherOf": null
   },
   {
     "id": "T026",
@@ -416,7 +466,9 @@
     "assignedClasses": [
       "All"
     ],
-    "contact": "9876543026"
+    "contact": "9876543026",
+    "isClassTeacher": false,
+    "classTeacherOf": null
   },
   {
     "id": "T027",
@@ -432,7 +484,9 @@
       "8B",
       "8C"
     ],
-    "contact": "9876543027"
+    "contact": "9876543027",
+    "isClassTeacher": false,
+    "classTeacherOf": null
   },
   {
     "id": "T028",
@@ -449,7 +503,9 @@
       "8B",
       "8C"
     ],
-    "contact": "9876543028"
+    "contact": "9876543028",
+    "isClassTeacher": false,
+    "classTeacherOf": null
   },
   {
     "id": "T029",
@@ -469,7 +525,9 @@
       "11B",
       "11C"
     ],
-    "contact": "9876543029"
+    "contact": "9876543029",
+    "isClassTeacher": false,
+    "classTeacherOf": null
   },
   {
     "id": "T030",
@@ -489,7 +547,9 @@
       "11B",
       "11C"
     ],
-    "contact": "9876543030"
+    "contact": "9876543030",
+    "isClassTeacher": false,
+    "classTeacherOf": null
   },
   {
     "id": "T031",
@@ -504,7 +564,9 @@
     "assignedClasses": [
       "All"
     ],
-    "contact": "9876543031"
+    "contact": "9876543031",
+    "isClassTeacher": false,
+    "classTeacherOf": null
   },
   {
     "id": "T032",
@@ -520,6 +582,8 @@
       "12A",
       "11C"
     ],
-    "contact": "9876543000"
+    "contact": "9876543000",
+    "isClassTeacher": false,
+    "classTeacherOf": null
   }
 ]
