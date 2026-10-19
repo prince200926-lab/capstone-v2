@@ -1,0 +1,525 @@
+[
+  {
+    "id": "T001",
+    "name": "Dr. Rajesh Sharma",
+    "department": "Physics",
+    "subjects": [
+      "Physics"
+    ],
+    "designation": "PGT",
+    "type": "senior",
+    "assignedClasses": [
+      "12A",
+      "12B",
+      "11C"
+    ],
+    "contact": "9876543001"
+  },
+  {
+    "id": "T002",
+    "name": "Ms. Neha Rawat",
+    "department": "Physics",
+    "subjects": [
+      "Physics"
+    ],
+    "designation": "PGT",
+    "type": "senior",
+    "assignedClasses": [
+      "12C",
+      "11A",
+      "11B"
+    ],
+    "contact": "9876543002"
+  },
+  {
+    "id": "T003",
+    "name": "Dr. Anil Verma",
+    "department": "Chemistry",
+    "subjects": [
+      "Chemistry"
+    ],
+    "designation": "PGT",
+    "type": "senior",
+    "assignedClasses": [
+      "12A",
+      "12C",
+      "11B"
+    ],
+    "contact": "9876543003"
+  },
+  {
+    "id": "T004",
+    "name": "Mrs. Priya Kapoor",
+    "department": "Chemistry",
+    "subjects": [
+      "Chemistry"
+    ],
+    "designation": "PGT",
+    "type": "senior",
+    "assignedClasses": [
+      "12B",
+      "11A",
+      "11C"
+    ],
+    "contact": "9876543004"
+  },
+  {
+    "id": "T005",
+    "name": "Mr. Suresh Gupta",
+    "department": "Mathematics",
+    "subjects": [
+      "Mathematics"
+    ],
+    "designation": "PGT",
+    "type": "senior",
+    "assignedClasses": [
+      "12A",
+      "12B",
+      "11C"
+    ],
+    "contact": "9876543005"
+  },
+  {
+    "id": "T006",
+    "name": "Mrs. Lakshmi Rao",
+    "department": "Mathematics",
+    "subjects": [
+      "Mathematics"
+    ],
+    "designation": "PGT",
+    "type": "senior",
+    "assignedClasses": [
+      "11A",
+      "11B"
+    ],
+    "contact": "9876543006"
+  },
+  {
+    "id": "T007",
+    "name": "Dr. Venkat Iyer",
+    "department": "Biology",
+    "subjects": [
+      "Biology"
+    ],
+    "designation": "PGT",
+    "type": "senior",
+    "assignedClasses": [
+      "12C",
+      "11C"
+    ],
+    "contact": "9876543007"
+  },
+  {
+    "id": "T008",
+    "name": "Ms. Pooja Bhatt",
+    "department": "Biology",
+    "subjects": [
+      "Biology"
+    ],
+    "designation": "PGT",
+    "type": "senior",
+    "assignedClasses": [
+      "12C",
+      "11C"
+    ],
+    "contact": "9876543008"
+  },
+  {
+    "id": "T009",
+    "name": "Mr. John David",
+    "department": "English",
+    "subjects": [
+      "English"
+    ],
+    "designation": "PGT",
+    "type": "senior",
+    "assignedClasses": [
+      "12A",
+      "12B",
+      "11A"
+    ],
+    "contact": "9876543009"
+  },
+  {
+    "id": "T010",
+    "name": "Mrs. Sunita Devi",
+    "department": "English",
+    "subjects": [
+      "English"
+    ],
+    "designation": "PGT",
+    "type": "senior",
+    "assignedClasses": [
+      "12C",
+      "11B",
+      "11C"
+    ],
+    "contact": "9876543010"
+  },
+  {
+    "id": "T011",
+    "name": "Mr. Ramesh Kumar",
+    "department": "Mathematics",
+    "subjects": [
+      "Mathematics",
+      "Maths"
+    ],
+    "designation": "TGT",
+    "type": "secondary",
+    "assignedClasses": [
+      "10A",
+      "9A",
+      "8A"
+    ],
+    "contact": "9876543011"
+  },
+  {
+    "id": "T012",
+    "name": "Mrs. Kavita Singh",
+    "department": "Mathematics",
+    "subjects": [
+      "Mathematics",
+      "Maths"
+    ],
+    "designation": "TGT",
+    "type": "secondary",
+    "assignedClasses": [
+      "10B",
+      "9B",
+      "8B"
+    ],
+    "contact": "9876543012"
+  },
+  {
+    "id": "T013",
+    "name": "Mr. Arjun Patel",
+    "department": "Science",
+    "subjects": [
+      "Science"
+    ],
+    "designation": "TGT",
+    "type": "secondary",
+    "assignedClasses": [
+      "10A",
+      "9B",
+      "8C"
+    ],
+    "contact": "9876543013"
+  },
+  {
+    "id": "T014",
+    "name": "Ms. Deepa Joshi",
+    "department": "Science",
+    "subjects": [
+      "Science"
+    ],
+    "designation": "TGT",
+    "type": "secondary",
+    "assignedClasses": [
+      "10B",
+      "10C",
+      "9A"
+    ],
+    "contact": "9876543014"
+  },
+  {
+    "id": "T015",
+    "name": "Mr. Vikram Reddy",
+    "department": "English",
+    "subjects": [
+      "English"
+    ],
+    "designation": "TGT",
+    "type": "secondary",
+    "assignedClasses": [
+      "10A",
+      "9A",
+      "8A"
+    ],
+    "contact": "9876543015"
+  },
+  {
+    "id": "T016",
+    "name": "Mrs. Fatima Mehta",
+    "department": "English",
+    "subjects": [
+      "English"
+    ],
+    "designation": "TGT",
+    "type": "secondary",
+    "assignedClasses": [
+      "10B",
+      "9B",
+      "8B"
+    ],
+    "contact": "9876543016"
+  },
+  {
+    "id": "T017",
+    "name": "Mr. Irfan Khan",
+    "department": "Hindi",
+    "subjects": [
+      "Hindi"
+    ],
+    "designation": "TGT",
+    "type": "secondary",
+    "assignedClasses": [
+      "10A",
+      "10B",
+      "9A"
+    ],
+    "contact": "9876543017"
+  },
+  {
+    "id": "T018",
+    "name": "Mrs. Geeta Saxena",
+    "department": "Hindi",
+    "subjects": [
+      "Hindi"
+    ],
+    "designation": "TGT",
+    "type": "secondary",
+    "assignedClasses": [
+      "9B",
+      "8A",
+      "8B"
+    ],
+    "contact": "9876543018"
+  },
+  {
+    "id": "T019",
+    "name": "Mr. Krishnan Nair",
+    "department": "Social Science",
+    "subjects": [
+      "SST",
+      "Social Science"
+    ],
+    "designation": "TGT",
+    "type": "secondary",
+    "assignedClasses": [
+      "10A",
+      "9A",
+      "8A"
+    ],
+    "contact": "9876543019"
+  },
+  {
+    "id": "T020",
+    "name": "Mrs. Anita Chauhan",
+    "department": "Social Science",
+    "subjects": [
+      "SST",
+      "Social Science"
+    ],
+    "designation": "TGT",
+    "type": "secondary",
+    "assignedClasses": [
+      "10B",
+      "9B",
+      "8B"
+    ],
+    "contact": "9876543020"
+  },
+  {
+    "id": "T021",
+    "name": "Mr. Sanjay Mishra",
+    "department": "Mathematics",
+    "subjects": [
+      "Mathematics",
+      "Science"
+    ],
+    "designation": "TGT",
+    "type": "secondary",
+    "assignedClasses": [
+      "10C",
+      "9C",
+      "8C"
+    ],
+    "contact": "9876543021"
+  },
+  {
+    "id": "T022",
+    "name": "Mrs. Ritu Agarwal",
+    "department": "English",
+    "subjects": [
+      "English",
+      "Hindi"
+    ],
+    "designation": "TGT",
+    "type": "secondary",
+    "assignedClasses": [
+      "10C",
+      "9C",
+      "8C"
+    ],
+    "contact": "9876543022"
+  },
+  {
+    "id": "T023",
+    "name": "Mr. Prakash Jha",
+    "department": "Social Science",
+    "subjects": [
+      "SST",
+      "Hindi"
+    ],
+    "designation": "TGT",
+    "type": "secondary",
+    "assignedClasses": [
+      "10C",
+      "9C",
+      "8C"
+    ],
+    "contact": "9876543023"
+  },
+  {
+    "id": "T024",
+    "name": "Mr. Amit Tiwari",
+    "department": "Technology",
+    "subjects": [
+      "Coding",
+      "Computer Science",
+      "Optional"
+    ],
+    "designation": "Specialist",
+    "type": "specialist",
+    "assignedClasses": [
+      "All"
+    ],
+    "contact": "9876543024"
+  },
+  {
+    "id": "T025",
+    "name": "Ms. Diana Fernandes",
+    "department": "Technology",
+    "subjects": [
+      "Coding",
+      "Computer Science",
+      "Optional"
+    ],
+    "designation": "Specialist",
+    "type": "specialist",
+    "assignedClasses": [
+      "All"
+    ],
+    "contact": "9876543025"
+  },
+  {
+    "id": "T026",
+    "name": "Mr. Harish Bhat",
+    "department": "Activity",
+    "subjects": [
+      "Games",
+      "PE"
+    ],
+    "designation": "PET",
+    "type": "specialist",
+    "assignedClasses": [
+      "All"
+    ],
+    "contact": "9876543026"
+  },
+  {
+    "id": "T027",
+    "name": "Mrs. Meera Pillai",
+    "department": "Languages",
+    "subjects": [
+      "Sanskrit"
+    ],
+    "designation": "TGT",
+    "type": "specialist",
+    "assignedClasses": [
+      "8A",
+      "8B",
+      "8C"
+    ],
+    "contact": "9876543027"
+  },
+  {
+    "id": "T028",
+    "name": "Ms. Claire Laurent",
+    "department": "Languages",
+    "subjects": [
+      "Foreign Lang",
+      "French"
+    ],
+    "designation": "Specialist",
+    "type": "specialist",
+    "assignedClasses": [
+      "8A",
+      "8B",
+      "8C"
+    ],
+    "contact": "9876543028"
+  },
+  {
+    "id": "T029",
+    "name": "Mr. Sunil Das",
+    "department": "Activity",
+    "subjects": [
+      "Library",
+      "GST"
+    ],
+    "designation": "Specialist",
+    "type": "specialist",
+    "assignedClasses": [
+      "12A",
+      "12B",
+      "12C",
+      "11A",
+      "11B",
+      "11C"
+    ],
+    "contact": "9876543029"
+  },
+  {
+    "id": "T030",
+    "name": "Mrs. Rekha Sharma",
+    "department": "Activity",
+    "subjects": [
+      "WE",
+      "Art"
+    ],
+    "designation": "Specialist",
+    "type": "specialist",
+    "assignedClasses": [
+      "12A",
+      "12B",
+      "12C",
+      "11A",
+      "11B",
+      "11C"
+    ],
+    "contact": "9876543030"
+  },
+  {
+    "id": "T031",
+    "name": "Mr. Dinesh Mishra",
+    "department": "Activity",
+    "subjects": [
+      "Optional",
+      "Games"
+    ],
+    "designation": "Specialist",
+    "type": "specialist",
+    "assignedClasses": [
+      "All"
+    ],
+    "contact": "9876543031"
+  },
+  {
+    "id": "T032",
+    "name": "Dr. Smita Sengupta",
+    "department": "Physics",
+    "subjects": [
+      "Physics",
+      "Lab"
+    ],
+    "designation": "PGT",
+    "type": "senior",
+    "assignedClasses": [
+      "12A",
+      "11C"
+    ],
+    "contact": "9876543000"
+  }
+]

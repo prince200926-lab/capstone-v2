@@ -1,0 +1,4726 @@
+{
+  "12A": {
+    "Monday": [
+      {
+        "period": 1,
+        "subject": "Physics",
+        "teacherId": "T001",
+        "type": "double",
+        "linkedPeriod": 2
+      },
+      {
+        "period": 2,
+        "subject": "Physics",
+        "teacherId": "T001",
+        "type": "double",
+        "linkedPeriod": 1
+      },
+      {
+        "period": 3,
+        "subject": "Chemistry",
+        "teacherId": "T003",
+        "type": "single"
+      },
+      {
+        "period": 4,
+        "subject": "English",
+        "teacherId": "T009",
+        "type": "single"
+      },
+      {
+        "period": 5,
+        "subject": "Optional",
+        "teacherId": "T024",
+        "type": "double",
+        "linkedPeriod": 6,
+        "room": "Opt Center"
+      },
+      {
+        "period": 6,
+        "subject": "Optional",
+        "teacherId": "T024",
+        "type": "double",
+        "linkedPeriod": 5,
+        "room": "Opt Center"
+      },
+      {
+        "period": 7,
+        "subject": "Mathematics",
+        "teacherId": "T005",
+        "type": "double",
+        "linkedPeriod": 8
+      },
+      {
+        "period": 8,
+        "subject": "Mathematics",
+        "teacherId": "T005",
+        "type": "double",
+        "linkedPeriod": 7
+      }
+    ],
+    "Tuesday": [
+      {
+        "period": 1,
+        "subject": "Physics",
+        "teacherId": "T001",
+        "type": "single"
+      },
+      {
+        "period": 2,
+        "subject": "Mathematics",
+        "teacherId": "T005",
+        "type": "single"
+      },
+      {
+        "period": 3,
+        "subject": "Chemistry",
+        "teacherId": "T003",
+        "type": "double",
+        "linkedPeriod": 4
+      },
+      {
+        "period": 4,
+        "subject": "Chemistry",
+        "teacherId": "T003",
+        "type": "double",
+        "linkedPeriod": 3
+      },
+      {
+        "period": 5,
+        "subject": "Optional",
+        "teacherId": "T024",
+        "type": "single",
+        "room": "Opt Center"
+      },
+      {
+        "period": 6,
+        "subject": "Games",
+        "teacherId": "T026",
+        "type": "single"
+      },
+      {
+        "period": 7,
+        "subject": "English",
+        "teacherId": "T009",
+        "type": "single"
+      },
+      {
+        "period": 8,
+        "subject": "Games",
+        "teacherId": "T026",
+        "type": "single"
+      }
+    ],
+    "Wednesday": [
+      {
+        "period": 1,
+        "subject": "Physics",
+        "teacherId": "T001",
+        "type": "single"
+      },
+      {
+        "period": 2,
+        "subject": "English",
+        "teacherId": "T009",
+        "type": "single"
+      },
+      {
+        "period": 3,
+        "subject": "Chemistry",
+        "teacherId": "T003",
+        "type": "double",
+        "linkedPeriod": 4
+      },
+      {
+        "period": 4,
+        "subject": "Chemistry",
+        "teacherId": "T003",
+        "type": "double",
+        "linkedPeriod": 3
+      },
+      {
+        "period": 5,
+        "subject": "Optional",
+        "teacherId": "T024",
+        "type": "double",
+        "linkedPeriod": 6,
+        "room": "Opt Center"
+      },
+      {
+        "period": 6,
+        "subject": "Optional",
+        "teacherId": "T024",
+        "type": "double",
+        "linkedPeriod": 5,
+        "room": "Opt Center"
+      },
+      {
+        "period": 7,
+        "subject": "Games",
+        "teacherId": "T026",
+        "type": "single"
+      },
+      {
+        "period": 8,
+        "subject": "Games",
+        "teacherId": "T026",
+        "type": "single"
+      }
+    ],
+    "Thursday": [
+      {
+        "period": 1,
+        "subject": "Physics",
+        "teacherId": "T001",
+        "type": "double",
+        "linkedPeriod": 2
+      },
+      {
+        "period": 2,
+        "subject": "Physics",
+        "teacherId": "T001",
+        "type": "double",
+        "linkedPeriod": 1
+      },
+      {
+        "period": 3,
+        "subject": "Chemistry",
+        "teacherId": "T003",
+        "type": "single"
+      },
+      {
+        "period": 4,
+        "subject": "English",
+        "teacherId": "T009",
+        "type": "single"
+      },
+      {
+        "period": 5,
+        "subject": "Optional",
+        "teacherId": "T024",
+        "type": "single",
+        "room": "Opt Center"
+      },
+      {
+        "period": 6,
+        "subject": "Games",
+        "teacherId": "T026",
+        "type": "single"
+      },
+      {
+        "period": 7,
+        "subject": "Games",
+        "teacherId": "T026",
+        "type": "single"
+      },
+      {
+        "period": 8,
+        "subject": "Games",
+        "teacherId": "T026",
+        "type": "single"
+      }
+    ],
+    "Friday": [
+      {
+        "period": 1,
+        "subject": "Chemistry",
+        "teacherId": "T003",
+        "type": "double",
+        "linkedPeriod": 2
+      },
+      {
+        "period": 2,
+        "subject": "Chemistry",
+        "teacherId": "T003",
+        "type": "double",
+        "linkedPeriod": 1
+      },
+      {
+        "period": 3,
+        "subject": "Mathematics",
+        "teacherId": "T005",
+        "type": "single"
+      },
+      {
+        "period": 4,
+        "subject": "English",
+        "teacherId": "T009",
+        "type": "single"
+      },
+      {
+        "period": 5,
+        "subject": "Optional",
+        "teacherId": "T024",
+        "type": "double",
+        "linkedPeriod": 6,
+        "room": "Opt Center"
+      },
+      {
+        "period": 6,
+        "subject": "Optional",
+        "teacherId": "T024",
+        "type": "double",
+        "linkedPeriod": 5,
+        "room": "Opt Center"
+      },
+      {
+        "period": 7,
+        "subject": "Games",
+        "teacherId": "T026",
+        "type": "single"
+      },
+      {
+        "period": 8,
+        "subject": "Games",
+        "teacherId": "T026",
+        "type": "single"
+      }
+    ],
+    "Saturday": [
+      {
+        "period": 1,
+        "subject": "Mathematics",
+        "teacherId": "T005",
+        "type": "double",
+        "linkedPeriod": 2
+      },
+      {
+        "period": 2,
+        "subject": "Mathematics",
+        "teacherId": "T005",
+        "type": "double",
+        "linkedPeriod": 1
+      },
+      {
+        "period": 3,
+        "subject": "Physics",
+        "teacherId": "T001",
+        "type": "double",
+        "linkedPeriod": 4
+      },
+      {
+        "period": 4,
+        "subject": "Physics",
+        "teacherId": "T001",
+        "type": "double",
+        "linkedPeriod": 3
+      },
+      {
+        "period": 5,
+        "subject": "Optional",
+        "teacherId": "T024",
+        "type": "single",
+        "room": "Opt Center"
+      },
+      {
+        "period": 6,
+        "subject": "Games",
+        "teacherId": "T026",
+        "type": "single"
+      },
+      {
+        "period": 7,
+        "subject": "English",
+        "teacherId": "T009",
+        "type": "single"
+      },
+      {
+        "period": 8,
+        "subject": "Games",
+        "teacherId": "T026",
+        "type": "single"
+      }
+    ]
+  },
+  "12B": {
+    "Monday": [
+      {
+        "period": 1,
+        "subject": "Chemistry",
+        "teacherId": "T004",
+        "type": "double",
+        "linkedPeriod": 2
+      },
+      {
+        "period": 2,
+        "subject": "Chemistry",
+        "teacherId": "T004",
+        "type": "double",
+        "linkedPeriod": 1
+      },
+      {
+        "period": 3,
+        "subject": "Physics",
+        "teacherId": "T001",
+        "type": "single"
+      },
+      {
+        "period": 4,
+        "subject": "Mathematics",
+        "teacherId": "T005",
+        "type": "single"
+      },
+      {
+        "period": 5,
+        "subject": "Optional",
+        "teacherId": "T031",
+        "type": "double",
+        "linkedPeriod": 6,
+        "room": "Opt Center"
+      },
+      {
+        "period": 6,
+        "subject": "Optional",
+        "teacherId": "T031",
+        "type": "double",
+        "linkedPeriod": 5,
+        "room": "Opt Center"
+      },
+      {
+        "period": 7,
+        "subject": "English",
+        "teacherId": "T009",
+        "type": "single"
+      },
+      {
+        "period": 8,
+        "subject": "Games",
+        "teacherId": "T026",
+        "type": "single"
+      }
+    ],
+    "Tuesday": [
+      {
+        "period": 1,
+        "subject": "Chemistry",
+        "teacherId": "T004",
+        "type": "single"
+      },
+      {
+        "period": 2,
+        "subject": "English",
+        "teacherId": "T009",
+        "type": "single"
+      },
+      {
+        "period": 3,
+        "subject": "Physics",
+        "teacherId": "T001",
+        "type": "double",
+        "linkedPeriod": 4
+      },
+      {
+        "period": 4,
+        "subject": "Physics",
+        "teacherId": "T001",
+        "type": "double",
+        "linkedPeriod": 3
+      },
+      {
+        "period": 5,
+        "subject": "Optional",
+        "teacherId": "T031",
+        "type": "single",
+        "room": "Opt Center"
+      },
+      {
+        "period": 6,
+        "subject": "Library",
+        "teacherId": "T029",
+        "type": "single"
+      },
+      {
+        "period": 7,
+        "subject": "Mathematics",
+        "teacherId": "T005",
+        "type": "double",
+        "linkedPeriod": 8
+      },
+      {
+        "period": 8,
+        "subject": "Mathematics",
+        "teacherId": "T005",
+        "type": "double",
+        "linkedPeriod": 7
+      }
+    ],
+    "Wednesday": [
+      {
+        "period": 1,
+        "subject": "Mathematics",
+        "teacherId": "T005",
+        "type": "single"
+      },
+      {
+        "period": 2,
+        "subject": "Games",
+        "teacherId": "T026",
+        "type": "single"
+      },
+      {
+        "period": 3,
+        "subject": "Physics",
+        "teacherId": "T001",
+        "type": "double",
+        "linkedPeriod": 4
+      },
+      {
+        "period": 4,
+        "subject": "Physics",
+        "teacherId": "T001",
+        "type": "double",
+        "linkedPeriod": 3
+      },
+      {
+        "period": 5,
+        "subject": "Optional",
+        "teacherId": "T031",
+        "type": "double",
+        "linkedPeriod": 6,
+        "room": "Opt Center"
+      },
+      {
+        "period": 6,
+        "subject": "Optional",
+        "teacherId": "T031",
+        "type": "double",
+        "linkedPeriod": 5,
+        "room": "Opt Center"
+      },
+      {
+        "period": 7,
+        "subject": "English",
+        "teacherId": "T009",
+        "type": "single"
+      },
+      {
+        "period": 8,
+        "subject": "Library",
+        "teacherId": "T029",
+        "type": "single"
+      }
+    ],
+    "Thursday": [
+      {
+        "period": 1,
+        "subject": "Chemistry",
+        "teacherId": "T004",
+        "type": "double",
+        "linkedPeriod": 2
+      },
+      {
+        "period": 2,
+        "subject": "Chemistry",
+        "teacherId": "T004",
+        "type": "double",
+        "linkedPeriod": 1
+      },
+      {
+        "period": 3,
+        "subject": "Physics",
+        "teacherId": "T001",
+        "type": "single"
+      },
+      {
+        "period": 4,
+        "subject": "Games",
+        "teacherId": "T026",
+        "type": "single"
+      },
+      {
+        "period": 5,
+        "subject": "Optional",
+        "teacherId": "T031",
+        "type": "single",
+        "room": "Opt Center"
+      },
+      {
+        "period": 6,
+        "subject": "Library",
+        "teacherId": "T029",
+        "type": "single"
+      },
+      {
+        "period": 7,
+        "subject": "Mathematics",
+        "teacherId": "T005",
+        "type": "double",
+        "linkedPeriod": 8
+      },
+      {
+        "period": 8,
+        "subject": "Mathematics",
+        "teacherId": "T005",
+        "type": "double",
+        "linkedPeriod": 7
+      }
+    ],
+    "Friday": [
+      {
+        "period": 1,
+        "subject": "Physics",
+        "teacherId": "T001",
+        "type": "double",
+        "linkedPeriod": 2
+      },
+      {
+        "period": 2,
+        "subject": "Physics",
+        "teacherId": "T001",
+        "type": "double",
+        "linkedPeriod": 1
+      },
+      {
+        "period": 3,
+        "subject": "Chemistry",
+        "teacherId": "T004",
+        "type": "single"
+      },
+      {
+        "period": 4,
+        "subject": "Games",
+        "teacherId": "T026",
+        "type": "single"
+      },
+      {
+        "period": 5,
+        "subject": "Optional",
+        "teacherId": "T031",
+        "type": "double",
+        "linkedPeriod": 6,
+        "room": "Opt Center"
+      },
+      {
+        "period": 6,
+        "subject": "Optional",
+        "teacherId": "T031",
+        "type": "double",
+        "linkedPeriod": 5,
+        "room": "Opt Center"
+      },
+      {
+        "period": 7,
+        "subject": "Mathematics",
+        "teacherId": "T005",
+        "type": "double",
+        "linkedPeriod": 8
+      },
+      {
+        "period": 8,
+        "subject": "Mathematics",
+        "teacherId": "T005",
+        "type": "double",
+        "linkedPeriod": 7
+      }
+    ],
+    "Saturday": [
+      {
+        "period": 1,
+        "subject": "Chemistry",
+        "teacherId": "T004",
+        "type": "double",
+        "linkedPeriod": 2
+      },
+      {
+        "period": 2,
+        "subject": "Chemistry",
+        "teacherId": "T004",
+        "type": "double",
+        "linkedPeriod": 1
+      },
+      {
+        "period": 3,
+        "subject": "English",
+        "teacherId": "T009",
+        "type": "single"
+      },
+      {
+        "period": 4,
+        "subject": "Games",
+        "teacherId": "T026",
+        "type": "single"
+      },
+      {
+        "period": 5,
+        "subject": "Optional",
+        "teacherId": "T031",
+        "type": "single",
+        "room": "Opt Center"
+      },
+      {
+        "period": 6,
+        "subject": "Library",
+        "teacherId": "T029",
+        "type": "single"
+      },
+      {
+        "period": 7,
+        "subject": "Games",
+        "teacherId": "T026",
+        "type": "single"
+      },
+      {
+        "period": 8,
+        "subject": "Library",
+        "teacherId": "T029",
+        "type": "single"
+      }
+    ]
+  },
+  "12C": {
+    "Monday": [
+      {
+        "period": 1,
+        "subject": "Chemistry",
+        "teacherId": "T003",
+        "type": "single"
+      },
+      {
+        "period": 2,
+        "subject": "English",
+        "teacherId": "T010",
+        "type": "single"
+      },
+      {
+        "period": 3,
+        "subject": "Physics",
+        "teacherId": "T002",
+        "type": "double",
+        "linkedPeriod": 4
+      },
+      {
+        "period": 4,
+        "subject": "Physics",
+        "teacherId": "T002",
+        "type": "double",
+        "linkedPeriod": 3
+      },
+      {
+        "period": 5,
+        "subject": "Optional",
+        "teacherId": "T025",
+        "type": "double",
+        "linkedPeriod": 6,
+        "room": "Opt Center"
+      },
+      {
+        "period": 6,
+        "subject": "Optional",
+        "teacherId": "T025",
+        "type": "double",
+        "linkedPeriod": 5,
+        "room": "Opt Center"
+      },
+      {
+        "period": 7,
+        "subject": "Biology",
+        "teacherId": "T007",
+        "type": "double",
+        "linkedPeriod": 8
+      },
+      {
+        "period": 8,
+        "subject": "Biology",
+        "teacherId": "T007",
+        "type": "double",
+        "linkedPeriod": 7
+      }
+    ],
+    "Tuesday": [
+      {
+        "period": 1,
+        "subject": "Physics",
+        "teacherId": "T002",
+        "type": "double",
+        "linkedPeriod": 2
+      },
+      {
+        "period": 2,
+        "subject": "Physics",
+        "teacherId": "T002",
+        "type": "double",
+        "linkedPeriod": 1
+      },
+      {
+        "period": 3,
+        "subject": "Biology",
+        "teacherId": "T007",
+        "type": "single"
+      },
+      {
+        "period": 4,
+        "subject": "English",
+        "teacherId": "T010",
+        "type": "single"
+      },
+      {
+        "period": 5,
+        "subject": "Optional",
+        "teacherId": "T025",
+        "type": "single",
+        "room": "Opt Center"
+      },
+      {
+        "period": 6,
+        "subject": "WE",
+        "teacherId": "T030",
+        "type": "single"
+      },
+      {
+        "period": 7,
+        "subject": "Games",
+        "teacherId": "T026",
+        "type": "single"
+      },
+      {
+        "period": 8,
+        "subject": "Library",
+        "teacherId": "T029",
+        "type": "single"
+      }
+    ],
+    "Wednesday": [
+      {
+        "period": 1,
+        "subject": "Physics",
+        "teacherId": "T002",
+        "type": "single"
+      },
+      {
+        "period": 2,
+        "subject": "Biology",
+        "teacherId": "T007",
+        "type": "single"
+      },
+      {
+        "period": 3,
+        "subject": "Games",
+        "teacherId": "T026",
+        "type": "single"
+      },
+      {
+        "period": 4,
+        "subject": "English",
+        "teacherId": "T010",
+        "type": "single"
+      },
+      {
+        "period": 5,
+        "subject": "Optional",
+        "teacherId": "T025",
+        "type": "double",
+        "linkedPeriod": 6,
+        "room": "Opt Center"
+      },
+      {
+        "period": 6,
+        "subject": "Optional",
+        "teacherId": "T025",
+        "type": "double",
+        "linkedPeriod": 5,
+        "room": "Opt Center"
+      },
+      {
+        "period": 7,
+        "subject": "Chemistry",
+        "teacherId": "T003",
+        "type": "double",
+        "linkedPeriod": 8
+      },
+      {
+        "period": 8,
+        "subject": "Chemistry",
+        "teacherId": "T003",
+        "type": "double",
+        "linkedPeriod": 7
+      }
+    ],
+    "Thursday": [
+      {
+        "period": 1,
+        "subject": "Biology",
+        "teacherId": "T007",
+        "type": "double",
+        "linkedPeriod": 2
+      },
+      {
+        "period": 2,
+        "subject": "Biology",
+        "teacherId": "T007",
+        "type": "double",
+        "linkedPeriod": 1
+      },
+      {
+        "period": 3,
+        "subject": "Games",
+        "teacherId": "T026",
+        "type": "single"
+      },
+      {
+        "period": 4,
+        "subject": "English",
+        "teacherId": "T010",
+        "type": "single"
+      },
+      {
+        "period": 5,
+        "subject": "Optional",
+        "teacherId": "T025",
+        "type": "single",
+        "room": "Opt Center"
+      },
+      {
+        "period": 6,
+        "subject": "WE",
+        "teacherId": "T030",
+        "type": "single"
+      },
+      {
+        "period": 7,
+        "subject": "Chemistry",
+        "teacherId": "T003",
+        "type": "double",
+        "linkedPeriod": 8
+      },
+      {
+        "period": 8,
+        "subject": "Chemistry",
+        "teacherId": "T003",
+        "type": "double",
+        "linkedPeriod": 7
+      }
+    ],
+    "Friday": [
+      {
+        "period": 1,
+        "subject": "Physics",
+        "teacherId": "T002",
+        "type": "double",
+        "linkedPeriod": 2
+      },
+      {
+        "period": 2,
+        "subject": "Physics",
+        "teacherId": "T002",
+        "type": "double",
+        "linkedPeriod": 1
+      },
+      {
+        "period": 3,
+        "subject": "Chemistry",
+        "teacherId": "T003",
+        "type": "single"
+      },
+      {
+        "period": 4,
+        "subject": "English",
+        "teacherId": "T010",
+        "type": "single"
+      },
+      {
+        "period": 5,
+        "subject": "Optional",
+        "teacherId": "T025",
+        "type": "double",
+        "linkedPeriod": 6,
+        "room": "Opt Center"
+      },
+      {
+        "period": 6,
+        "subject": "Optional",
+        "teacherId": "T025",
+        "type": "double",
+        "linkedPeriod": 5,
+        "room": "Opt Center"
+      },
+      {
+        "period": 7,
+        "subject": "Biology",
+        "teacherId": "T007",
+        "type": "double",
+        "linkedPeriod": 8
+      },
+      {
+        "period": 8,
+        "subject": "Biology",
+        "teacherId": "T007",
+        "type": "double",
+        "linkedPeriod": 7
+      }
+    ],
+    "Saturday": [
+      {
+        "period": 1,
+        "subject": "Physics",
+        "teacherId": "T002",
+        "type": "single"
+      },
+      {
+        "period": 2,
+        "subject": "English",
+        "teacherId": "T010",
+        "type": "single"
+      },
+      {
+        "period": 3,
+        "subject": "Chemistry",
+        "teacherId": "T003",
+        "type": "double",
+        "linkedPeriod": 4
+      },
+      {
+        "period": 4,
+        "subject": "Chemistry",
+        "teacherId": "T003",
+        "type": "double",
+        "linkedPeriod": 3
+      },
+      {
+        "period": 5,
+        "subject": "Optional",
+        "teacherId": "T025",
+        "type": "single",
+        "room": "Opt Center"
+      },
+      {
+        "period": 6,
+        "subject": "WE",
+        "teacherId": "T030",
+        "type": "single"
+      },
+      {
+        "period": 7,
+        "subject": "Library",
+        "teacherId": "T029",
+        "type": "single"
+      },
+      {
+        "period": 8,
+        "subject": "WE",
+        "teacherId": "T030",
+        "type": "single"
+      }
+    ]
+  },
+  "11A": {
+    "Monday": [
+      {
+        "period": 1,
+        "subject": "Physics",
+        "teacherId": "T002",
+        "type": "single"
+      },
+      {
+        "period": 2,
+        "subject": "English",
+        "teacherId": "T009",
+        "type": "single"
+      },
+      {
+        "period": 3,
+        "subject": "Chemistry",
+        "teacherId": "T004",
+        "type": "double",
+        "linkedPeriod": 4
+      },
+      {
+        "period": 4,
+        "subject": "Chemistry",
+        "teacherId": "T004",
+        "type": "double",
+        "linkedPeriod": 3
+      },
+      {
+        "period": 5,
+        "subject": "Optional",
+        "teacherId": "T024",
+        "type": "single",
+        "room": "Opt Center"
+      },
+      {
+        "period": 6,
+        "subject": "Games",
+        "teacherId": "T026",
+        "type": "single"
+      },
+      {
+        "period": 7,
+        "subject": "Mathematics",
+        "teacherId": "T006",
+        "type": "double",
+        "linkedPeriod": 8
+      },
+      {
+        "period": 8,
+        "subject": "Mathematics",
+        "teacherId": "T006",
+        "type": "double",
+        "linkedPeriod": 7
+      }
+    ],
+    "Tuesday": [
+      {
+        "period": 1,
+        "subject": "English",
+        "teacherId": "T009",
+        "type": "single"
+      },
+      {
+        "period": 2,
+        "subject": "Games",
+        "teacherId": "T026",
+        "type": "single"
+      },
+      {
+        "period": 3,
+        "subject": "Chemistry",
+        "teacherId": "T004",
+        "type": "double",
+        "linkedPeriod": 4
+      },
+      {
+        "period": 4,
+        "subject": "Chemistry",
+        "teacherId": "T004",
+        "type": "double",
+        "linkedPeriod": 3
+      },
+      {
+        "period": 5,
+        "subject": "Optional",
+        "teacherId": "T024",
+        "type": "double",
+        "linkedPeriod": 6,
+        "room": "Opt Center"
+      },
+      {
+        "period": 6,
+        "subject": "Optional",
+        "teacherId": "T024",
+        "type": "double",
+        "linkedPeriod": 5,
+        "room": "Opt Center"
+      },
+      {
+        "period": 7,
+        "subject": "Mathematics",
+        "teacherId": "T006",
+        "type": "double",
+        "linkedPeriod": 8
+      },
+      {
+        "period": 8,
+        "subject": "Mathematics",
+        "teacherId": "T006",
+        "type": "double",
+        "linkedPeriod": 7
+      }
+    ],
+    "Wednesday": [
+      {
+        "period": 1,
+        "subject": "Chemistry",
+        "teacherId": "T004",
+        "type": "single"
+      },
+      {
+        "period": 2,
+        "subject": "Library",
+        "teacherId": "T029",
+        "type": "single"
+      },
+      {
+        "period": 3,
+        "subject": "Physics",
+        "teacherId": "T002",
+        "type": "double",
+        "linkedPeriod": 4
+      },
+      {
+        "period": 4,
+        "subject": "Physics",
+        "teacherId": "T002",
+        "type": "double",
+        "linkedPeriod": 3
+      },
+      {
+        "period": 5,
+        "subject": "Optional",
+        "teacherId": "T024",
+        "type": "single",
+        "room": "Opt Center"
+      },
+      {
+        "period": 6,
+        "subject": "Games",
+        "teacherId": "T026",
+        "type": "single"
+      },
+      {
+        "period": 7,
+        "subject": "Library",
+        "teacherId": "T029",
+        "type": "single"
+      },
+      {
+        "period": 8,
+        "subject": "English",
+        "teacherId": "T009",
+        "type": "single"
+      }
+    ],
+    "Thursday": [
+      {
+        "period": 1,
+        "subject": "Physics",
+        "teacherId": "T002",
+        "type": "double",
+        "linkedPeriod": 2
+      },
+      {
+        "period": 2,
+        "subject": "Physics",
+        "teacherId": "T002",
+        "type": "double",
+        "linkedPeriod": 1
+      },
+      {
+        "period": 3,
+        "subject": "Mathematics",
+        "teacherId": "T006",
+        "type": "double",
+        "linkedPeriod": 4
+      },
+      {
+        "period": 4,
+        "subject": "Mathematics",
+        "teacherId": "T006",
+        "type": "double",
+        "linkedPeriod": 3
+      },
+      {
+        "period": 5,
+        "subject": "Optional",
+        "teacherId": "T024",
+        "type": "double",
+        "linkedPeriod": 6,
+        "room": "Opt Center"
+      },
+      {
+        "period": 6,
+        "subject": "Optional",
+        "teacherId": "T024",
+        "type": "double",
+        "linkedPeriod": 5,
+        "room": "Opt Center"
+      },
+      {
+        "period": 7,
+        "subject": "English",
+        "teacherId": "T009",
+        "type": "single"
+      },
+      {
+        "period": 8,
+        "subject": "Library",
+        "teacherId": "T029",
+        "type": "single"
+      }
+    ],
+    "Friday": [
+      {
+        "period": 1,
+        "subject": "Chemistry",
+        "teacherId": "T004",
+        "type": "double",
+        "linkedPeriod": 2
+      },
+      {
+        "period": 2,
+        "subject": "Chemistry",
+        "teacherId": "T004",
+        "type": "double",
+        "linkedPeriod": 1
+      },
+      {
+        "period": 3,
+        "subject": "Physics",
+        "teacherId": "T002",
+        "type": "single"
+      },
+      {
+        "period": 4,
+        "subject": "Mathematics",
+        "teacherId": "T006",
+        "type": "single"
+      },
+      {
+        "period": 5,
+        "subject": "Optional",
+        "teacherId": "T024",
+        "type": "single",
+        "room": "Opt Center"
+      },
+      {
+        "period": 6,
+        "subject": "Games",
+        "teacherId": "T026",
+        "type": "single"
+      },
+      {
+        "period": 7,
+        "subject": "English",
+        "teacherId": "T009",
+        "type": "single"
+      },
+      {
+        "period": 8,
+        "subject": "Library",
+        "teacherId": "T029",
+        "type": "single"
+      }
+    ],
+    "Saturday": [
+      {
+        "period": 1,
+        "subject": "Mathematics",
+        "teacherId": "T006",
+        "type": "single"
+      },
+      {
+        "period": 2,
+        "subject": "English",
+        "teacherId": "T009",
+        "type": "single"
+      },
+      {
+        "period": 3,
+        "subject": "Physics",
+        "teacherId": "T002",
+        "type": "double",
+        "linkedPeriod": 4
+      },
+      {
+        "period": 4,
+        "subject": "Physics",
+        "teacherId": "T002",
+        "type": "double",
+        "linkedPeriod": 3
+      },
+      {
+        "period": 5,
+        "subject": "Optional",
+        "teacherId": "T024",
+        "type": "double",
+        "linkedPeriod": 6,
+        "room": "Opt Center"
+      },
+      {
+        "period": 6,
+        "subject": "Optional",
+        "teacherId": "T024",
+        "type": "double",
+        "linkedPeriod": 5,
+        "room": "Opt Center"
+      },
+      {
+        "period": 7,
+        "subject": "Chemistry",
+        "teacherId": "T004",
+        "type": "single"
+      },
+      {
+        "period": 8,
+        "subject": "WE",
+        "teacherId": "T030",
+        "type": "single"
+      }
+    ]
+  },
+  "11B": {
+    "Monday": [
+      {
+        "period": 1,
+        "subject": "Mathematics",
+        "teacherId": "T006",
+        "type": "single"
+      },
+      {
+        "period": 2,
+        "subject": "Chemistry",
+        "teacherId": "T003",
+        "type": "single"
+      },
+      {
+        "period": 3,
+        "subject": "English",
+        "teacherId": "T010",
+        "type": "single"
+      },
+      {
+        "period": 4,
+        "subject": "Games",
+        "teacherId": "T026",
+        "type": "single"
+      },
+      {
+        "period": 5,
+        "subject": "Optional",
+        "teacherId": "T031",
+        "type": "single",
+        "room": "Opt Center"
+      },
+      {
+        "period": 6,
+        "subject": "Library",
+        "teacherId": "T029",
+        "type": "single"
+      },
+      {
+        "period": 7,
+        "subject": "Physics",
+        "teacherId": "T002",
+        "type": "double",
+        "linkedPeriod": 8
+      },
+      {
+        "period": 8,
+        "subject": "Physics",
+        "teacherId": "T002",
+        "type": "double",
+        "linkedPeriod": 7
+      }
+    ],
+    "Tuesday": [
+      {
+        "period": 1,
+        "subject": "Chemistry",
+        "teacherId": "T003",
+        "type": "double",
+        "linkedPeriod": 2
+      },
+      {
+        "period": 2,
+        "subject": "Chemistry",
+        "teacherId": "T003",
+        "type": "double",
+        "linkedPeriod": 1
+      },
+      {
+        "period": 3,
+        "subject": "Mathematics",
+        "teacherId": "T006",
+        "type": "single"
+      },
+      {
+        "period": 4,
+        "subject": "Games",
+        "teacherId": "T026",
+        "type": "single"
+      },
+      {
+        "period": 5,
+        "subject": "Optional",
+        "teacherId": "T031",
+        "type": "double",
+        "linkedPeriod": 6,
+        "room": "Opt Center"
+      },
+      {
+        "period": 6,
+        "subject": "Optional",
+        "teacherId": "T031",
+        "type": "double",
+        "linkedPeriod": 5,
+        "room": "Opt Center"
+      },
+      {
+        "period": 7,
+        "subject": "Physics",
+        "teacherId": "T002",
+        "type": "double",
+        "linkedPeriod": 8
+      },
+      {
+        "period": 8,
+        "subject": "Physics",
+        "teacherId": "T002",
+        "type": "double",
+        "linkedPeriod": 7
+      }
+    ],
+    "Wednesday": [
+      {
+        "period": 1,
+        "subject": "Games",
+        "teacherId": "T026",
+        "type": "single"
+      },
+      {
+        "period": 2,
+        "subject": "Physics",
+        "teacherId": "T002",
+        "type": "single"
+      },
+      {
+        "period": 3,
+        "subject": "Mathematics",
+        "teacherId": "T006",
+        "type": "double",
+        "linkedPeriod": 4
+      },
+      {
+        "period": 4,
+        "subject": "Mathematics",
+        "teacherId": "T006",
+        "type": "double",
+        "linkedPeriod": 3
+      },
+      {
+        "period": 5,
+        "subject": "Optional",
+        "teacherId": "T031",
+        "type": "single",
+        "room": "Opt Center"
+      },
+      {
+        "period": 6,
+        "subject": "Library",
+        "teacherId": "T029",
+        "type": "single"
+      },
+      {
+        "period": 7,
+        "subject": "English",
+        "teacherId": "T010",
+        "type": "single"
+      },
+      {
+        "period": 8,
+        "subject": "WE",
+        "teacherId": "T030",
+        "type": "single"
+      }
+    ],
+    "Thursday": [
+      {
+        "period": 1,
+        "subject": "Chemistry",
+        "teacherId": "T003",
+        "type": "single"
+      },
+      {
+        "period": 2,
+        "subject": "English",
+        "teacherId": "T010",
+        "type": "single"
+      },
+      {
+        "period": 3,
+        "subject": "Physics",
+        "teacherId": "T002",
+        "type": "double",
+        "linkedPeriod": 4
+      },
+      {
+        "period": 4,
+        "subject": "Physics",
+        "teacherId": "T002",
+        "type": "double",
+        "linkedPeriod": 3
+      },
+      {
+        "period": 5,
+        "subject": "Optional",
+        "teacherId": "T031",
+        "type": "double",
+        "linkedPeriod": 6,
+        "room": "Opt Center"
+      },
+      {
+        "period": 6,
+        "subject": "Optional",
+        "teacherId": "T031",
+        "type": "double",
+        "linkedPeriod": 5,
+        "room": "Opt Center"
+      },
+      {
+        "period": 7,
+        "subject": "Library",
+        "teacherId": "T029",
+        "type": "single"
+      },
+      {
+        "period": 8,
+        "subject": "WE",
+        "teacherId": "T030",
+        "type": "single"
+      }
+    ],
+    "Friday": [
+      {
+        "period": 1,
+        "subject": "Mathematics",
+        "teacherId": "T006",
+        "type": "double",
+        "linkedPeriod": 2
+      },
+      {
+        "period": 2,
+        "subject": "Mathematics",
+        "teacherId": "T006",
+        "type": "double",
+        "linkedPeriod": 1
+      },
+      {
+        "period": 3,
+        "subject": "English",
+        "teacherId": "T010",
+        "type": "single"
+      },
+      {
+        "period": 4,
+        "subject": "Library",
+        "teacherId": "T029",
+        "type": "single"
+      },
+      {
+        "period": 5,
+        "subject": "Optional",
+        "teacherId": "T031",
+        "type": "single",
+        "room": "Opt Center"
+      },
+      {
+        "period": 6,
+        "subject": "Library",
+        "teacherId": "T029",
+        "type": "single"
+      },
+      {
+        "period": 7,
+        "subject": "Chemistry",
+        "teacherId": "T003",
+        "type": "double",
+        "linkedPeriod": 8
+      },
+      {
+        "period": 8,
+        "subject": "Chemistry",
+        "teacherId": "T003",
+        "type": "double",
+        "linkedPeriod": 7
+      }
+    ],
+    "Saturday": [
+      {
+        "period": 1,
+        "subject": "Games",
+        "teacherId": "T026",
+        "type": "single"
+      },
+      {
+        "period": 2,
+        "subject": "Physics",
+        "teacherId": "T002",
+        "type": "single"
+      },
+      {
+        "period": 3,
+        "subject": "Mathematics",
+        "teacherId": "T006",
+        "type": "double",
+        "linkedPeriod": 4
+      },
+      {
+        "period": 4,
+        "subject": "Mathematics",
+        "teacherId": "T006",
+        "type": "double",
+        "linkedPeriod": 3
+      },
+      {
+        "period": 5,
+        "subject": "Optional",
+        "teacherId": "T031",
+        "type": "double",
+        "linkedPeriod": 6,
+        "room": "Opt Center"
+      },
+      {
+        "period": 6,
+        "subject": "Optional",
+        "teacherId": "T031",
+        "type": "double",
+        "linkedPeriod": 5,
+        "room": "Opt Center"
+      },
+      {
+        "period": 7,
+        "subject": "Chemistry",
+        "teacherId": "T003",
+        "type": "double",
+        "linkedPeriod": 8
+      },
+      {
+        "period": 8,
+        "subject": "Chemistry",
+        "teacherId": "T003",
+        "type": "double",
+        "linkedPeriod": 7
+      }
+    ]
+  },
+  "11C": {
+    "Monday": [
+      {
+        "period": 1,
+        "subject": "Biology",
+        "teacherId": "T007",
+        "type": "single"
+      },
+      {
+        "period": 2,
+        "subject": "Games",
+        "teacherId": "T026",
+        "type": "single"
+      },
+      {
+        "period": 3,
+        "subject": "Games",
+        "teacherId": "T026",
+        "type": "single"
+      },
+      {
+        "period": 4,
+        "subject": "Physics",
+        "teacherId": "T001",
+        "type": "single"
+      },
+      {
+        "period": 5,
+        "subject": "Optional",
+        "teacherId": "T025",
+        "type": "single",
+        "room": "Opt Center"
+      },
+      {
+        "period": 6,
+        "subject": "WE",
+        "teacherId": "T030",
+        "type": "single"
+      },
+      {
+        "period": 7,
+        "subject": "Chemistry",
+        "teacherId": "T004",
+        "type": "double",
+        "linkedPeriod": 8
+      },
+      {
+        "period": 8,
+        "subject": "Chemistry",
+        "teacherId": "T004",
+        "type": "double",
+        "linkedPeriod": 7
+      }
+    ],
+    "Tuesday": [
+      {
+        "period": 1,
+        "subject": "English",
+        "teacherId": "T010",
+        "type": "single"
+      },
+      {
+        "period": 2,
+        "subject": "Chemistry",
+        "teacherId": "T004",
+        "type": "single"
+      },
+      {
+        "period": 3,
+        "subject": "Games",
+        "teacherId": "T026",
+        "type": "single"
+      },
+      {
+        "period": 4,
+        "subject": "Library",
+        "teacherId": "T029",
+        "type": "single"
+      },
+      {
+        "period": 5,
+        "subject": "Optional",
+        "teacherId": "T025",
+        "type": "double",
+        "linkedPeriod": 6,
+        "room": "Opt Center"
+      },
+      {
+        "period": 6,
+        "subject": "Optional",
+        "teacherId": "T025",
+        "type": "double",
+        "linkedPeriod": 5,
+        "room": "Opt Center"
+      },
+      {
+        "period": 7,
+        "subject": "Physics",
+        "teacherId": "T001",
+        "type": "double",
+        "linkedPeriod": 8
+      },
+      {
+        "period": 8,
+        "subject": "Physics",
+        "teacherId": "T001",
+        "type": "double",
+        "linkedPeriod": 7
+      }
+    ],
+    "Wednesday": [
+      {
+        "period": 1,
+        "subject": "Biology",
+        "teacherId": "T007",
+        "type": "single"
+      },
+      {
+        "period": 2,
+        "subject": "English",
+        "teacherId": "T010",
+        "type": "single"
+      },
+      {
+        "period": 3,
+        "subject": "Chemistry",
+        "teacherId": "T004",
+        "type": "double",
+        "linkedPeriod": 4
+      },
+      {
+        "period": 4,
+        "subject": "Chemistry",
+        "teacherId": "T004",
+        "type": "double",
+        "linkedPeriod": 3
+      },
+      {
+        "period": 5,
+        "subject": "Optional",
+        "teacherId": "T025",
+        "type": "single",
+        "room": "Opt Center"
+      },
+      {
+        "period": 6,
+        "subject": "WE",
+        "teacherId": "T030",
+        "type": "single"
+      },
+      {
+        "period": 7,
+        "subject": "Physics",
+        "teacherId": "T001",
+        "type": "double",
+        "linkedPeriod": 8
+      },
+      {
+        "period": 8,
+        "subject": "Physics",
+        "teacherId": "T001",
+        "type": "double",
+        "linkedPeriod": 7
+      }
+    ],
+    "Thursday": [
+      {
+        "period": 1,
+        "subject": "English",
+        "teacherId": "T010",
+        "type": "single"
+      },
+      {
+        "period": 2,
+        "subject": "Games",
+        "teacherId": "T026",
+        "type": "single"
+      },
+      {
+        "period": 3,
+        "subject": "Library",
+        "teacherId": "T029",
+        "type": "single"
+      },
+      {
+        "period": 4,
+        "subject": "Physics",
+        "teacherId": "T001",
+        "type": "single"
+      },
+      {
+        "period": 5,
+        "subject": "Optional",
+        "teacherId": "T025",
+        "type": "double",
+        "linkedPeriod": 6,
+        "room": "Opt Center"
+      },
+      {
+        "period": 6,
+        "subject": "Optional",
+        "teacherId": "T025",
+        "type": "double",
+        "linkedPeriod": 5,
+        "room": "Opt Center"
+      },
+      {
+        "period": 7,
+        "subject": "WE",
+        "teacherId": "T030",
+        "type": "single"
+      },
+      {
+        "period": 8,
+        "subject": "WE",
+        "teacherId": "T030",
+        "type": "single"
+      }
+    ],
+    "Friday": [
+      {
+        "period": 1,
+        "subject": "Biology",
+        "teacherId": "T007",
+        "type": "double",
+        "linkedPeriod": 2
+      },
+      {
+        "period": 2,
+        "subject": "Biology",
+        "teacherId": "T007",
+        "type": "double",
+        "linkedPeriod": 1
+      },
+      {
+        "period": 3,
+        "subject": "Games",
+        "teacherId": "T026",
+        "type": "single"
+      },
+      {
+        "period": 4,
+        "subject": "Chemistry",
+        "teacherId": "T004",
+        "type": "single"
+      },
+      {
+        "period": 5,
+        "subject": "Optional",
+        "teacherId": "T025",
+        "type": "single",
+        "room": "Opt Center"
+      },
+      {
+        "period": 6,
+        "subject": "WE",
+        "teacherId": "T030",
+        "type": "single"
+      },
+      {
+        "period": 7,
+        "subject": "Physics",
+        "teacherId": "T001",
+        "type": "double",
+        "linkedPeriod": 8
+      },
+      {
+        "period": 8,
+        "subject": "Physics",
+        "teacherId": "T001",
+        "type": "double",
+        "linkedPeriod": 7
+      }
+    ],
+    "Saturday": [
+      {
+        "period": 1,
+        "subject": "English",
+        "teacherId": "T010",
+        "type": "single"
+      },
+      {
+        "period": 2,
+        "subject": "Games",
+        "teacherId": "T026",
+        "type": "single"
+      },
+      {
+        "period": 3,
+        "subject": "Chemistry",
+        "teacherId": "T004",
+        "type": "double",
+        "linkedPeriod": 4
+      },
+      {
+        "period": 4,
+        "subject": "Chemistry",
+        "teacherId": "T004",
+        "type": "double",
+        "linkedPeriod": 3
+      },
+      {
+        "period": 5,
+        "subject": "Optional",
+        "teacherId": "T025",
+        "type": "double",
+        "linkedPeriod": 6,
+        "room": "Opt Center"
+      },
+      {
+        "period": 6,
+        "subject": "Optional",
+        "teacherId": "T025",
+        "type": "double",
+        "linkedPeriod": 5,
+        "room": "Opt Center"
+      },
+      {
+        "period": 7,
+        "subject": "Biology",
+        "teacherId": "T007",
+        "type": "double",
+        "linkedPeriod": 8
+      },
+      {
+        "period": 8,
+        "subject": "Biology",
+        "teacherId": "T007",
+        "type": "double",
+        "linkedPeriod": 7
+      }
+    ]
+  },
+  "10A": {
+    "Monday": [
+      {
+        "period": 1,
+        "subject": "Maths",
+        "teacherId": "T011",
+        "type": "single"
+      },
+      {
+        "period": 2,
+        "subject": "Science",
+        "teacherId": "T013",
+        "type": "single"
+      },
+      {
+        "period": 3,
+        "subject": "Social Studies",
+        "teacherId": "T019",
+        "type": "single"
+      },
+      {
+        "period": 4,
+        "subject": "English",
+        "teacherId": "T015",
+        "type": "single"
+      },
+      {
+        "period": 5,
+        "subject": "Hindi",
+        "teacherId": "T017",
+        "type": "single"
+      },
+      {
+        "period": 6,
+        "subject": "Maths",
+        "teacherId": "T011",
+        "type": "single"
+      },
+      {
+        "period": 7,
+        "subject": "Coding",
+        "teacherId": "T025",
+        "type": "single"
+      },
+      {
+        "period": 8,
+        "subject": "Maths",
+        "teacherId": "T011",
+        "type": "single"
+      }
+    ],
+    "Tuesday": [
+      {
+        "period": 1,
+        "subject": "Social Studies",
+        "teacherId": "T019",
+        "type": "single"
+      },
+      {
+        "period": 2,
+        "subject": "English",
+        "teacherId": "T015",
+        "type": "single"
+      },
+      {
+        "period": 3,
+        "subject": "Hindi",
+        "teacherId": "T017",
+        "type": "single"
+      },
+      {
+        "period": 4,
+        "subject": "Optional",
+        "teacherId": "T024",
+        "type": "single"
+      },
+      {
+        "period": 5,
+        "subject": "Social Studies",
+        "teacherId": "T019",
+        "type": "single"
+      },
+      {
+        "period": 6,
+        "subject": "Social Studies",
+        "teacherId": "T019",
+        "type": "single"
+      },
+      {
+        "period": 7,
+        "subject": "Maths",
+        "teacherId": "T011",
+        "type": "single"
+      },
+      {
+        "period": 8,
+        "subject": "Science",
+        "teacherId": "T013",
+        "type": "single"
+      }
+    ],
+    "Wednesday": [
+      {
+        "period": 1,
+        "subject": "Hindi",
+        "teacherId": "T017",
+        "type": "single"
+      },
+      {
+        "period": 2,
+        "subject": "Optional",
+        "teacherId": "T024",
+        "type": "single"
+      },
+      {
+        "period": 3,
+        "subject": "Coding",
+        "teacherId": "T025",
+        "type": "single"
+      },
+      {
+        "period": 4,
+        "subject": "Games",
+        "teacherId": "T026",
+        "type": "single"
+      },
+      {
+        "period": 5,
+        "subject": "Maths",
+        "teacherId": "T011",
+        "type": "single"
+      },
+      {
+        "period": 6,
+        "subject": "Science",
+        "teacherId": "T013",
+        "type": "single"
+      },
+      {
+        "period": 7,
+        "subject": "Social Studies",
+        "teacherId": "T019",
+        "type": "single"
+      },
+      {
+        "period": 8,
+        "subject": "English",
+        "teacherId": "T015",
+        "type": "single"
+      }
+    ],
+    "Thursday": [
+      {
+        "period": 1,
+        "subject": "Coding",
+        "teacherId": "T025",
+        "type": "single"
+      },
+      {
+        "period": 2,
+        "subject": "Coding",
+        "teacherId": "T025",
+        "type": "single"
+      },
+      {
+        "period": 3,
+        "subject": "Maths",
+        "teacherId": "T011",
+        "type": "single"
+      },
+      {
+        "period": 4,
+        "subject": "Science",
+        "teacherId": "T013",
+        "type": "single"
+      },
+      {
+        "period": 5,
+        "subject": "Social Studies",
+        "teacherId": "T019",
+        "type": "single"
+      },
+      {
+        "period": 6,
+        "subject": "English",
+        "teacherId": "T015",
+        "type": "single"
+      },
+      {
+        "period": 7,
+        "subject": "Hindi",
+        "teacherId": "T017",
+        "type": "single"
+      },
+      {
+        "period": 8,
+        "subject": "Optional",
+        "teacherId": "T024",
+        "type": "single"
+      }
+    ],
+    "Friday": [
+      {
+        "period": 1,
+        "subject": "Maths",
+        "teacherId": "T011",
+        "type": "single"
+      },
+      {
+        "period": 2,
+        "subject": "Science",
+        "teacherId": "T013",
+        "type": "single"
+      },
+      {
+        "period": 3,
+        "subject": "Social Studies",
+        "teacherId": "T019",
+        "type": "single"
+      },
+      {
+        "period": 4,
+        "subject": "English",
+        "teacherId": "T015",
+        "type": "single"
+      },
+      {
+        "period": 5,
+        "subject": "Hindi",
+        "teacherId": "T017",
+        "type": "single"
+      },
+      {
+        "period": 6,
+        "subject": "Maths",
+        "teacherId": "T011",
+        "type": "single"
+      },
+      {
+        "period": 7,
+        "subject": "Coding",
+        "teacherId": "T025",
+        "type": "single"
+      },
+      {
+        "period": 8,
+        "subject": "Maths",
+        "teacherId": "T011",
+        "type": "single"
+      }
+    ],
+    "Saturday": [
+      {
+        "period": 1,
+        "subject": "Social Studies",
+        "teacherId": "T019",
+        "type": "single"
+      },
+      {
+        "period": 2,
+        "subject": "English",
+        "teacherId": "T015",
+        "type": "single"
+      },
+      {
+        "period": 3,
+        "subject": "Hindi",
+        "teacherId": "T017",
+        "type": "single"
+      },
+      {
+        "period": 4,
+        "subject": "Optional",
+        "teacherId": "T024",
+        "type": "single"
+      },
+      {
+        "period": 5,
+        "subject": "Social Studies",
+        "teacherId": "T019",
+        "type": "single"
+      },
+      {
+        "period": 6,
+        "subject": "Social Studies",
+        "teacherId": "T019",
+        "type": "single"
+      },
+      {
+        "period": 7,
+        "subject": "Maths",
+        "teacherId": "T011",
+        "type": "single"
+      },
+      {
+        "period": 8,
+        "subject": "Science",
+        "teacherId": "T013",
+        "type": "single"
+      }
+    ]
+  },
+  "10B": {
+    "Monday": [
+      {
+        "period": 1,
+        "subject": "Science",
+        "teacherId": "T014",
+        "type": "single"
+      },
+      {
+        "period": 2,
+        "subject": "Social Studies",
+        "teacherId": "T020",
+        "type": "single"
+      },
+      {
+        "period": 3,
+        "subject": "English",
+        "teacherId": "T016",
+        "type": "single"
+      },
+      {
+        "period": 4,
+        "subject": "Hindi",
+        "teacherId": "T018",
+        "type": "single"
+      },
+      {
+        "period": 5,
+        "subject": "Science",
+        "teacherId": "T014",
+        "type": "single"
+      },
+      {
+        "period": 6,
+        "subject": "Science",
+        "teacherId": "T014",
+        "type": "single"
+      },
+      {
+        "period": 7,
+        "subject": "Games",
+        "teacherId": "T026",
+        "type": "single"
+      },
+      {
+        "period": 8,
+        "subject": "Maths",
+        "teacherId": "T012",
+        "type": "single"
+      }
+    ],
+    "Tuesday": [
+      {
+        "period": 1,
+        "subject": "English",
+        "teacherId": "T016",
+        "type": "single"
+      },
+      {
+        "period": 2,
+        "subject": "Hindi",
+        "teacherId": "T018",
+        "type": "single"
+      },
+      {
+        "period": 3,
+        "subject": "Optional",
+        "teacherId": "T024",
+        "type": "single"
+      },
+      {
+        "period": 4,
+        "subject": "Coding",
+        "teacherId": "T025",
+        "type": "single"
+      },
+      {
+        "period": 5,
+        "subject": "Games",
+        "teacherId": "T026",
+        "type": "single"
+      },
+      {
+        "period": 6,
+        "subject": "Maths",
+        "teacherId": "T012",
+        "type": "single"
+      },
+      {
+        "period": 7,
+        "subject": "Science",
+        "teacherId": "T014",
+        "type": "single"
+      },
+      {
+        "period": 8,
+        "subject": "Social Studies",
+        "teacherId": "T020",
+        "type": "single"
+      }
+    ],
+    "Wednesday": [
+      {
+        "period": 1,
+        "subject": "Optional",
+        "teacherId": "T024",
+        "type": "single"
+      },
+      {
+        "period": 2,
+        "subject": "Coding",
+        "teacherId": "T025",
+        "type": "single"
+      },
+      {
+        "period": 3,
+        "subject": "Optional",
+        "teacherId": "T024",
+        "type": "single"
+      },
+      {
+        "period": 4,
+        "subject": "Maths",
+        "teacherId": "T012",
+        "type": "single"
+      },
+      {
+        "period": 5,
+        "subject": "Science",
+        "teacherId": "T014",
+        "type": "single"
+      },
+      {
+        "period": 6,
+        "subject": "Social Studies",
+        "teacherId": "T020",
+        "type": "single"
+      },
+      {
+        "period": 7,
+        "subject": "English",
+        "teacherId": "T016",
+        "type": "single"
+      },
+      {
+        "period": 8,
+        "subject": "Hindi",
+        "teacherId": "T018",
+        "type": "single"
+      }
+    ],
+    "Thursday": [
+      {
+        "period": 1,
+        "subject": "Games",
+        "teacherId": "T026",
+        "type": "single"
+      },
+      {
+        "period": 2,
+        "subject": "Maths",
+        "teacherId": "T012",
+        "type": "single"
+      },
+      {
+        "period": 3,
+        "subject": "Science",
+        "teacherId": "T014",
+        "type": "single"
+      },
+      {
+        "period": 4,
+        "subject": "Social Studies",
+        "teacherId": "T020",
+        "type": "single"
+      },
+      {
+        "period": 5,
+        "subject": "English",
+        "teacherId": "T016",
+        "type": "single"
+      },
+      {
+        "period": 6,
+        "subject": "Hindi",
+        "teacherId": "T018",
+        "type": "single"
+      },
+      {
+        "period": 7,
+        "subject": "Optional",
+        "teacherId": "T024",
+        "type": "single"
+      },
+      {
+        "period": 8,
+        "subject": "Coding",
+        "teacherId": "T025",
+        "type": "single"
+      }
+    ],
+    "Friday": [
+      {
+        "period": 1,
+        "subject": "Science",
+        "teacherId": "T014",
+        "type": "single"
+      },
+      {
+        "period": 2,
+        "subject": "Social Studies",
+        "teacherId": "T020",
+        "type": "single"
+      },
+      {
+        "period": 3,
+        "subject": "English",
+        "teacherId": "T016",
+        "type": "single"
+      },
+      {
+        "period": 4,
+        "subject": "Hindi",
+        "teacherId": "T018",
+        "type": "single"
+      },
+      {
+        "period": 5,
+        "subject": "Science",
+        "teacherId": "T014",
+        "type": "single"
+      },
+      {
+        "period": 6,
+        "subject": "Science",
+        "teacherId": "T014",
+        "type": "single"
+      },
+      {
+        "period": 7,
+        "subject": "Science",
+        "teacherId": "T014",
+        "type": "single"
+      },
+      {
+        "period": 8,
+        "subject": "Maths",
+        "teacherId": "T012",
+        "type": "single"
+      }
+    ],
+    "Saturday": [
+      {
+        "period": 1,
+        "subject": "English",
+        "teacherId": "T016",
+        "type": "single"
+      },
+      {
+        "period": 2,
+        "subject": "Hindi",
+        "teacherId": "T018",
+        "type": "single"
+      },
+      {
+        "period": 3,
+        "subject": "Optional",
+        "teacherId": "T024",
+        "type": "single"
+      },
+      {
+        "period": 4,
+        "subject": "Coding",
+        "teacherId": "T025",
+        "type": "single"
+      },
+      {
+        "period": 5,
+        "subject": "Games",
+        "teacherId": "T026",
+        "type": "single"
+      },
+      {
+        "period": 6,
+        "subject": "Maths",
+        "teacherId": "T012",
+        "type": "single"
+      },
+      {
+        "period": 7,
+        "subject": "Science",
+        "teacherId": "T014",
+        "type": "single"
+      },
+      {
+        "period": 8,
+        "subject": "Social Studies",
+        "teacherId": "T020",
+        "type": "single"
+      }
+    ]
+  },
+  "10C": {
+    "Monday": [
+      {
+        "period": 1,
+        "subject": "Social Studies",
+        "teacherId": "T023",
+        "type": "single"
+      },
+      {
+        "period": 2,
+        "subject": "English",
+        "teacherId": "T022",
+        "type": "single"
+      },
+      {
+        "period": 3,
+        "subject": "Hindi",
+        "teacherId": "T022",
+        "type": "single"
+      },
+      {
+        "period": 4,
+        "subject": "Optional",
+        "teacherId": "T024",
+        "type": "single"
+      },
+      {
+        "period": 5,
+        "subject": "Social Studies",
+        "teacherId": "T023",
+        "type": "single"
+      },
+      {
+        "period": 6,
+        "subject": "Social Studies",
+        "teacherId": "T023",
+        "type": "single"
+      },
+      {
+        "period": 7,
+        "subject": "Maths",
+        "teacherId": "T021",
+        "type": "single"
+      },
+      {
+        "period": 8,
+        "subject": "Science",
+        "teacherId": "T021",
+        "type": "single"
+      }
+    ],
+    "Tuesday": [
+      {
+        "period": 1,
+        "subject": "Hindi",
+        "teacherId": "T022",
+        "type": "single"
+      },
+      {
+        "period": 2,
+        "subject": "Optional",
+        "teacherId": "T024",
+        "type": "single"
+      },
+      {
+        "period": 3,
+        "subject": "Coding",
+        "teacherId": "T025",
+        "type": "single"
+      },
+      {
+        "period": 4,
+        "subject": "Hindi",
+        "teacherId": "T022",
+        "type": "single"
+      },
+      {
+        "period": 5,
+        "subject": "Maths",
+        "teacherId": "T021",
+        "type": "single"
+      },
+      {
+        "period": 6,
+        "subject": "Science",
+        "teacherId": "T021",
+        "type": "single"
+      },
+      {
+        "period": 7,
+        "subject": "Social Studies",
+        "teacherId": "T023",
+        "type": "single"
+      },
+      {
+        "period": 8,
+        "subject": "English",
+        "teacherId": "T022",
+        "type": "single"
+      }
+    ],
+    "Wednesday": [
+      {
+        "period": 1,
+        "subject": "Coding",
+        "teacherId": "T025",
+        "type": "single"
+      },
+      {
+        "period": 2,
+        "subject": "Maths",
+        "teacherId": "T021",
+        "type": "single"
+      },
+      {
+        "period": 3,
+        "subject": "Maths",
+        "teacherId": "T021",
+        "type": "single"
+      },
+      {
+        "period": 4,
+        "subject": "Science",
+        "teacherId": "T021",
+        "type": "single"
+      },
+      {
+        "period": 5,
+        "subject": "Social Studies",
+        "teacherId": "T023",
+        "type": "single"
+      },
+      {
+        "period": 6,
+        "subject": "English",
+        "teacherId": "T022",
+        "type": "single"
+      },
+      {
+        "period": 7,
+        "subject": "Hindi",
+        "teacherId": "T022",
+        "type": "single"
+      },
+      {
+        "period": 8,
+        "subject": "Optional",
+        "teacherId": "T024",
+        "type": "single"
+      }
+    ],
+    "Thursday": [
+      {
+        "period": 1,
+        "subject": "Maths",
+        "teacherId": "T021",
+        "type": "single"
+      },
+      {
+        "period": 2,
+        "subject": "Science",
+        "teacherId": "T021",
+        "type": "single"
+      },
+      {
+        "period": 3,
+        "subject": "Social Studies",
+        "teacherId": "T023",
+        "type": "single"
+      },
+      {
+        "period": 4,
+        "subject": "English",
+        "teacherId": "T022",
+        "type": "single"
+      },
+      {
+        "period": 5,
+        "subject": "Hindi",
+        "teacherId": "T022",
+        "type": "single"
+      },
+      {
+        "period": 6,
+        "subject": "Maths",
+        "teacherId": "T021",
+        "type": "single"
+      },
+      {
+        "period": 7,
+        "subject": "Coding",
+        "teacherId": "T025",
+        "type": "single"
+      },
+      {
+        "period": 8,
+        "subject": "Maths",
+        "teacherId": "T021",
+        "type": "single"
+      }
+    ],
+    "Friday": [
+      {
+        "period": 1,
+        "subject": "Social Studies",
+        "teacherId": "T023",
+        "type": "single"
+      },
+      {
+        "period": 2,
+        "subject": "English",
+        "teacherId": "T022",
+        "type": "single"
+      },
+      {
+        "period": 3,
+        "subject": "Hindi",
+        "teacherId": "T022",
+        "type": "single"
+      },
+      {
+        "period": 4,
+        "subject": "Optional",
+        "teacherId": "T024",
+        "type": "single"
+      },
+      {
+        "period": 5,
+        "subject": "Social Studies",
+        "teacherId": "T023",
+        "type": "single"
+      },
+      {
+        "period": 6,
+        "subject": "Social Studies",
+        "teacherId": "T023",
+        "type": "single"
+      },
+      {
+        "period": 7,
+        "subject": "Maths",
+        "teacherId": "T021",
+        "type": "single"
+      },
+      {
+        "period": 8,
+        "subject": "Science",
+        "teacherId": "T021",
+        "type": "single"
+      }
+    ],
+    "Saturday": [
+      {
+        "period": 1,
+        "subject": "Hindi",
+        "teacherId": "T022",
+        "type": "single"
+      },
+      {
+        "period": 2,
+        "subject": "Optional",
+        "teacherId": "T024",
+        "type": "single"
+      },
+      {
+        "period": 3,
+        "subject": "Coding",
+        "teacherId": "T025",
+        "type": "single"
+      },
+      {
+        "period": 4,
+        "subject": "Hindi",
+        "teacherId": "T022",
+        "type": "single"
+      },
+      {
+        "period": 5,
+        "subject": "Maths",
+        "teacherId": "T021",
+        "type": "single"
+      },
+      {
+        "period": 6,
+        "subject": "Science",
+        "teacherId": "T021",
+        "type": "single"
+      },
+      {
+        "period": 7,
+        "subject": "Social Studies",
+        "teacherId": "T023",
+        "type": "single"
+      },
+      {
+        "period": 8,
+        "subject": "English",
+        "teacherId": "T022",
+        "type": "single"
+      }
+    ]
+  },
+  "9A": {
+    "Monday": [
+      {
+        "period": 1,
+        "subject": "English",
+        "teacherId": "T015",
+        "type": "single"
+      },
+      {
+        "period": 2,
+        "subject": "Hindi",
+        "teacherId": "T017",
+        "type": "single"
+      },
+      {
+        "period": 3,
+        "subject": "Optional",
+        "teacherId": "T024",
+        "type": "single"
+      },
+      {
+        "period": 4,
+        "subject": "Coding",
+        "teacherId": "T025",
+        "type": "single"
+      },
+      {
+        "period": 5,
+        "subject": "Games",
+        "teacherId": "T026",
+        "type": "single"
+      },
+      {
+        "period": 6,
+        "subject": "English",
+        "teacherId": "T015",
+        "type": "single"
+      },
+      {
+        "period": 7,
+        "subject": "Science",
+        "teacherId": "T014",
+        "type": "single"
+      },
+      {
+        "period": 8,
+        "subject": "Social Studies",
+        "teacherId": "T019",
+        "type": "single"
+      }
+    ],
+    "Tuesday": [
+      {
+        "period": 1,
+        "subject": "Optional",
+        "teacherId": "T024",
+        "type": "single"
+      },
+      {
+        "period": 2,
+        "subject": "Coding",
+        "teacherId": "T025",
+        "type": "single"
+      },
+      {
+        "period": 3,
+        "subject": "Maths",
+        "teacherId": "T011",
+        "type": "single"
+      },
+      {
+        "period": 4,
+        "subject": "Maths",
+        "teacherId": "T011",
+        "type": "single"
+      },
+      {
+        "period": 5,
+        "subject": "Science",
+        "teacherId": "T014",
+        "type": "single"
+      },
+      {
+        "period": 6,
+        "subject": "Maths",
+        "teacherId": "T011",
+        "type": "single"
+      },
+      {
+        "period": 7,
+        "subject": "English",
+        "teacherId": "T015",
+        "type": "single"
+      },
+      {
+        "period": 8,
+        "subject": "Hindi",
+        "teacherId": "T017",
+        "type": "single"
+      }
+    ],
+    "Wednesday": [
+      {
+        "period": 1,
+        "subject": "Maths",
+        "teacherId": "T011",
+        "type": "single"
+      },
+      {
+        "period": 2,
+        "subject": "Maths",
+        "teacherId": "T011",
+        "type": "single"
+      },
+      {
+        "period": 3,
+        "subject": "Science",
+        "teacherId": "T014",
+        "type": "single"
+      },
+      {
+        "period": 4,
+        "subject": "Social Studies",
+        "teacherId": "T019",
+        "type": "single"
+      },
+      {
+        "period": 5,
+        "subject": "English",
+        "teacherId": "T015",
+        "type": "single"
+      },
+      {
+        "period": 6,
+        "subject": "Hindi",
+        "teacherId": "T017",
+        "type": "single"
+      },
+      {
+        "period": 7,
+        "subject": "Optional",
+        "teacherId": "T024",
+        "type": "single"
+      },
+      {
+        "period": 8,
+        "subject": "Coding",
+        "teacherId": "T025",
+        "type": "single"
+      }
+    ],
+    "Thursday": [
+      {
+        "period": 1,
+        "subject": "Science",
+        "teacherId": "T014",
+        "type": "single"
+      },
+      {
+        "period": 2,
+        "subject": "Social Studies",
+        "teacherId": "T019",
+        "type": "single"
+      },
+      {
+        "period": 3,
+        "subject": "English",
+        "teacherId": "T015",
+        "type": "single"
+      },
+      {
+        "period": 4,
+        "subject": "Hindi",
+        "teacherId": "T017",
+        "type": "single"
+      },
+      {
+        "period": 5,
+        "subject": "Science",
+        "teacherId": "T014",
+        "type": "single"
+      },
+      {
+        "period": 6,
+        "subject": "Science",
+        "teacherId": "T014",
+        "type": "single"
+      },
+      {
+        "period": 7,
+        "subject": "Science",
+        "teacherId": "T014",
+        "type": "single"
+      },
+      {
+        "period": 8,
+        "subject": "Maths",
+        "teacherId": "T011",
+        "type": "single"
+      }
+    ],
+    "Friday": [
+      {
+        "period": 1,
+        "subject": "English",
+        "teacherId": "T015",
+        "type": "single"
+      },
+      {
+        "period": 2,
+        "subject": "Hindi",
+        "teacherId": "T017",
+        "type": "single"
+      },
+      {
+        "period": 3,
+        "subject": "Optional",
+        "teacherId": "T024",
+        "type": "single"
+      },
+      {
+        "period": 4,
+        "subject": "Coding",
+        "teacherId": "T025",
+        "type": "single"
+      },
+      {
+        "period": 5,
+        "subject": "Games",
+        "teacherId": "T026",
+        "type": "single"
+      },
+      {
+        "period": 6,
+        "subject": "English",
+        "teacherId": "T015",
+        "type": "single"
+      },
+      {
+        "period": 7,
+        "subject": "English",
+        "teacherId": "T015",
+        "type": "single"
+      },
+      {
+        "period": 8,
+        "subject": "Social Studies",
+        "teacherId": "T019",
+        "type": "single"
+      }
+    ],
+    "Saturday": [
+      {
+        "period": 1,
+        "subject": "Optional",
+        "teacherId": "T024",
+        "type": "single"
+      },
+      {
+        "period": 2,
+        "subject": "Coding",
+        "teacherId": "T025",
+        "type": "single"
+      },
+      {
+        "period": 3,
+        "subject": "Games",
+        "teacherId": "T026",
+        "type": "single"
+      },
+      {
+        "period": 4,
+        "subject": "Maths",
+        "teacherId": "T011",
+        "type": "single"
+      },
+      {
+        "period": 5,
+        "subject": "Science",
+        "teacherId": "T014",
+        "type": "single"
+      },
+      {
+        "period": 6,
+        "subject": "Maths",
+        "teacherId": "T011",
+        "type": "single"
+      },
+      {
+        "period": 7,
+        "subject": "English",
+        "teacherId": "T015",
+        "type": "single"
+      },
+      {
+        "period": 8,
+        "subject": "Hindi",
+        "teacherId": "T017",
+        "type": "single"
+      }
+    ]
+  },
+  "9B": {
+    "Monday": [
+      {
+        "period": 1,
+        "subject": "Hindi",
+        "teacherId": "T018",
+        "type": "single"
+      },
+      {
+        "period": 2,
+        "subject": "Optional",
+        "teacherId": "T024",
+        "type": "single"
+      },
+      {
+        "period": 3,
+        "subject": "Coding",
+        "teacherId": "T025",
+        "type": "single"
+      },
+      {
+        "period": 4,
+        "subject": "Maths",
+        "teacherId": "T012",
+        "type": "single"
+      },
+      {
+        "period": 5,
+        "subject": "Maths",
+        "teacherId": "T012",
+        "type": "single"
+      },
+      {
+        "period": 6,
+        "subject": "Science",
+        "teacherId": "T013",
+        "type": "single"
+      },
+      {
+        "period": 7,
+        "subject": "Social Studies",
+        "teacherId": "T020",
+        "type": "single"
+      },
+      {
+        "period": 8,
+        "subject": "English",
+        "teacherId": "T016",
+        "type": "single"
+      }
+    ],
+    "Tuesday": [
+      {
+        "period": 1,
+        "subject": "Coding",
+        "teacherId": "T025",
+        "type": "single"
+      },
+      {
+        "period": 2,
+        "subject": "Maths",
+        "teacherId": "T012",
+        "type": "single"
+      },
+      {
+        "period": 3,
+        "subject": "Maths",
+        "teacherId": "T012",
+        "type": "single"
+      },
+      {
+        "period": 4,
+        "subject": "Science",
+        "teacherId": "T013",
+        "type": "single"
+      },
+      {
+        "period": 5,
+        "subject": "Social Studies",
+        "teacherId": "T020",
+        "type": "single"
+      },
+      {
+        "period": 6,
+        "subject": "English",
+        "teacherId": "T016",
+        "type": "single"
+      },
+      {
+        "period": 7,
+        "subject": "Hindi",
+        "teacherId": "T018",
+        "type": "single"
+      },
+      {
+        "period": 8,
+        "subject": "Optional",
+        "teacherId": "T024",
+        "type": "single"
+      }
+    ],
+    "Wednesday": [
+      {
+        "period": 1,
+        "subject": "Maths",
+        "teacherId": "T012",
+        "type": "single"
+      },
+      {
+        "period": 2,
+        "subject": "Science",
+        "teacherId": "T013",
+        "type": "single"
+      },
+      {
+        "period": 3,
+        "subject": "Social Studies",
+        "teacherId": "T020",
+        "type": "single"
+      },
+      {
+        "period": 4,
+        "subject": "English",
+        "teacherId": "T016",
+        "type": "single"
+      },
+      {
+        "period": 5,
+        "subject": "Hindi",
+        "teacherId": "T018",
+        "type": "single"
+      },
+      {
+        "period": 6,
+        "subject": "Maths",
+        "teacherId": "T012",
+        "type": "single"
+      },
+      {
+        "period": 7,
+        "subject": "Coding",
+        "teacherId": "T025",
+        "type": "single"
+      },
+      {
+        "period": 8,
+        "subject": "Maths",
+        "teacherId": "T012",
+        "type": "single"
+      }
+    ],
+    "Thursday": [
+      {
+        "period": 1,
+        "subject": "Social Studies",
+        "teacherId": "T020",
+        "type": "single"
+      },
+      {
+        "period": 2,
+        "subject": "English",
+        "teacherId": "T016",
+        "type": "single"
+      },
+      {
+        "period": 3,
+        "subject": "Hindi",
+        "teacherId": "T018",
+        "type": "single"
+      },
+      {
+        "period": 4,
+        "subject": "Optional",
+        "teacherId": "T024",
+        "type": "single"
+      },
+      {
+        "period": 5,
+        "subject": "Social Studies",
+        "teacherId": "T020",
+        "type": "single"
+      },
+      {
+        "period": 6,
+        "subject": "Social Studies",
+        "teacherId": "T020",
+        "type": "single"
+      },
+      {
+        "period": 7,
+        "subject": "Maths",
+        "teacherId": "T012",
+        "type": "single"
+      },
+      {
+        "period": 8,
+        "subject": "Science",
+        "teacherId": "T013",
+        "type": "single"
+      }
+    ],
+    "Friday": [
+      {
+        "period": 1,
+        "subject": "Hindi",
+        "teacherId": "T018",
+        "type": "single"
+      },
+      {
+        "period": 2,
+        "subject": "Optional",
+        "teacherId": "T024",
+        "type": "single"
+      },
+      {
+        "period": 3,
+        "subject": "Coding",
+        "teacherId": "T025",
+        "type": "single"
+      },
+      {
+        "period": 4,
+        "subject": "Maths",
+        "teacherId": "T012",
+        "type": "single"
+      },
+      {
+        "period": 5,
+        "subject": "Maths",
+        "teacherId": "T012",
+        "type": "single"
+      },
+      {
+        "period": 6,
+        "subject": "Science",
+        "teacherId": "T013",
+        "type": "single"
+      },
+      {
+        "period": 7,
+        "subject": "Social Studies",
+        "teacherId": "T020",
+        "type": "single"
+      },
+      {
+        "period": 8,
+        "subject": "English",
+        "teacherId": "T016",
+        "type": "single"
+      }
+    ],
+    "Saturday": [
+      {
+        "period": 1,
+        "subject": "Coding",
+        "teacherId": "T025",
+        "type": "single"
+      },
+      {
+        "period": 2,
+        "subject": "Maths",
+        "teacherId": "T012",
+        "type": "single"
+      },
+      {
+        "period": 3,
+        "subject": "Maths",
+        "teacherId": "T012",
+        "type": "single"
+      },
+      {
+        "period": 4,
+        "subject": "Science",
+        "teacherId": "T013",
+        "type": "single"
+      },
+      {
+        "period": 5,
+        "subject": "Social Studies",
+        "teacherId": "T020",
+        "type": "single"
+      },
+      {
+        "period": 6,
+        "subject": "English",
+        "teacherId": "T016",
+        "type": "single"
+      },
+      {
+        "period": 7,
+        "subject": "Hindi",
+        "teacherId": "T018",
+        "type": "single"
+      },
+      {
+        "period": 8,
+        "subject": "Optional",
+        "teacherId": "T024",
+        "type": "single"
+      }
+    ]
+  },
+  "9C": {
+    "Monday": [
+      {
+        "period": 1,
+        "subject": "Optional",
+        "teacherId": "T024",
+        "type": "single"
+      },
+      {
+        "period": 2,
+        "subject": "Coding",
+        "teacherId": "T025",
+        "type": "single"
+      },
+      {
+        "period": 3,
+        "subject": "Maths",
+        "teacherId": "T021",
+        "type": "single"
+      },
+      {
+        "period": 4,
+        "subject": "Maths",
+        "teacherId": "T021",
+        "type": "single"
+      },
+      {
+        "period": 5,
+        "subject": "Science",
+        "teacherId": "T021",
+        "type": "single"
+      },
+      {
+        "period": 6,
+        "subject": "Maths",
+        "teacherId": "T021",
+        "type": "single"
+      },
+      {
+        "period": 7,
+        "subject": "English",
+        "teacherId": "T022",
+        "type": "single"
+      },
+      {
+        "period": 8,
+        "subject": "Hindi",
+        "teacherId": "T023",
+        "type": "single"
+      }
+    ],
+    "Tuesday": [
+      {
+        "period": 1,
+        "subject": "Games",
+        "teacherId": "T026",
+        "type": "single"
+      },
+      {
+        "period": 2,
+        "subject": "Maths",
+        "teacherId": "T021",
+        "type": "single"
+      },
+      {
+        "period": 3,
+        "subject": "Science",
+        "teacherId": "T021",
+        "type": "single"
+      },
+      {
+        "period": 4,
+        "subject": "Social Studies",
+        "teacherId": "T023",
+        "type": "single"
+      },
+      {
+        "period": 5,
+        "subject": "English",
+        "teacherId": "T022",
+        "type": "single"
+      },
+      {
+        "period": 6,
+        "subject": "Hindi",
+        "teacherId": "T023",
+        "type": "single"
+      },
+      {
+        "period": 7,
+        "subject": "Optional",
+        "teacherId": "T024",
+        "type": "single"
+      },
+      {
+        "period": 8,
+        "subject": "Coding",
+        "teacherId": "T025",
+        "type": "single"
+      }
+    ],
+    "Wednesday": [
+      {
+        "period": 1,
+        "subject": "Science",
+        "teacherId": "T021",
+        "type": "single"
+      },
+      {
+        "period": 2,
+        "subject": "Social Studies",
+        "teacherId": "T023",
+        "type": "single"
+      },
+      {
+        "period": 3,
+        "subject": "English",
+        "teacherId": "T022",
+        "type": "single"
+      },
+      {
+        "period": 4,
+        "subject": "Hindi",
+        "teacherId": "T023",
+        "type": "single"
+      },
+      {
+        "period": 5,
+        "subject": "Science",
+        "teacherId": "T021",
+        "type": "single"
+      },
+      {
+        "period": 6,
+        "subject": "Science",
+        "teacherId": "T021",
+        "type": "single"
+      },
+      {
+        "period": 7,
+        "subject": "Science",
+        "teacherId": "T021",
+        "type": "single"
+      },
+      {
+        "period": 8,
+        "subject": "Maths",
+        "teacherId": "T021",
+        "type": "single"
+      }
+    ],
+    "Thursday": [
+      {
+        "period": 1,
+        "subject": "English",
+        "teacherId": "T022",
+        "type": "single"
+      },
+      {
+        "period": 2,
+        "subject": "Hindi",
+        "teacherId": "T023",
+        "type": "single"
+      },
+      {
+        "period": 3,
+        "subject": "Optional",
+        "teacherId": "T024",
+        "type": "single"
+      },
+      {
+        "period": 4,
+        "subject": "Coding",
+        "teacherId": "T025",
+        "type": "single"
+      },
+      {
+        "period": 5,
+        "subject": "Games",
+        "teacherId": "T026",
+        "type": "single"
+      },
+      {
+        "period": 6,
+        "subject": "English",
+        "teacherId": "T022",
+        "type": "single"
+      },
+      {
+        "period": 7,
+        "subject": "Science",
+        "teacherId": "T021",
+        "type": "single"
+      },
+      {
+        "period": 8,
+        "subject": "Social Studies",
+        "teacherId": "T023",
+        "type": "single"
+      }
+    ],
+    "Friday": [
+      {
+        "period": 1,
+        "subject": "Optional",
+        "teacherId": "T024",
+        "type": "single"
+      },
+      {
+        "period": 2,
+        "subject": "Coding",
+        "teacherId": "T025",
+        "type": "single"
+      },
+      {
+        "period": 3,
+        "subject": "Maths",
+        "teacherId": "T021",
+        "type": "single"
+      },
+      {
+        "period": 4,
+        "subject": "Maths",
+        "teacherId": "T021",
+        "type": "single"
+      },
+      {
+        "period": 5,
+        "subject": "Science",
+        "teacherId": "T021",
+        "type": "single"
+      },
+      {
+        "period": 6,
+        "subject": "Maths",
+        "teacherId": "T021",
+        "type": "single"
+      },
+      {
+        "period": 7,
+        "subject": "English",
+        "teacherId": "T022",
+        "type": "single"
+      },
+      {
+        "period": 8,
+        "subject": "Hindi",
+        "teacherId": "T023",
+        "type": "single"
+      }
+    ],
+    "Saturday": [
+      {
+        "period": 1,
+        "subject": "Maths",
+        "teacherId": "T021",
+        "type": "single"
+      },
+      {
+        "period": 2,
+        "subject": "Maths",
+        "teacherId": "T021",
+        "type": "single"
+      },
+      {
+        "period": 3,
+        "subject": "Science",
+        "teacherId": "T021",
+        "type": "single"
+      },
+      {
+        "period": 4,
+        "subject": "Social Studies",
+        "teacherId": "T023",
+        "type": "single"
+      },
+      {
+        "period": 5,
+        "subject": "English",
+        "teacherId": "T022",
+        "type": "single"
+      },
+      {
+        "period": 6,
+        "subject": "Hindi",
+        "teacherId": "T023",
+        "type": "single"
+      },
+      {
+        "period": 7,
+        "subject": "Optional",
+        "teacherId": "T024",
+        "type": "single"
+      },
+      {
+        "period": 8,
+        "subject": "Coding",
+        "teacherId": "T025",
+        "type": "single"
+      }
+    ]
+  },
+  "8A": {
+    "Monday": [
+      {
+        "period": 1,
+        "subject": "Foreign Lang",
+        "teacherId": "T028",
+        "type": "single"
+      },
+      {
+        "period": 2,
+        "subject": "Foreign Lang",
+        "teacherId": "T028",
+        "type": "single"
+      },
+      {
+        "period": 3,
+        "subject": "Maths",
+        "teacherId": "T011",
+        "type": "single"
+      },
+      {
+        "period": 4,
+        "subject": "Science",
+        "teacherId": "T013",
+        "type": "single"
+      },
+      {
+        "period": 5,
+        "subject": "Social Studies",
+        "teacherId": "T019",
+        "type": "single"
+      },
+      {
+        "period": 6,
+        "subject": "Foreign Lang",
+        "teacherId": "T028",
+        "type": "single"
+      },
+      {
+        "period": 7,
+        "subject": "Hindi",
+        "teacherId": "T017",
+        "type": "single"
+      },
+      {
+        "period": 8,
+        "subject": "Sanskrit",
+        "teacherId": "T027",
+        "type": "single"
+      }
+    ],
+    "Tuesday": [
+      {
+        "period": 1,
+        "subject": "Maths",
+        "teacherId": "T011",
+        "type": "single"
+      },
+      {
+        "period": 2,
+        "subject": "Science",
+        "teacherId": "T013",
+        "type": "single"
+      },
+      {
+        "period": 3,
+        "subject": "Social Studies",
+        "teacherId": "T019",
+        "type": "single"
+      },
+      {
+        "period": 4,
+        "subject": "English",
+        "teacherId": "T015",
+        "type": "single"
+      },
+      {
+        "period": 5,
+        "subject": "Hindi",
+        "teacherId": "T017",
+        "type": "single"
+      },
+      {
+        "period": 6,
+        "subject": "Sanskrit",
+        "teacherId": "T027",
+        "type": "single"
+      },
+      {
+        "period": 7,
+        "subject": "Foreign Lang",
+        "teacherId": "T028",
+        "type": "single"
+      },
+      {
+        "period": 8,
+        "subject": "Maths",
+        "teacherId": "T011",
+        "type": "single"
+      }
+    ],
+    "Wednesday": [
+      {
+        "period": 1,
+        "subject": "Social Studies",
+        "teacherId": "T019",
+        "type": "single"
+      },
+      {
+        "period": 2,
+        "subject": "English",
+        "teacherId": "T015",
+        "type": "single"
+      },
+      {
+        "period": 3,
+        "subject": "Hindi",
+        "teacherId": "T017",
+        "type": "single"
+      },
+      {
+        "period": 4,
+        "subject": "Sanskrit",
+        "teacherId": "T027",
+        "type": "single"
+      },
+      {
+        "period": 5,
+        "subject": "Foreign Lang",
+        "teacherId": "T028",
+        "type": "single"
+      },
+      {
+        "period": 6,
+        "subject": "Social Studies",
+        "teacherId": "T019",
+        "type": "single"
+      },
+      {
+        "period": 7,
+        "subject": "Maths",
+        "teacherId": "T011",
+        "type": "single"
+      },
+      {
+        "period": 8,
+        "subject": "Science",
+        "teacherId": "T013",
+        "type": "single"
+      }
+    ],
+    "Thursday": [
+      {
+        "period": 1,
+        "subject": "Hindi",
+        "teacherId": "T017",
+        "type": "single"
+      },
+      {
+        "period": 2,
+        "subject": "Sanskrit",
+        "teacherId": "T027",
+        "type": "single"
+      },
+      {
+        "period": 3,
+        "subject": "Foreign Lang",
+        "teacherId": "T028",
+        "type": "single"
+      },
+      {
+        "period": 4,
+        "subject": "Sanskrit",
+        "teacherId": "T027",
+        "type": "single"
+      },
+      {
+        "period": 5,
+        "subject": "Maths",
+        "teacherId": "T011",
+        "type": "single"
+      },
+      {
+        "period": 6,
+        "subject": "Science",
+        "teacherId": "T013",
+        "type": "single"
+      },
+      {
+        "period": 7,
+        "subject": "Social Studies",
+        "teacherId": "T019",
+        "type": "single"
+      },
+      {
+        "period": 8,
+        "subject": "English",
+        "teacherId": "T015",
+        "type": "single"
+      }
+    ],
+    "Friday": [
+      {
+        "period": 1,
+        "subject": "Foreign Lang",
+        "teacherId": "T028",
+        "type": "single"
+      },
+      {
+        "period": 2,
+        "subject": "Games",
+        "teacherId": "T026",
+        "type": "single"
+      },
+      {
+        "period": 3,
+        "subject": "Maths",
+        "teacherId": "T011",
+        "type": "single"
+      },
+      {
+        "period": 4,
+        "subject": "Science",
+        "teacherId": "T013",
+        "type": "single"
+      },
+      {
+        "period": 5,
+        "subject": "Social Studies",
+        "teacherId": "T019",
+        "type": "single"
+      },
+      {
+        "period": 6,
+        "subject": "Foreign Lang",
+        "teacherId": "T028",
+        "type": "single"
+      },
+      {
+        "period": 7,
+        "subject": "Hindi",
+        "teacherId": "T017",
+        "type": "single"
+      },
+      {
+        "period": 8,
+        "subject": "Sanskrit",
+        "teacherId": "T027",
+        "type": "single"
+      }
+    ],
+    "Saturday": [
+      {
+        "period": 1,
+        "subject": "Maths",
+        "teacherId": "T011",
+        "type": "single"
+      },
+      {
+        "period": 2,
+        "subject": "Science",
+        "teacherId": "T013",
+        "type": "single"
+      },
+      {
+        "period": 3,
+        "subject": "Social Studies",
+        "teacherId": "T019",
+        "type": "single"
+      },
+      {
+        "period": 4,
+        "subject": "English",
+        "teacherId": "T015",
+        "type": "single"
+      },
+      {
+        "period": 5,
+        "subject": "Hindi",
+        "teacherId": "T017",
+        "type": "single"
+      },
+      {
+        "period": 6,
+        "subject": "Sanskrit",
+        "teacherId": "T027",
+        "type": "single"
+      },
+      {
+        "period": 7,
+        "subject": "Foreign Lang",
+        "teacherId": "T028",
+        "type": "single"
+      },
+      {
+        "period": 8,
+        "subject": "Maths",
+        "teacherId": "T011",
+        "type": "single"
+      }
+    ]
+  },
+  "8B": {
+    "Monday": [
+      {
+        "period": 1,
+        "subject": "Games",
+        "teacherId": "T026",
+        "type": "single"
+      },
+      {
+        "period": 2,
+        "subject": "Maths",
+        "teacherId": "T012",
+        "type": "single"
+      },
+      {
+        "period": 3,
+        "subject": "Science",
+        "teacherId": "T014",
+        "type": "single"
+      },
+      {
+        "period": 4,
+        "subject": "Social Studies",
+        "teacherId": "T020",
+        "type": "single"
+      },
+      {
+        "period": 5,
+        "subject": "English",
+        "teacherId": "T016",
+        "type": "single"
+      },
+      {
+        "period": 6,
+        "subject": "Hindi",
+        "teacherId": "T018",
+        "type": "single"
+      },
+      {
+        "period": 7,
+        "subject": "Sanskrit",
+        "teacherId": "T027",
+        "type": "single"
+      },
+      {
+        "period": 8,
+        "subject": "Foreign Lang",
+        "teacherId": "T028",
+        "type": "single"
+      }
+    ],
+    "Tuesday": [
+      {
+        "period": 1,
+        "subject": "Science",
+        "teacherId": "T014",
+        "type": "single"
+      },
+      {
+        "period": 2,
+        "subject": "Social Studies",
+        "teacherId": "T020",
+        "type": "single"
+      },
+      {
+        "period": 3,
+        "subject": "English",
+        "teacherId": "T016",
+        "type": "single"
+      },
+      {
+        "period": 4,
+        "subject": "Hindi",
+        "teacherId": "T018",
+        "type": "single"
+      },
+      {
+        "period": 5,
+        "subject": "Sanskrit",
+        "teacherId": "T027",
+        "type": "single"
+      },
+      {
+        "period": 6,
+        "subject": "Foreign Lang",
+        "teacherId": "T028",
+        "type": "single"
+      },
+      {
+        "period": 7,
+        "subject": "Social Studies",
+        "teacherId": "T020",
+        "type": "single"
+      },
+      {
+        "period": 8,
+        "subject": "Maths",
+        "teacherId": "T012",
+        "type": "single"
+      }
+    ],
+    "Wednesday": [
+      {
+        "period": 1,
+        "subject": "English",
+        "teacherId": "T016",
+        "type": "single"
+      },
+      {
+        "period": 2,
+        "subject": "Hindi",
+        "teacherId": "T018",
+        "type": "single"
+      },
+      {
+        "period": 3,
+        "subject": "Sanskrit",
+        "teacherId": "T027",
+        "type": "single"
+      },
+      {
+        "period": 4,
+        "subject": "Foreign Lang",
+        "teacherId": "T028",
+        "type": "single"
+      },
+      {
+        "period": 5,
+        "subject": "Games",
+        "teacherId": "T026",
+        "type": "single"
+      },
+      {
+        "period": 6,
+        "subject": "English",
+        "teacherId": "T016",
+        "type": "single"
+      },
+      {
+        "period": 7,
+        "subject": "Science",
+        "teacherId": "T014",
+        "type": "single"
+      },
+      {
+        "period": 8,
+        "subject": "Social Studies",
+        "teacherId": "T020",
+        "type": "single"
+      }
+    ],
+    "Thursday": [
+      {
+        "period": 1,
+        "subject": "Sanskrit",
+        "teacherId": "T027",
+        "type": "single"
+      },
+      {
+        "period": 2,
+        "subject": "Foreign Lang",
+        "teacherId": "T028",
+        "type": "single"
+      },
+      {
+        "period": 3,
+        "subject": "Sanskrit",
+        "teacherId": "T027",
+        "type": "single"
+      },
+      {
+        "period": 4,
+        "subject": "Maths",
+        "teacherId": "T012",
+        "type": "single"
+      },
+      {
+        "period": 5,
+        "subject": "Sanskrit",
+        "teacherId": "T027",
+        "type": "single"
+      },
+      {
+        "period": 6,
+        "subject": "Sanskrit",
+        "teacherId": "T027",
+        "type": "single"
+      },
+      {
+        "period": 7,
+        "subject": "English",
+        "teacherId": "T016",
+        "type": "single"
+      },
+      {
+        "period": 8,
+        "subject": "Hindi",
+        "teacherId": "T018",
+        "type": "single"
+      }
+    ],
+    "Friday": [
+      {
+        "period": 1,
+        "subject": "Games",
+        "teacherId": "T026",
+        "type": "single"
+      },
+      {
+        "period": 2,
+        "subject": "Maths",
+        "teacherId": "T012",
+        "type": "single"
+      },
+      {
+        "period": 3,
+        "subject": "Science",
+        "teacherId": "T014",
+        "type": "single"
+      },
+      {
+        "period": 4,
+        "subject": "Social Studies",
+        "teacherId": "T020",
+        "type": "single"
+      },
+      {
+        "period": 5,
+        "subject": "English",
+        "teacherId": "T016",
+        "type": "single"
+      },
+      {
+        "period": 6,
+        "subject": "Hindi",
+        "teacherId": "T018",
+        "type": "single"
+      },
+      {
+        "period": 7,
+        "subject": "Sanskrit",
+        "teacherId": "T027",
+        "type": "single"
+      },
+      {
+        "period": 8,
+        "subject": "Foreign Lang",
+        "teacherId": "T028",
+        "type": "single"
+      }
+    ],
+    "Saturday": [
+      {
+        "period": 1,
+        "subject": "Science",
+        "teacherId": "T014",
+        "type": "single"
+      },
+      {
+        "period": 2,
+        "subject": "Social Studies",
+        "teacherId": "T020",
+        "type": "single"
+      },
+      {
+        "period": 3,
+        "subject": "English",
+        "teacherId": "T016",
+        "type": "single"
+      },
+      {
+        "period": 4,
+        "subject": "Hindi",
+        "teacherId": "T018",
+        "type": "single"
+      },
+      {
+        "period": 5,
+        "subject": "Sanskrit",
+        "teacherId": "T027",
+        "type": "single"
+      },
+      {
+        "period": 6,
+        "subject": "Foreign Lang",
+        "teacherId": "T028",
+        "type": "single"
+      },
+      {
+        "period": 7,
+        "subject": "Social Studies",
+        "teacherId": "T020",
+        "type": "single"
+      },
+      {
+        "period": 8,
+        "subject": "Maths",
+        "teacherId": "T012",
+        "type": "single"
+      }
+    ]
+  },
+  "8C": {
+    "Monday": [
+      {
+        "period": 1,
+        "subject": "Maths",
+        "teacherId": "T021",
+        "type": "single"
+      },
+      {
+        "period": 2,
+        "subject": "Science",
+        "teacherId": "T021",
+        "type": "single"
+      },
+      {
+        "period": 3,
+        "subject": "Social Studies",
+        "teacherId": "T023",
+        "type": "single"
+      },
+      {
+        "period": 4,
+        "subject": "English",
+        "teacherId": "T022",
+        "type": "single"
+      },
+      {
+        "period": 5,
+        "subject": "Hindi",
+        "teacherId": "T022",
+        "type": "single"
+      },
+      {
+        "period": 6,
+        "subject": "Sanskrit",
+        "teacherId": "T027",
+        "type": "single"
+      },
+      {
+        "period": 7,
+        "subject": "Foreign Lang",
+        "teacherId": "T028",
+        "type": "single"
+      },
+      {
+        "period": 8,
+        "subject": "English",
+        "teacherId": "T022",
+        "type": "single"
+      }
+    ],
+    "Tuesday": [
+      {
+        "period": 1,
+        "subject": "Social Studies",
+        "teacherId": "T023",
+        "type": "single"
+      },
+      {
+        "period": 2,
+        "subject": "English",
+        "teacherId": "T022",
+        "type": "single"
+      },
+      {
+        "period": 3,
+        "subject": "Hindi",
+        "teacherId": "T022",
+        "type": "single"
+      },
+      {
+        "period": 4,
+        "subject": "Sanskrit",
+        "teacherId": "T027",
+        "type": "single"
+      },
+      {
+        "period": 5,
+        "subject": "Foreign Lang",
+        "teacherId": "T028",
+        "type": "single"
+      },
+      {
+        "period": 6,
+        "subject": "English",
+        "teacherId": "T022",
+        "type": "single"
+      },
+      {
+        "period": 7,
+        "subject": "Maths",
+        "teacherId": "T021",
+        "type": "single"
+      },
+      {
+        "period": 8,
+        "subject": "Science",
+        "teacherId": "T021",
+        "type": "single"
+      }
+    ],
+    "Wednesday": [
+      {
+        "period": 1,
+        "subject": "Hindi",
+        "teacherId": "T022",
+        "type": "single"
+      },
+      {
+        "period": 2,
+        "subject": "Sanskrit",
+        "teacherId": "T027",
+        "type": "single"
+      },
+      {
+        "period": 3,
+        "subject": "Foreign Lang",
+        "teacherId": "T028",
+        "type": "single"
+      },
+      {
+        "period": 4,
+        "subject": "Hindi",
+        "teacherId": "T022",
+        "type": "single"
+      },
+      {
+        "period": 5,
+        "subject": "Hindi",
+        "teacherId": "T022",
+        "type": "single"
+      },
+      {
+        "period": 6,
+        "subject": "Sanskrit",
+        "teacherId": "T027",
+        "type": "single"
+      },
+      {
+        "period": 7,
+        "subject": "Social Studies",
+        "teacherId": "T023",
+        "type": "single"
+      },
+      {
+        "period": 8,
+        "subject": "English",
+        "teacherId": "T022",
+        "type": "single"
+      }
+    ],
+    "Thursday": [
+      {
+        "period": 1,
+        "subject": "Foreign Lang",
+        "teacherId": "T028",
+        "type": "single"
+      },
+      {
+        "period": 2,
+        "subject": "English",
+        "teacherId": "T022",
+        "type": "single"
+      },
+      {
+        "period": 3,
+        "subject": "Maths",
+        "teacherId": "T021",
+        "type": "single"
+      },
+      {
+        "period": 4,
+        "subject": "Science",
+        "teacherId": "T021",
+        "type": "single"
+      },
+      {
+        "period": 5,
+        "subject": "Social Studies",
+        "teacherId": "T023",
+        "type": "single"
+      },
+      {
+        "period": 6,
+        "subject": "Foreign Lang",
+        "teacherId": "T028",
+        "type": "single"
+      },
+      {
+        "period": 7,
+        "subject": "Hindi",
+        "teacherId": "T022",
+        "type": "single"
+      },
+      {
+        "period": 8,
+        "subject": "Sanskrit",
+        "teacherId": "T027",
+        "type": "single"
+      }
+    ],
+    "Friday": [
+      {
+        "period": 1,
+        "subject": "Maths",
+        "teacherId": "T021",
+        "type": "single"
+      },
+      {
+        "period": 2,
+        "subject": "Science",
+        "teacherId": "T021",
+        "type": "single"
+      },
+      {
+        "period": 3,
+        "subject": "Social Studies",
+        "teacherId": "T023",
+        "type": "single"
+      },
+      {
+        "period": 4,
+        "subject": "English",
+        "teacherId": "T022",
+        "type": "single"
+      },
+      {
+        "period": 5,
+        "subject": "Hindi",
+        "teacherId": "T022",
+        "type": "single"
+      },
+      {
+        "period": 6,
+        "subject": "Sanskrit",
+        "teacherId": "T027",
+        "type": "single"
+      },
+      {
+        "period": 7,
+        "subject": "Foreign Lang",
+        "teacherId": "T028",
+        "type": "single"
+      },
+      {
+        "period": 8,
+        "subject": "English",
+        "teacherId": "T022",
+        "type": "single"
+      }
+    ],
+    "Saturday": [
+      {
+        "period": 1,
+        "subject": "Social Studies",
+        "teacherId": "T023",
+        "type": "single"
+      },
+      {
+        "period": 2,
+        "subject": "English",
+        "teacherId": "T022",
+        "type": "single"
+      },
+      {
+        "period": 3,
+        "subject": "Hindi",
+        "teacherId": "T022",
+        "type": "single"
+      },
+      {
+        "period": 4,
+        "subject": "Sanskrit",
+        "teacherId": "T027",
+        "type": "single"
+      },
+      {
+        "period": 5,
+        "subject": "Foreign Lang",
+        "teacherId": "T028",
+        "type": "single"
+      },
+      {
+        "period": 6,
+        "subject": "English",
+        "teacherId": "T022",
+        "type": "single"
+      },
+      {
+        "period": 7,
+        "subject": "Maths",
+        "teacherId": "T021",
+        "type": "single"
+      },
+      {
+        "period": 8,
+        "subject": "Science",
+        "teacherId": "T021",
+        "type": "single"
+      }
+    ]
+  }
+}

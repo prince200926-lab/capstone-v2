@@ -1,0 +1,150 @@
+/* ===== Tailwind CSS Directives ===== */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===== Custom Scrollbar Styling ===== */
+/* Slim, rounded scrollbar that matches the indigo theme */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9; /* slate-100 */
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #94a3b8; /* slate-400 */
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6366f1; /* indigo-500 */
+}
+
+/* ===== Print Media Query for SubstitutionCircular ===== */
+/* Strips all non-essential UI when printing the circular */
+@media print {
+  /* Hide the sidebar, navbar, and all non-circular content */
+  nav,
+  aside,
+  .no-print,
+  .sidebar,
+  .top-navbar {
+    display: none !important;
+  }
+
+  /* Make the circular fill the page */
+  .print-circular {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20mm;
+    background: white;
+    color: black;
+    font-size: 12pt;
+  }
+
+  /* Clean table borders for print */
+  .print-circular table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  .print-circular th,
+  .print-circular td {
+    border: 1px solid #333;
+    padding: 6px 8px;
+    text-align: left;
+  }
+
+  .print-circular th {
+    background-color: #e5e7eb !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* Remove shadows and rounded corners for print */
+  * {
+    box-shadow: none !important;
+    border-radius: 0 !important;
+  }
+}
+
+/* ===== Smooth Animations for Card Transitions ===== */
+/* Fade-in animation used when cards mount or status changes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse-dot {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Utility classes for animations */
+.animate-fade-in-up {
+  animation: fadeInUp 0.35s ease-out both;
+}
+
+.animate-slide-in {
+  animation: slideIn 0.3s ease-out both;
+}
+
+.animate-pulse-dot {
+  animation: pulse-dot 1.5s ease-in-out infinite;
+}
+
+/* Staggered animation delays for card grids */
+.stagger-1 { animation-delay: 0.05s; }
+.stagger-2 { animation-delay: 0.10s; }
+.stagger-3 { animation-delay: 0.15s; }
+.stagger-4 { animation-delay: 0.20s; }
+.stagger-5 { animation-delay: 0.25s; }
+.stagger-6 { animation-delay: 0.30s; }
+
+/* ===== Color Scheme Tokens (as Tailwind layers) ===== */
+@layer components {
+  /* Status-colored cards */
+  .card-present {
+    @apply border-l-4 border-green-500 bg-green-50;
+  }
+  .card-absent {
+    @apply border-l-4 border-red-500 bg-red-50;
+  }
+  .card-on-leave {
+    @apply border-l-4 border-amber-500 bg-amber-50;
+  }
+
+  /* Dashboard summary cards */
+  .summary-card {
+    @apply rounded-xl bg-white p-5 shadow-sm border border-slate-200
+           transition-all duration-200 hover:shadow-md hover:-translate-y-0.5;
+  }
+}

@@ -1,0 +1,529 @@
+{
+  "info": {
+    "_postman_id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+    "name": "School Attendance & Auto-Substitution System",
+    "description": "Complete API collection for the School Teacher Attendance & Auto-Substitution System.\n\nBase URL: http://localhost:5000/api\n\nThis collection covers health checks, teacher management, biometric attendance, auto-substitution engine, timetable queries, and a full demo scenario that can be run end-to-end.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:5000/api",
+      "type": "string"
+    }
+  ],
+  "item": [
+    {
+      "name": "1. Health Check",
+      "item": [
+        {
+          "name": "GET Health",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5000/api/health",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["api", "health"]
+            },
+            "description": "Returns server health status, uptime, and version info."
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "2. Teachers",
+      "item": [
+        {
+          "name": "GET All Teachers",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5000/api/teachers",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["api", "teachers"]
+            },
+            "description": "Returns the full roster of all teachers with their subjects, departments, and metadata."
+          },
+          "response": []
+        },
+        {
+          "name": "GET Single Teacher (Dr. Rajesh Sharma)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5000/api/teachers/T001",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["api", "teachers", "T001"]
+            },
+            "description": "Returns detailed profile for teacher T001 (Dr. Rajesh Sharma — Physics)."
+          },
+          "response": []
+        },
+        {
+          "name": "GET Teacher Workload (Dr. Rajesh Sharma)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5000/api/teachers/T001/workload",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["api", "teachers", "T001", "workload"]
+            },
+            "description": "Returns substitution workload stats for T001 — weekly/daily counts, free periods, availability."
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "3. Biometric Attendance",
+      "item": [
+        {
+          "name": "POST Single Punch — Dr. Sharma Arrives",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"deviceId\": \"BIO_GATE_01\",\n  \"teacherId\": \"T001\",\n  \"timestamp\": \"2026-10-20T08:05:00Z\",\n  \"punchType\": \"CHECK_IN\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:5000/api/attendance/punch",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["api", "attendance", "punch"]
+            },
+            "description": "Records a single biometric punch for Dr. Rajesh Sharma (T001) arriving at 08:05 AM via gate scanner BIO_GATE_01."
+          },
+          "response": []
+        },
+        {
+          "name": "POST Single Punch — Ms. Neha Arrives",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"deviceId\": \"BIO_GATE_01\",\n  \"teacherId\": \"T002\",\n  \"timestamp\": \"2026-10-20T08:08:00Z\",\n  \"punchType\": \"CHECK_IN\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:5000/api/attendance/punch",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["api", "attendance", "punch"]
+            },
+            "description": "Records a single biometric punch for Ms. Neha Rawat (T002) arriving at 08:08 AM."
+          },
+          "response": []
+        },
+        {
+          "name": "POST Batch Sync — Morning Rush (25 Teachers)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"date\": \"2026-10-20\",\n  \"deviceId\": \"BIO_GATE_01\",\n  \"punches\": [\n    { \"teacherId\": \"T002\", \"timestamp\": \"2026-10-20T07:45:00Z\", \"punchType\": \"CHECK_IN\" },\n    { \"teacherId\": \"T003\", \"timestamp\": \"2026-10-20T07:47:00Z\", \"punchType\": \"CHECK_IN\" },\n    { \"teacherId\": \"T004\", \"timestamp\": \"2026-10-20T07:50:00Z\", \"punchType\": \"CHECK_IN\" },\n    { \"teacherId\": \"T005\", \"timestamp\": \"2026-10-20T07:52:00Z\", \"punchType\": \"CHECK_IN\" },\n    { \"teacherId\": \"T006\", \"timestamp\": \"2026-10-20T07:55:00Z\", \"punchType\": \"CHECK_IN\" },\n    { \"teacherId\": \"T007\", \"timestamp\": \"2026-10-20T07:58:00Z\", \"punchType\": \"CHECK_IN\" },\n    { \"teacherId\": \"T008\", \"timestamp\": \"2026-10-20T08:00:00Z\", \"punchType\": \"CHECK_IN\" },\n    { \"teacherId\": \"T009\", \"timestamp\": \"2026-10-20T08:02:00Z\", \"punchType\": \"CHECK_IN\" },\n    { \"teacherId\": \"T010\", \"timestamp\": \"2026-10-20T08:03:00Z\", \"punchType\": \"CHECK_IN\" },\n    { \"teacherId\": \"T012\", \"timestamp\": \"2026-10-20T08:05:00Z\", \"punchType\": \"CHECK_IN\" },\n    { \"teacherId\": \"T013\", \"timestamp\": \"2026-10-20T08:06:00Z\", \"punchType\": \"CHECK_IN\" },\n    { \"teacherId\": \"T014\", \"timestamp\": \"2026-10-20T08:07:00Z\", \"punchType\": \"CHECK_IN\" },\n    { \"teacherId\": \"T015\", \"timestamp\": \"2026-10-20T08:08:00Z\", \"punchType\": \"CHECK_IN\" },\n    { \"teacherId\": \"T016\", \"timestamp\": \"2026-10-20T08:10:00Z\", \"punchType\": \"CHECK_IN\" },\n    { \"teacherId\": \"T017\", \"timestamp\": \"2026-10-20T08:11:00Z\", \"punchType\": \"CHECK_IN\" },\n    { \"teacherId\": \"T018\", \"timestamp\": \"2026-10-20T08:12:00Z\", \"punchType\": \"CHECK_IN\" },\n    { \"teacherId\": \"T019\", \"timestamp\": \"2026-10-20T08:13:00Z\", \"punchType\": \"CHECK_IN\" },\n    { \"teacherId\": \"T020\", \"timestamp\": \"2026-10-20T08:14:00Z\", \"punchType\": \"CHECK_IN\" },\n    { \"teacherId\": \"T021\", \"timestamp\": \"2026-10-20T08:15:00Z\", \"punchType\": \"CHECK_IN\" },\n    { \"teacherId\": \"T022\", \"timestamp\": \"2026-10-20T08:16:00Z\", \"punchType\": \"CHECK_IN\" },\n    { \"teacherId\": \"T023\", \"timestamp\": \"2026-10-20T08:17:00Z\", \"punchType\": \"CHECK_IN\" },\n    { \"teacherId\": \"T024\", \"timestamp\": \"2026-10-20T08:18:00Z\", \"punchType\": \"CHECK_IN\" },\n    { \"teacherId\": \"T025\", \"timestamp\": \"2026-10-20T08:19:00Z\", \"punchType\": \"CHECK_IN\" },\n    { \"teacherId\": \"T026\", \"timestamp\": \"2026-10-20T08:20:00Z\", \"punchType\": \"CHECK_IN\" },\n    { \"teacherId\": \"T027\", \"timestamp\": \"2026-10-20T08:21:00Z\", \"punchType\": \"CHECK_IN\" }\n  ]\n}"
+            },
+            "url": {
+              "raw": "http://localhost:5000/api/attendance/batch-sync",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["api", "attendance", "batch-sync"]
+            },
+            "description": "Batch-syncs 25 teacher check-ins from the biometric gate scanner.\n\n⚠️ EXCLUDED: T001 (Dr. Rajesh Sharma) and T011 (Mr. Suresh Kumar) — they are ABSENT today, which will trigger the auto-substitution engine."
+          },
+          "response": []
+        },
+        {
+          "name": "POST Mark Leave — Dr. Sharma Sick Leave",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"teacherId\": \"T001\",\n  \"date\": \"2026-10-20\",\n  \"reason\": \"Sick Leave\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:5000/api/attendance/leave",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["api", "attendance", "leave"]
+            },
+            "description": "Marks Dr. Rajesh Sharma (T001) as on Sick Leave for 2026-10-20."
+          },
+          "response": []
+        },
+        {
+          "name": "GET Today's Attendance",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5000/api/attendance/today",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["api", "attendance", "today"]
+            },
+            "description": "Returns all attendance records for today with present/absent/late statuses."
+          },
+          "response": []
+        },
+        {
+          "name": "GET Attendance for Specific Date",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5000/api/attendance/date/2026-10-20",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["api", "attendance", "date", "2026-10-20"]
+            },
+            "description": "Returns attendance records for a specific past or future date."
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "4. Auto-Substitution",
+      "item": [
+        {
+          "name": "POST Generate Substitutions (Trigger Engine)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"date\": \"2026-10-20\",\n  \"cutOffTime\": \"08:30:00\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:5000/api/substitutions/generate",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["api", "substitutions", "generate"]
+            },
+            "description": "Triggers the priority engine to generate substitutions for the given date.\n\nThe engine:\n1. Identifies all teachers absent by the cut-off time\n2. Collects their vacant periods\n3. Sorts by class priority (Board years first)\n4. Scores eligible substitutes and assigns the best matches"
+          },
+          "response": []
+        },
+        {
+          "name": "GET Today's Substitutions",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5000/api/substitutions/today",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["api", "substitutions", "today"]
+            },
+            "description": "Returns all substitution assignments generated for today, including candidate audit trails."
+          },
+          "response": []
+        },
+        {
+          "name": "GET Substitutions by Date",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5000/api/substitutions/date/2026-10-20",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["api", "substitutions", "date", "2026-10-20"]
+            },
+            "description": "Returns all substitution assignments for a specific date."
+          },
+          "response": []
+        },
+        {
+          "name": "PUT Override a Substitution",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"substitutionId\": \"SUB_001\",\n  \"newSubstituteTeacherId\": \"T003\",\n  \"reason\": \"Admin override — Principal requested Dr. Anil Verma for 12A Physics\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:5000/api/substitutions/override",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["api", "substitutions", "override"]
+            },
+            "description": "Allows an admin to manually override an engine-generated substitution.\n\nReplaces the assigned substitute with a different teacher and logs the reason."
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "5. Timetable",
+      "item": [
+        {
+          "name": "GET Class 12A Timetable",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5000/api/timetable/class/12A",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["api", "timetable", "class", "12A"]
+            },
+            "description": "Returns the full weekly timetable for Class 12A (Board year — Priority 1)."
+          },
+          "response": []
+        },
+        {
+          "name": "GET Teacher T001 Schedule",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5000/api/timetable/teacher/T001",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["api", "timetable", "teacher", "T001"]
+            },
+            "description": "Returns all scheduled teaching slots for Dr. Rajesh Sharma (T001) across all classes and days."
+          },
+          "response": []
+        },
+        {
+          "name": "GET Monday Full School",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5000/api/timetable/day/Monday",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["api", "timetable", "day", "Monday"]
+            },
+            "description": "Returns the complete school timetable for Monday — all classes, all periods, all teachers."
+          },
+          "response": []
+        },
+        {
+          "name": "GET Monday Period 1 (Who's Free?)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5000/api/timetable/period/Monday/1",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["api", "timetable", "period", "Monday", "1"]
+            },
+            "description": "Returns which teachers are teaching and which are FREE during Monday Period 1.\n\nUseful for manually checking substitute availability."
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "6. Demo Scenario (Run in Order)",
+      "description": "A complete end-to-end demo story:\n\n1. Verify the server is running\n2. View the teacher roster\n3. Simulate morning biometric batch (T001 & T011 are ABSENT)\n4. Check attendance status\n5. Trigger the 8:30 AM cut-off → engine generates substitutions\n6. View the substitution circular\n7. Admin manually overrides one assignment\n\nRun these requests IN ORDER to see the full workflow.",
+      "item": [
+        {
+          "name": "Step 1 — Check Health",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5000/api/health",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["api", "health"]
+            },
+            "description": "Step 1: Verify the server is up and running before proceeding."
+          },
+          "response": []
+        },
+        {
+          "name": "Step 2 — View All Teachers",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5000/api/teachers",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["api", "teachers"]
+            },
+            "description": "Step 2: View the full roster of 31 teachers. Note T001 (Dr. Rajesh Sharma — Physics) and T011 (Mr. Suresh Kumar — SST) who will be absent."
+          },
+          "response": []
+        },
+        {
+          "name": "Step 3 — Morning Batch Punch (29 of 31 Teachers)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"date\": \"2026-10-20\",\n  \"deviceId\": \"BIO_GATE_01\",\n  \"punches\": [\n    { \"teacherId\": \"T002\", \"timestamp\": \"2026-10-20T07:42:00Z\", \"punchType\": \"CHECK_IN\" },\n    { \"teacherId\": \"T003\", \"timestamp\": \"2026-10-20T07:44:00Z\", \"punchType\": \"CHECK_IN\" },\n    { \"teacherId\": \"T004\", \"timestamp\": \"2026-10-20T07:46:00Z\", \"punchType\": \"CHECK_IN\" },\n    { \"teacherId\": \"T005\", \"timestamp\": \"2026-10-20T07:48:00Z\", \"punchType\": \"CHECK_IN\" },\n    { \"teacherId\": \"T006\", \"timestamp\": \"2026-10-20T07:50:00Z\", \"punchType\": \"CHECK_IN\" },\n    { \"teacherId\": \"T007\", \"timestamp\": \"2026-10-20T07:52:00Z\", \"punchType\": \"CHECK_IN\" },\n    { \"teacherId\": \"T008\", \"timestamp\": \"2026-10-20T07:54:00Z\", \"punchType\": \"CHECK_IN\" },\n    { \"teacherId\": \"T009\", \"timestamp\": \"2026-10-20T07:56:00Z\", \"punchType\": \"CHECK_IN\" },\n    { \"teacherId\": \"T010\", \"timestamp\": \"2026-10-20T07:58:00Z\", \"punchType\": \"CHECK_IN\" },\n    { \"teacherId\": \"T012\", \"timestamp\": \"2026-10-20T08:00:00Z\", \"punchType\": \"CHECK_IN\" },\n    { \"teacherId\": \"T013\", \"timestamp\": \"2026-10-20T08:01:00Z\", \"punchType\": \"CHECK_IN\" },\n    { \"teacherId\": \"T014\", \"timestamp\": \"2026-10-20T08:02:00Z\", \"punchType\": \"CHECK_IN\" },\n    { \"teacherId\": \"T015\", \"timestamp\": \"2026-10-20T08:03:00Z\", \"punchType\": \"CHECK_IN\" },\n    { \"teacherId\": \"T016\", \"timestamp\": \"2026-10-20T08:04:00Z\", \"punchType\": \"CHECK_IN\" },\n    { \"teacherId\": \"T017\", \"timestamp\": \"2026-10-20T08:05:00Z\", \"punchType\": \"CHECK_IN\" },\n    { \"teacherId\": \"T018\", \"timestamp\": \"2026-10-20T08:06:00Z\", \"punchType\": \"CHECK_IN\" },\n    { \"teacherId\": \"T019\", \"timestamp\": \"2026-10-20T08:07:00Z\", \"punchType\": \"CHECK_IN\" },\n    { \"teacherId\": \"T020\", \"timestamp\": \"2026-10-20T08:08:00Z\", \"punchType\": \"CHECK_IN\" },\n    { \"teacherId\": \"T021\", \"timestamp\": \"2026-10-20T08:09:00Z\", \"punchType\": \"CHECK_IN\" },\n    { \"teacherId\": \"T022\", \"timestamp\": \"2026-10-20T08:10:00Z\", \"punchType\": \"CHECK_IN\" },\n    { \"teacherId\": \"T023\", \"timestamp\": \"2026-10-20T08:11:00Z\", \"punchType\": \"CHECK_IN\" },\n    { \"teacherId\": \"T024\", \"timestamp\": \"2026-10-20T08:12:00Z\", \"punchType\": \"CHECK_IN\" },\n    { \"teacherId\": \"T025\", \"timestamp\": \"2026-10-20T08:13:00Z\", \"punchType\": \"CHECK_IN\" },\n    { \"teacherId\": \"T026\", \"timestamp\": \"2026-10-20T08:14:00Z\", \"punchType\": \"CHECK_IN\" },\n    { \"teacherId\": \"T027\", \"timestamp\": \"2026-10-20T08:15:00Z\", \"punchType\": \"CHECK_IN\" },\n    { \"teacherId\": \"T028\", \"timestamp\": \"2026-10-20T08:16:00Z\", \"punchType\": \"CHECK_IN\" },\n    { \"teacherId\": \"T029\", \"timestamp\": \"2026-10-20T08:17:00Z\", \"punchType\": \"CHECK_IN\" },\n    { \"teacherId\": \"T030\", \"timestamp\": \"2026-10-20T08:18:00Z\", \"punchType\": \"CHECK_IN\" },\n    { \"teacherId\": \"T031\", \"timestamp\": \"2026-10-20T08:19:00Z\", \"punchType\": \"CHECK_IN\" }\n  ]\n}"
+            },
+            "url": {
+              "raw": "http://localhost:5000/api/attendance/batch-sync",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["api", "attendance", "batch-sync"]
+            },
+            "description": "Step 3: Simulate the morning biometric gate sync.\n\n29 out of 31 teachers check in between 07:42 and 08:19.\n\n⚠️ MISSING:\n- T001 (Dr. Rajesh Sharma — Physics, teaches 12A & 10B)\n- T011 (Mr. Suresh Kumar — SST, teaches 9A & 8C)\n\nThese two absences will trigger the substitution engine in Step 5."
+          },
+          "response": []
+        },
+        {
+          "name": "Step 4 — Check Attendance Status",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5000/api/attendance/today",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["api", "attendance", "today"]
+            },
+            "description": "Step 4: Verify the attendance board. Should show:\n- 29 teachers PRESENT\n- T001 and T011 as ABSENT (no punch recorded)"
+          },
+          "response": []
+        },
+        {
+          "name": "Step 5 — Trigger 8:30 AM Cut-Off",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"date\": \"2026-10-20\",\n  \"cutOffTime\": \"08:30:00\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:5000/api/substitutions/generate",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["api", "substitutions", "generate"]
+            },
+            "description": "Step 5: Trigger the auto-substitution engine at 8:30 AM cut-off.\n\nThe engine will:\n1. Identify T001 and T011 as absent\n2. Find all their vacant periods for Tuesday\n3. Sort vacancies by class priority (12A first, then 10B, 9A, 8C)\n4. Score eligible substitutes using the 5-factor algorithm\n5. Assign best matches while respecting daily cap (max 2 per teacher)"
+          },
+          "response": []
+        },
+        {
+          "name": "Step 6 — View Substitution Circular",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5000/api/substitutions/today",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["api", "substitutions", "today"]
+            },
+            "description": "Step 6: View the generated substitution circular.\n\nExpect to see substitution records for every vacant period of T001 and T011, each with:\n- The assigned substitute teacher\n- Match type (exact_subject / allied_subject / available_teacher)\n- Score and reasoning\n- Full candidate audit trail"
+          },
+          "response": []
+        },
+        {
+          "name": "Step 7 — Admin Overrides Period 3",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"substitutionId\": \"SUB_001\",\n  \"newSubstituteTeacherId\": \"T003\",\n  \"reason\": \"Admin override — Principal requested Dr. Anil Verma handle 12A Physics today\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:5000/api/substitutions/override",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["api", "substitutions", "override"]
+            },
+            "description": "Step 7: The Principal manually overrides substitution SUB_001.\n\nReplaces the engine-assigned substitute with Dr. Anil Verma (T003) for the 12A Physics slot, with a logged reason for the audit trail."
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,221 @@
+{
+  "2026-10-19": {
+    "T002": {
+      "status": "PRESENT",
+      "punchTime": "08:10:00",
+      "punchType": "CHECK_IN",
+      "deviceId": "BATCH_SYNC",
+      "recordedAt": "2026-10-19T07:56:53.069Z"
+    },
+    "T003": {
+      "status": "PRESENT",
+      "punchTime": "08:15:00",
+      "punchType": "CHECK_IN",
+      "deviceId": "BATCH_SYNC",
+      "recordedAt": "2026-10-19T07:58:55.256Z"
+    },
+    "T004": {
+      "status": "PRESENT",
+      "punchTime": "08:11:14",
+      "punchType": "CHECK_IN",
+      "deviceId": "BATCH_SYNC",
+      "recordedAt": "2026-10-19T07:56:53.069Z"
+    },
+    "T005": {
+      "status": "PRESENT",
+      "punchTime": "08:15:07",
+      "punchType": "CHECK_IN",
+      "deviceId": "BATCH_SYNC",
+      "recordedAt": "2026-10-19T07:58:55.257Z"
+    },
+    "T006": {
+      "status": "PRESENT",
+      "punchTime": "08:16:14",
+      "punchType": "CHECK_IN",
+      "deviceId": "BATCH_SYNC",
+      "recordedAt": "2026-10-19T07:58:55.257Z"
+    },
+    "T007": {
+      "status": "PRESENT",
+      "punchTime": "08:12:35",
+      "punchType": "CHECK_IN",
+      "deviceId": "BATCH_SYNC",
+      "recordedAt": "2026-10-19T07:56:53.069Z"
+    },
+    "T008": {
+      "status": "PRESENT",
+      "punchTime": "08:13:42",
+      "punchType": "CHECK_IN",
+      "deviceId": "BATCH_SYNC",
+      "recordedAt": "2026-10-19T07:56:53.069Z"
+    },
+    "T009": {
+      "status": "PRESENT",
+      "punchTime": "08:16:21",
+      "punchType": "CHECK_IN",
+      "deviceId": "BATCH_SYNC",
+      "recordedAt": "2026-10-19T07:58:55.257Z"
+    },
+    "T010": {
+      "status": "PRESENT",
+      "punchTime": "08:14:56",
+      "punchType": "CHECK_IN",
+      "deviceId": "BATCH_SYNC",
+      "recordedAt": "2026-10-19T07:56:53.069Z"
+    },
+    "T012": {
+      "status": "PRESENT",
+      "punchTime": "08:17:28",
+      "punchType": "CHECK_IN",
+      "deviceId": "BATCH_SYNC",
+      "recordedAt": "2026-10-19T07:58:55.257Z"
+    },
+    "T013": {
+      "status": "PRESENT",
+      "punchTime": "08:15:10",
+      "punchType": "CHECK_IN",
+      "deviceId": "BATCH_SYNC",
+      "recordedAt": "2026-10-19T07:56:53.069Z"
+    },
+    "T014": {
+      "status": "PRESENT",
+      "punchTime": "08:17:35",
+      "punchType": "CHECK_IN",
+      "deviceId": "BATCH_SYNC",
+      "recordedAt": "2026-10-19T07:58:55.257Z"
+    },
+    "T015": {
+      "status": "PRESENT",
+      "punchTime": "08:18:42",
+      "punchType": "CHECK_IN",
+      "deviceId": "BATCH_SYNC",
+      "recordedAt": "2026-10-19T07:58:55.257Z"
+    },
+    "T016": {
+      "status": "PRESENT",
+      "punchTime": "08:18:49",
+      "punchType": "CHECK_IN",
+      "deviceId": "BATCH_SYNC",
+      "recordedAt": "2026-10-19T07:58:55.257Z"
+    },
+    "T017": {
+      "status": "PRESENT",
+      "punchTime": "08:19:56",
+      "punchType": "CHECK_IN",
+      "deviceId": "BATCH_SYNC",
+      "recordedAt": "2026-10-19T07:58:55.257Z"
+    },
+    "T018": {
+      "status": "PRESENT",
+      "punchTime": "08:19:03",
+      "punchType": "CHECK_IN",
+      "deviceId": "BATCH_SYNC",
+      "recordedAt": "2026-10-19T07:58:55.257Z"
+    },
+    "T019": {
+      "status": "PRESENT",
+      "punchTime": "08:20:10",
+      "punchType": "CHECK_IN",
+      "deviceId": "BATCH_SYNC",
+      "recordedAt": "2026-10-19T07:58:55.257Z"
+    },
+    "T020": {
+      "status": "PRESENT",
+      "punchTime": "08:20:17",
+      "punchType": "CHECK_IN",
+      "deviceId": "BATCH_SYNC",
+      "recordedAt": "2026-10-19T07:58:55.257Z"
+    },
+    "T021": {
+      "status": "PRESENT",
+      "punchTime": "08:21:24",
+      "punchType": "CHECK_IN",
+      "deviceId": "BATCH_SYNC",
+      "recordedAt": "2026-10-19T07:58:55.257Z"
+    },
+    "T022": {
+      "status": "PRESENT",
+      "punchTime": "08:21:31",
+      "punchType": "CHECK_IN",
+      "deviceId": "BATCH_SYNC",
+      "recordedAt": "2026-10-19T07:58:55.257Z"
+    },
+    "T023": {
+      "status": "PRESENT",
+      "punchTime": "08:22:38",
+      "punchType": "CHECK_IN",
+      "deviceId": "BATCH_SYNC",
+      "recordedAt": "2026-10-19T07:58:55.257Z"
+    },
+    "T024": {
+      "status": "PRESENT",
+      "punchTime": "08:22:45",
+      "punchType": "CHECK_IN",
+      "deviceId": "BATCH_SYNC",
+      "recordedAt": "2026-10-19T07:58:55.257Z"
+    },
+    "T025": {
+      "status": "PRESENT",
+      "punchTime": "08:23:52",
+      "punchType": "CHECK_IN",
+      "deviceId": "BATCH_SYNC",
+      "recordedAt": "2026-10-19T07:58:55.257Z"
+    },
+    "T026": {
+      "status": "PRESENT",
+      "punchTime": "08:23:59",
+      "punchType": "CHECK_IN",
+      "deviceId": "BATCH_SYNC",
+      "recordedAt": "2026-10-19T07:58:55.257Z"
+    },
+    "T027": {
+      "status": "PRESENT",
+      "punchTime": "08:24:06",
+      "punchType": "CHECK_IN",
+      "deviceId": "BATCH_SYNC",
+      "recordedAt": "2026-10-19T07:58:55.257Z"
+    },
+    "T028": {
+      "status": "PRESENT",
+      "punchTime": "08:24:13",
+      "punchType": "CHECK_IN",
+      "deviceId": "BATCH_SYNC",
+      "recordedAt": "2026-10-19T07:58:55.257Z"
+    },
+    "T029": {
+      "status": "PRESENT",
+      "punchTime": "08:25:20",
+      "punchType": "CHECK_IN",
+      "deviceId": "BATCH_SYNC",
+      "recordedAt": "2026-10-19T07:58:55.257Z"
+    },
+    "T030": {
+      "status": "PRESENT",
+      "punchTime": "08:25:27",
+      "punchType": "CHECK_IN",
+      "deviceId": "BATCH_SYNC",
+      "recordedAt": "2026-10-19T07:58:55.257Z"
+    },
+    "T031": {
+      "status": "PRESENT",
+      "punchTime": "08:26:34",
+      "punchType": "CHECK_IN",
+      "deviceId": "BATCH_SYNC",
+      "recordedAt": "2026-10-19T07:58:55.257Z"
+    },
+    "T001": {
+      "status": "PRESENT",
+      "punchTime": "13:45",
+      "punchType": "CHECK_IN",
+      "deviceId": "ADMIN_CONSOLE",
+      "recordedAt": "2026-10-19T07:56:50.137Z"
+    },
+    "T032": {
+      "status": "PRESENT",
+      "punchTime": "08:26:41",
+      "punchType": "CHECK_IN",
+      "deviceId": "BATCH_SYNC",
+      "recordedAt": "2026-10-19T07:58:55.257Z"
+    }
+  }
+}
