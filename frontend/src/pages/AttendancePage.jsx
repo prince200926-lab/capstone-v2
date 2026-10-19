@@ -82,41 +82,41 @@ export default function AttendancePage() {
   });
 
   return (
-    <div className="space-y-6">
-      <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+    <div className="space-y-5">
+      <div className="bg-white rounded-lg border border-slate-200 p-5 shadow-xs flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
         <div>
-          <h1 className="text-2xl font-bold text-slate-900 dark:text-white">Biometric Attendance Logs</h1>
-          <p className="text-sm text-slate-500">Live hardware punch records synchronized directly from biometric gate readers</p>
+          <h1 className="text-xl font-semibold text-slate-900 tracking-tight">Biometric Attendance Register</h1>
+          <p className="text-xs text-slate-500 mt-0.5">Live hardware punch records synchronized directly from terminal RFID/biometric gate readers</p>
         </div>
         <div className="flex items-center gap-2">
-          <span className="flex items-center gap-1.5 text-xs text-emerald-600 font-semibold bg-emerald-50 dark:bg-emerald-950/40 px-3 py-1.5 rounded-xl border border-emerald-200 dark:border-emerald-800">
-            <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-            Biometric Gate Active
+          <span className="flex items-center gap-1.5 text-xs text-slate-700 font-medium bg-slate-50 px-2.5 py-1 rounded border border-slate-200">
+            <span className="w-1.5 h-1.5 rounded-full bg-emerald-600"></span>
+            Biometric Terminal Active
           </span>
         </div>
       </div>
 
       {/* Filter and Search Bar */}
-      <div className="flex flex-col sm:flex-row gap-3">
+      <div className="flex flex-col sm:flex-row gap-2.5">
         <div className="relative flex-1">
-          <Search className="w-4 h-4 absolute left-3.5 top-3.5 text-slate-400" />
+          <Search className="w-4 h-4 absolute left-3 top-2.5 text-slate-400" />
           <input
             type="text"
             placeholder="Search by teacher name, department, or ID..."
             value={search}
             onChange={e => setSearch(e.target.value)}
-            className="w-full pl-10 pr-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            className="w-full pl-9 pr-3 py-1.5 rounded border border-slate-200 bg-white text-xs focus:outline-none focus:ring-1 focus:ring-slate-900"
           />
         </div>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-1.5">
           {['ALL', 'PRESENT', 'ABSENT', 'ON_LEAVE'].map(f => (
             <button
               key={f}
               onClick={() => setFilter(f)}
-              className={`px-3.5 py-2 rounded-xl text-xs font-semibold transition ${
+              className={`px-3 py-1.5 rounded text-xs font-medium transition ${
                 filter === f
-                  ? 'bg-slate-900 text-white dark:bg-white dark:text-slate-900'
-                  : 'bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-400 hover:bg-slate-50'
+                  ? 'bg-slate-900 text-white font-semibold'
+                  : 'bg-white border border-slate-200 text-slate-700 hover:bg-slate-50'
               }`}
             >
               {f.replace('_', ' ')}
@@ -126,16 +126,16 @@ export default function AttendancePage() {
       </div>
 
       {/* Roster Table */}
-      <div className="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 overflow-hidden shadow-sm">
-        <table className="w-full text-left text-sm">
-          <thead className="bg-slate-50 dark:bg-slate-900/50 border-b border-slate-200 dark:border-slate-700 text-slate-500 font-medium">
+      <div className="bg-white rounded-lg border border-slate-200 overflow-hidden shadow-xs">
+        <table className="w-full text-left text-xs">
+          <thead className="bg-slate-50 border-b border-slate-200 text-slate-600 font-semibold uppercase tracking-wider text-[11px]">
             <tr>
-              <th className="py-3 px-4">ID</th>
-              <th className="py-3 px-4">Teacher Name</th>
-              <th className="py-3 px-4">Department / Subject</th>
-              <th className="py-3 px-4">Designation</th>
-              <th className="py-3 px-4">Punch Time</th>
-              <th className="py-3 px-4">Status</th>
+              <th className="py-2.5 px-3.5">ID</th>
+              <th className="py-2.5 px-3.5">Teacher Name</th>
+              <th className="py-2.5 px-3.5">Department</th>
+              <th className="py-2.5 px-3.5">Designation</th>
+              <th className="py-2.5 px-3.5">Punch Time</th>
+              <th className="py-2.5 px-3.5">Status</th>
             </tr>
           </thead>
           <tbody className="divide-y divide-slate-100 dark:divide-slate-800">

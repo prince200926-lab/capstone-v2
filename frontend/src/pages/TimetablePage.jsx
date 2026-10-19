@@ -54,25 +54,26 @@ export default function TimetablePage() {
   const classTeacher = teachers.find(t => t.isClassTeacher && t.classTeacherOf === selectedClass);
 
   return (
-    <div className="space-y-6">
-      <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+    <div className="space-y-5">
+      <div className="bg-white rounded-lg border border-slate-200 p-5 shadow-xs flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
         <div>
-          <h1 className="text-2xl font-bold text-slate-900 dark:text-white">Master Weekly Timetable</h1>
-          <p className="text-sm text-slate-500">
-            Inspect verified schedules, double-period allocations, and synchronized optional blocks
+          <h1 className="text-xl font-semibold text-slate-900 tracking-tight">Master Academic Timetable</h1>
+          <p className="text-xs text-slate-500 mt-0.5">
+            Class section schedules, double-period allocations, and designated Class Teacher anchors
           </p>
         </div>
 
         {/* Class Selector Pills */}
-        <div className="flex items-center gap-1.5 flex-wrap">
+        <div className="flex items-center gap-1 flex-wrap">
+          <span className="text-[11px] font-semibold text-slate-400 uppercase tracking-wider mr-1">Section:</span>
           {classrooms.map(cls => (
             <button
               key={cls}
               onClick={() => setSelectedClass(cls)}
-              className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition ${
+              className={`px-2.5 py-1 rounded text-xs font-medium transition ${
                 selectedClass === cls
-                  ? 'bg-indigo-600 text-white shadow-sm'
-                  : 'bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-50'
+                  ? 'bg-slate-900 text-white font-semibold'
+                  : 'bg-slate-50 border border-slate-200 text-slate-700 hover:bg-slate-100'
               }`}
             >
               {cls}
@@ -82,33 +83,33 @@ export default function TimetablePage() {
       </div>
 
       {/* Class Teacher Banner */}
-      <div className="bg-amber-500/10 border border-amber-500/30 rounded-2xl p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs">
+      <div className="bg-amber-50/70 border border-amber-200 rounded-lg p-3.5 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs">
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-xl bg-amber-500 text-white flex items-center justify-center font-bold shadow-sm">
-            <Award className="w-5 h-5" />
+          <div className="w-8 h-8 rounded border border-amber-300 bg-amber-100 text-amber-800 flex items-center justify-center font-bold">
+            <Award className="w-4 h-4" />
           </div>
           <div>
             <div className="flex items-center gap-2">
-              <span className="font-bold text-slate-900 dark:text-white text-sm">
+              <span className="font-semibold text-slate-900 text-xs">
                 Class {selectedClass} Class Teacher:
               </span>
-              <span className="px-2 py-0.5 rounded font-extrabold bg-amber-500 text-white text-[11px]">
+              <span className="px-1.5 py-0.5 rounded font-semibold bg-amber-200 text-amber-900 text-[11px]">
                 {classTeacher ? classTeacher.name : 'Assigned CT'}
               </span>
               {classTeacher && (
-                <span className="text-slate-500 dark:text-slate-400 font-medium">
+                <span className="text-slate-500 font-normal">
                   ({classTeacher.department})
                 </span>
               )}
             </div>
-            <p className="text-slate-600 dark:text-slate-300 mt-0.5">
-              Fixed <strong>Period 1 (Mon–Sat)</strong> is dedicated to the Class Teacher's subject & morning roll call.
+            <p className="text-slate-600 mt-0.5 text-[11px]">
+              Fixed <strong>Period 1 (Mon–Sat)</strong> is dedicated to the Class Teacher's subject & morning attendance assembly.
             </p>
           </div>
         </div>
 
         <div className="flex items-center gap-2">
-          <span className="px-2.5 py-1 rounded-lg bg-white dark:bg-slate-800 border border-amber-500/30 font-semibold text-amber-700 dark:text-amber-300 shadow-2xs">
+          <span className="px-2 py-0.5 rounded bg-white border border-amber-300 font-medium text-amber-900 text-[11px]">
             ★ Period 1 Enforced Across All 6 Days
           </span>
         </div>

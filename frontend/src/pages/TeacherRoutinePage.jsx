@@ -123,58 +123,58 @@ export default function TeacherRoutinePage() {
   });
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-5">
       {/* Page Header */}
-      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
+      <div className="bg-white rounded-lg border border-slate-200 p-5 shadow-xs flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div>
           <div className="flex items-center gap-2">
-            <h1 className="text-2xl font-bold text-slate-900 dark:text-white">
-              Faculty Routine & Class Duty Portal
+            <h1 className="text-xl font-semibold text-slate-900 tracking-tight">
+              Faculty Daily Roster & Class Duty Allocation
             </h1>
-            <span className="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-100 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300">
-              Today's Live Duties
+            <span className="px-2 py-0.5 rounded text-[11px] font-medium bg-slate-100 text-slate-700 border border-slate-200">
+              Active Date: {todayDateFormatted}
             </span>
           </div>
-          <p className="text-sm text-slate-500 mt-1">
+          <p className="text-xs text-slate-500 mt-1">
             Real-time classroom duty tracking: inspect which teacher has to cover which class today
           </p>
         </div>
 
         <div className="flex items-center gap-2">
           {/* View Mode Switcher */}
-          <div className="flex items-center bg-slate-200 dark:bg-slate-800 p-1 rounded-xl">
+          <div className="flex items-center bg-slate-100 p-0.5 rounded border border-slate-200">
             <button
               onClick={() => setViewMode('matrix')}
-              className={`px-3.5 py-1.5 rounded-lg text-xs font-bold transition flex items-center gap-1.5 ${
+              className={`px-3 py-1.5 rounded text-xs font-medium transition flex items-center gap-1.5 ${
                 viewMode === 'matrix'
-                  ? 'bg-white dark:bg-slate-900 text-indigo-600 dark:text-indigo-400 shadow-sm'
-                  : 'text-slate-600 dark:text-slate-400 hover:text-slate-900'
+                  ? 'bg-white text-slate-900 font-semibold shadow-xs'
+                  : 'text-slate-600 hover:text-slate-900'
               }`}
             >
-              <Layers className="w-3.5 h-3.5" />
-              Live Substitution Matrix (Today)
+              <Layers className="w-3.5 h-3.5 text-slate-500" />
+              Live Substitution Matrix
             </button>
             <button
               onClick={() => setViewMode('teacher')}
-              className={`px-3.5 py-1.5 rounded-lg text-xs font-bold transition flex items-center gap-1.5 ${
+              className={`px-3 py-1.5 rounded text-xs font-medium transition flex items-center gap-1.5 ${
                 viewMode === 'teacher'
-                  ? 'bg-white dark:bg-slate-900 text-indigo-600 dark:text-indigo-400 shadow-sm'
-                  : 'text-slate-600 dark:text-slate-400 hover:text-slate-900'
+                  ? 'bg-white text-slate-900 font-semibold shadow-xs'
+                  : 'text-slate-600 hover:text-slate-900'
               }`}
             >
-              <User className="w-3.5 h-3.5" />
-              My Schedule & Routine
+              <User className="w-3.5 h-3.5 text-slate-500" />
+              Teacher Routine Lookup
             </button>
           </div>
 
           {/* Print Button */}
           <button
             onClick={() => window.print()}
-            className="flex items-center gap-1.5 px-3 py-2 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:bg-slate-50 rounded-xl text-xs font-semibold text-slate-700 dark:text-slate-200 shadow-sm transition"
+            className="flex items-center gap-1.5 px-3 py-1.5 bg-white border border-slate-300 hover:bg-slate-50 rounded text-xs font-medium text-slate-700 shadow-xs transition"
             title="Print schedule"
           >
             <Printer className="w-3.5 h-3.5 text-slate-500" />
-            <span className="hidden sm:inline">Print</span>
+            <span className="hidden sm:inline">Print Roster</span>
           </button>
         </div>
       </div>
@@ -183,26 +183,21 @@ export default function TeacherRoutinePage() {
       {/* MODE 1: LIVE CLASSROOM SUBSTITUTION MATRIX (TODAY ONLY)                   */}
       {/* ========================================================================= */}
       {viewMode === 'matrix' && (
-        <div className="space-y-6">
+        <div className="space-y-5">
           {/* Date & Period Filter Bar */}
-          <div className="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 p-5 shadow-sm space-y-4">
-            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 border-b border-slate-100 dark:border-slate-700 pb-3">
+          <div className="bg-white rounded-lg border border-slate-200 p-4 shadow-xs space-y-3">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 border-b border-slate-100 pb-3">
               <div>
-                <div className="flex items-center gap-2">
-                  <h3 className="font-bold text-sm text-slate-900 dark:text-white">
-                    Live Substitutions for Today
-                  </h3>
-                  <span className="px-2 py-0.5 rounded text-[11px] font-mono font-bold bg-indigo-50 dark:bg-indigo-950 text-indigo-600 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-800">
-                    {todayDateFormatted}
-                  </span>
-                </div>
+                <h3 className="font-semibold text-xs text-slate-900 uppercase tracking-wide">
+                  Active Substitutions For Today
+                </h3>
                 <p className="text-xs text-slate-500 mt-0.5">
                   Substitutions are computed day-by-day based on morning attendance. Only classes requiring replacement coverage are shown.
                 </p>
               </div>
 
               <div className="text-right">
-                <span className="text-xs font-bold px-3 py-1.5 rounded-xl bg-amber-500/15 text-amber-700 dark:text-amber-300 border border-amber-500/30">
+                <span className="text-xs font-semibold px-2.5 py-1 rounded bg-amber-50 text-amber-800 border border-amber-200">
                   {todaySubstitutions.length} Total Substitution Duties Today
                 </span>
               </div>
@@ -210,38 +205,39 @@ export default function TeacherRoutinePage() {
 
             {/* Period Filter Buttons */}
             <div>
-              <p className="text-[11px] font-bold text-slate-500 mb-2 uppercase tracking-wider">
-                Filter by Period:
-              </p>
               <div className="flex items-center gap-1.5 flex-wrap">
+                <span className="text-[11px] font-semibold text-slate-400 uppercase tracking-wider mr-1">
+                  Period:
+                </span>
                 <button
                   onClick={() => setSelectedPeriodFilter('ALL')}
-                  className={`px-3 py-1.5 rounded-xl text-xs font-bold transition ${
+                  className={`px-2.5 py-1 rounded text-xs font-medium transition ${
                     selectedPeriodFilter === 'ALL'
-                      ? 'bg-indigo-600 text-white shadow-sm'
-                      : 'bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-200'
+                      ? 'bg-slate-900 text-white font-semibold'
+                      : 'bg-slate-50 text-slate-700 hover:bg-slate-100 border border-slate-200'
                   }`}
                 >
-                  All Periods ({todaySubstitutions.length})
+                  All ({todaySubstitutions.length})
                 </button>
 
                 {PERIOD_TIMES.map(({ period, time }) => {
                   const countForPeriod = todaySubstitutions.filter(s => s.period === period).length;
+                  const isSelected = selectedPeriodFilter === String(period);
                   return (
                     <button
                       key={period}
                       onClick={() => setSelectedPeriodFilter(String(period))}
-                      className={`px-3 py-1.5 rounded-xl text-xs font-semibold transition flex items-center gap-1.5 ${
-                        selectedPeriodFilter === String(period)
-                          ? 'bg-indigo-600 text-white shadow-sm font-bold'
-                          : 'bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-200'
+                      className={`px-2.5 py-1 rounded text-xs font-medium transition flex items-center gap-1.5 ${
+                        isSelected
+                          ? 'bg-slate-900 text-white font-semibold'
+                          : 'bg-slate-50 text-slate-700 hover:bg-slate-100 border border-slate-200'
                       }`}
                     >
                       <span>P{period}</span>
-                      <span className="text-[10px] font-mono text-slate-400">({time.split('–')[0].trim()})</span>
+                      <span className="text-[10px] text-slate-400">({time.split('–')[0].trim()})</span>
                       {countForPeriod > 0 && (
-                        <span className={`w-4 h-4 rounded-full text-[10px] font-bold flex items-center justify-center ${
-                          selectedPeriodFilter === String(period) ? 'bg-white text-indigo-700' : 'bg-amber-500 text-white'
+                        <span className={`px-1 rounded text-[10px] font-bold ${
+                          isSelected ? 'bg-amber-400 text-slate-950' : 'bg-amber-100 text-amber-800'
                         }`}>
                           {countForPeriod}
                         </span>
@@ -287,31 +283,31 @@ export default function TeacherRoutinePage() {
                   return (
                     <div
                       key={sub.id}
-                      className="bg-white dark:bg-slate-800 rounded-2xl border-2 border-emerald-400 dark:border-emerald-800/80 p-5 shadow-sm hover:shadow-md transition flex flex-col justify-between"
+                      className="bg-white rounded-lg border border-slate-200 p-4 shadow-xs flex flex-col justify-between"
                     >
                       <div>
                         {/* Top Period & Class Header */}
                         <div className="flex items-start justify-between gap-2 mb-3">
                           <div>
-                            <div className="flex items-center gap-2">
-                              <span className="font-mono text-xs font-black px-2.5 py-1 rounded-lg bg-indigo-100 dark:bg-indigo-950 text-indigo-700 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-800">
+                            <div className="flex items-center gap-1.5">
+                              <span className="font-mono text-xs font-semibold px-2 py-0.5 rounded bg-slate-100 text-slate-800 border border-slate-200">
                                 Period {sub.period}
                               </span>
-                              <span className="text-xs font-mono font-medium text-slate-400">
+                              <span className="text-xs font-mono text-slate-500">
                                 {timeStr}
                               </span>
                             </div>
-                            <h4 className="text-lg font-black text-slate-900 dark:text-white mt-1">
+                            <h4 className="text-base font-bold text-slate-900 mt-1">
                               Class {sub.classSection}
                             </h4>
                           </div>
 
                           <div className="flex flex-col items-end gap-1">
-                            <span className="text-[10px] font-bold px-2 py-0.5 rounded-md bg-emerald-100 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300">
+                            <span className="text-[10px] font-medium px-2 py-0.5 rounded bg-slate-100 text-slate-700 border border-slate-200">
                               Room {sub.classSection}
                             </span>
                             {(sub.period === 1 || sub.isCTPeriod) && (
-                              <span className="text-[9px] font-extrabold px-1.5 py-0.5 rounded bg-amber-500 text-slate-950 shadow-2xs">
+                              <span className="text-[9px] font-bold px-1.5 py-0.5 rounded bg-amber-100 text-amber-900 border border-amber-300">
                                 ★ CT Period
                               </span>
                             )}
@@ -319,55 +315,43 @@ export default function TeacherRoutinePage() {
                         </div>
 
                         {/* Subject */}
-                        <div className="mb-4">
-                          <p className="text-xs font-bold text-slate-500 uppercase tracking-wider">Subject</p>
-                          <p className="text-sm font-bold text-indigo-600 dark:text-indigo-400">
+                        <div className="mb-3">
+                          <p className="text-[10px] font-semibold text-slate-400 uppercase tracking-wider">Subject</p>
+                          <p className="text-xs font-semibold text-slate-800">
                             {sub.subject}
                           </p>
                         </div>
 
                         {/* Replacement Card: Absent -> Substitute */}
-                        <div className="bg-slate-50 dark:bg-slate-900/60 rounded-xl p-3 border border-slate-200 dark:border-slate-700 space-y-2 text-xs">
+                        <div className="bg-slate-50 rounded border border-slate-200 p-3 space-y-2 text-xs">
                           {/* Absent Teacher */}
                           <div className="flex items-center justify-between">
-                            <span className="text-slate-500">Regular Faculty:</span>
-                            <span className="text-rose-600 line-through font-semibold">
+                            <span className="text-slate-500 text-[11px]">Regular Faculty:</span>
+                            <span className="text-rose-700 line-through font-medium text-[11px]">
                               {absentName} {sub.isAbsentTeacherCT ? '(CT)' : ''}
                             </span>
                           </div>
 
-                          {/* Arrow Divider */}
-                          <div className="flex items-center gap-2 py-0.5">
-                            <div className="flex-1 h-px bg-slate-200 dark:bg-slate-700"></div>
-                            <span className="text-[10px] uppercase font-black text-emerald-600 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950 px-2 py-0.5 rounded-full border border-emerald-300 dark:border-emerald-800">
-                              Assigned To Go
-                            </span>
-                            <div className="flex-1 h-px bg-slate-200 dark:bg-slate-700"></div>
-                          </div>
+                          <div className="h-px bg-slate-200 my-1"></div>
 
                           {/* Substitute Teacher To Go */}
-                          <div className="flex items-center gap-2.5 pt-1">
-                            <div className="w-8 h-8 rounded-xl bg-emerald-600 text-white font-bold text-xs flex items-center justify-center shadow-xs">
-                              {subName.split(' ').map(n => n[0]).join('').slice(0, 2)}
-                            </div>
-                            <div className="min-w-0 flex-1">
-                              <p className="font-black text-xs text-emerald-950 dark:text-emerald-200 truncate">
-                                {subName}
-                              </p>
-                              <p className="text-[10px] text-slate-500 truncate">
-                                {sub.reason || 'Optimal Pedagogical Match'}
-                              </p>
-                            </div>
+                          <div className="flex items-center justify-between">
+                            <span className="text-slate-500 text-[11px]">Assigned Substitute:</span>
+                            <span className="font-semibold text-slate-900 text-xs">
+                              {subName}
+                            </span>
                           </div>
+                          <p className="text-[10px] text-slate-500 text-right">
+                            {sub.reason || 'Optimal Pedagogical Match'}
+                          </p>
                         </div>
                       </div>
 
                       {/* Footer Duty Confirmation */}
-                      <div className="mt-4 pt-3 border-t border-slate-100 dark:border-slate-700 flex items-center justify-between text-[11px]">
-                        <span className="text-slate-400 font-medium">Duty Action</span>
-                        <span className="text-emerald-700 dark:text-emerald-400 font-bold flex items-center gap-1">
-                          Go to Room {sub.classSection} at {timeStr.split('–')[0].trim()}
-                          <ArrowRight className="w-3.5 h-3.5" />
+                      <div className="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between text-[11px]">
+                        <span className="text-slate-500">Report To Room:</span>
+                        <span className="text-slate-900 font-medium flex items-center gap-1 font-mono">
+                          Room {sub.classSection} · {timeStr.split('–')[0].trim()}
                         </span>
                       </div>
                     </div>
@@ -417,43 +401,43 @@ export default function TeacherRoutinePage() {
 
           {/* Teacher Profile Summary Card */}
           {activeTeacher && (
-            <div className="bg-gradient-to-r from-slate-900 to-indigo-950 text-white rounded-2xl p-5 border border-slate-800 shadow-md flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-              <div className="flex items-center gap-4">
-                <div className="w-14 h-14 rounded-2xl bg-indigo-600 text-white flex items-center justify-center text-lg font-black shadow-md">
+            <div className="bg-white rounded-lg border border-slate-200 p-4 shadow-xs flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+              <div className="flex items-center gap-3.5">
+                <div className="w-11 h-11 rounded border border-slate-300 bg-slate-100 text-slate-800 flex items-center justify-center text-sm font-bold">
                   {activeTeacher.name.split(' ').map(n => n[0]).join('').slice(0, 2)}
                 </div>
                 <div>
                   <div className="flex items-center gap-2 flex-wrap">
-                    <h2 className="text-lg font-bold">{activeTeacher.name}</h2>
-                    <span className="px-2 py-0.5 rounded text-[10px] font-bold bg-white/10 uppercase tracking-wider">
+                    <h2 className="text-base font-semibold text-slate-900">{activeTeacher.name}</h2>
+                    <span className="px-1.5 py-0.5 rounded text-[10px] font-mono font-medium bg-slate-100 text-slate-700 border border-slate-200">
                       {activeTeacher.id} • {activeTeacher.designation}
                     </span>
                     {activeTeacher.isClassTeacher && (
-                      <span className="inline-flex items-center gap-1 text-[11px] font-extrabold px-2 py-0.5 rounded bg-amber-500 text-slate-950 shadow-xs">
-                        <Award className="w-3 h-3 text-slate-950" />
+                      <span className="inline-flex items-center gap-1 text-[11px] font-semibold px-2 py-0.5 rounded bg-amber-50 text-amber-900 border border-amber-300">
+                        <Award className="w-3 h-3 text-amber-700" />
                         Class Teacher: {activeTeacher.classTeacherOf}
                       </span>
                     )}
                   </div>
-                  <p className="text-xs text-slate-300 mt-1 flex items-center gap-3">
-                    <span><strong>Dept:</strong> {activeTeacher.department}</span>
-                    <span>•</span>
-                    <span><strong>Classes:</strong> {activeTeacher.assignedClasses?.join(', ')}</span>
+                  <p className="text-xs text-slate-500 mt-1 flex items-center gap-2">
+                    <span>Department: {activeTeacher.department}</span>
+                    <span>·</span>
+                    <span>Assigned: {activeTeacher.assignedClasses?.join(', ')}</span>
                   </p>
                 </div>
               </div>
 
               {/* Status Indicator */}
               <div className="flex items-center gap-2">
-                <div className={`px-3 py-1 rounded-xl text-xs font-bold border flex items-center gap-1.5 ${
+                <div className={`px-2.5 py-1 rounded text-xs font-medium border flex items-center gap-1.5 ${
                   activeTeacherAttendance?.status === 'PRESENT'
-                    ? 'bg-emerald-500/20 text-emerald-300 border-emerald-500/30'
-                    : 'bg-rose-500/20 text-rose-300 border-rose-500/30'
+                    ? 'bg-emerald-50 text-emerald-800 border-emerald-200'
+                    : 'bg-rose-50 text-rose-800 border-rose-200'
                 }`}>
-                  <span className={`w-2 h-2 rounded-full ${activeTeacherAttendance?.status === 'PRESENT' ? 'bg-emerald-400 animate-pulse' : 'bg-rose-400'}`}></span>
+                  <span className={`w-1.5 h-1.5 rounded-full ${activeTeacherAttendance?.status === 'PRESENT' ? 'bg-emerald-600' : 'bg-rose-600'}`}></span>
                   {activeTeacherAttendance?.status === 'PRESENT' 
-                    ? `Punched In (${activeTeacherAttendance.punchTime || 'Present'})`
-                    : 'Absent / Unreported'}
+                    ? `Present (${activeTeacherAttendance.punchTime || 'On Duty'})`
+                    : 'Unreported Today'}
                 </div>
               </div>
             </div>
@@ -461,9 +445,9 @@ export default function TeacherRoutinePage() {
 
           {/* Today's Live Duties & Substitution Alerts */}
           {mySubstituteDuties.length > 0 && (
-            <div className="bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-300 dark:border-emerald-800 rounded-2xl p-4 shadow-sm animate-pulse-once">
-              <div className="flex items-center gap-2 text-emerald-800 dark:text-emerald-300 font-bold text-sm mb-2">
-                <Sparkles className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
+            <div className="bg-amber-50/60 border border-amber-200 rounded-lg p-3.5 shadow-xs">
+              <div className="flex items-center gap-2 text-amber-900 font-semibold text-xs mb-2">
+                <Sparkles className="w-4 h-4 text-amber-700" />
                 Active Substitution Duty Assigned Today ({mySubstituteDuties.length})
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3">

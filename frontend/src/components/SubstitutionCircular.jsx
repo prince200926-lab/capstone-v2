@@ -79,7 +79,7 @@ const SubstitutionCircular = ({ substitutions = [], date, visible, onClose }) =>
           {/* School Header */}
           <div className="mb-6 text-center">
             <h1 className="text-xl font-bold text-slate-900 uppercase tracking-wide">
-              Delhi Public School, Model Town
+              Army Public School, LBS Marg
             </h1>
             <p className="text-sm text-slate-600 mt-1">
               (Affiliated to CBSE, New Delhi)

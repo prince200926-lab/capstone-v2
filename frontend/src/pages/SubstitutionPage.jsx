@@ -66,30 +66,30 @@ export default function SubstitutionPage() {
   const p3Subs = substitutions.filter(s => s.classSection?.startsWith('8') || (!s.classSection?.startsWith('12') && !s.classSection?.startsWith('10') && !s.classSection?.startsWith('11') && !s.classSection?.startsWith('9')));
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-5">
       {/* Header */}
-      <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+      <div className="bg-white rounded-lg border border-slate-200 p-5 shadow-xs flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
         <div>
-          <h1 className="text-2xl font-bold text-slate-900 dark:text-white">Automated Substitution Allocations</h1>
-          <p className="text-sm text-slate-500">
-            Priority-based replacement engine with workload balance & continuous block retention
+          <h1 className="text-xl font-semibold text-slate-900 tracking-tight">Substitution Allocation Register</h1>
+          <p className="text-xs text-slate-500 mt-0.5">
+            CBSE compliance priority allocation engine with workload balancing and pedagogy matching
           </p>
         </div>
         <div className="flex items-center gap-2">
           <button
             onClick={() => setShowCircular(!showCircular)}
-            className="flex items-center gap-2 px-4 py-2 border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 rounded-xl text-sm font-semibold text-slate-700 dark:text-slate-200 hover:bg-slate-50 shadow-sm transition"
+            className="flex items-center gap-1.5 px-3 py-1.5 border border-slate-300 bg-white rounded text-xs font-medium text-slate-700 hover:bg-slate-50 shadow-xs transition"
           >
-            <Printer className="w-4 h-4 text-slate-500" />
-            {showCircular ? 'View Allocation Table' : 'Printable Circular'}
+            <Printer className="w-3.5 h-3.5 text-slate-500" />
+            {showCircular ? 'View Allocation Table' : 'Print Official Circular'}
           </button>
           <button
             onClick={handleGenerate}
             disabled={loading}
-            className="flex items-center gap-2 px-4 py-2 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl text-sm font-semibold shadow-sm transition"
+            className="flex items-center gap-1.5 px-3 py-1.5 bg-slate-900 hover:bg-slate-800 text-white rounded text-xs font-semibold shadow-xs transition"
           >
-            <RefreshCw className={`w-4 h-4 ${loading ? 'animate-spin' : ''}`} />
-            Run Engine
+            <RefreshCw className={`w-3.5 h-3.5 ${loading ? 'animate-spin' : ''}`} />
+            Recalculate Allocations
           </button>
         </div>
       </div>

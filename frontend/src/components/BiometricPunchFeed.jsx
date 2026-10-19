@@ -107,102 +107,110 @@ const BiometricPunchFeed = ({ attendanceData, onRefresh }) => {
   const leaveCount = teachers.filter((t) => t.status === 'ON_LEAVE').length;
 
   return (
-    <div className="rounded-xl border border-slate-200 bg-white shadow-sm">
+    <div className="rounded-lg border border-slate-200 bg-white">
       {/* Header bar */}
-      <div className="flex items-center justify-between border-b border-slate-100 px-5 py-3">
+      <div className="flex items-center justify-between border-b border-slate-200 px-4 py-2.5 bg-slate-50">
         <div className="flex items-center gap-2">
-          <Fingerprint className="h-5 w-5 text-indigo-600" />
-          <h3 className="text-sm font-semibold text-slate-800">Biometric Punch Feed</h3>
-          {/* Live indicator */}
-          <span className="flex items-center gap-1 rounded-full bg-green-100 px-2 py-0.5 text-[10px] font-medium text-green-700">
-            <span className="h-1.5 w-1.5 rounded-full bg-green-500 animate-pulse-dot" />
+          <Fingerprint className="h-4 w-4 text-slate-700" />
+          <h3 className="text-xs font-semibold text-slate-900 uppercase tracking-wide">Terminal Punch Records</h3>
+          <span className="flex items-center gap-1 rounded bg-slate-200/70 px-1.5 py-0.5 text-[10px] font-semibold text-slate-700">
+            <span className="h-1.5 w-1.5 rounded-full bg-emerald-600" />
             LIVE
           </span>
         </div>
 
-        <div className="flex items-center gap-3 text-xs text-slate-500">
-          {/* Quick counts */}
-          <span className="text-green-600 font-medium">{presentCount} In</span>
-          <span className="text-red-600 font-medium">{absentCount} Out</span>
-          <span className="text-amber-600 font-medium">{leaveCount} Leave</span>
+        <div className="flex items-center gap-3 text-xs text-slate-600">
+          <span className="font-medium text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200 text-[11px]">{presentCount} Present</span>
+          <span className="font-medium text-rose-700 bg-rose-50 px-2 py-0.5 rounded border border-rose-200 text-[11px]">{absentCount} Absent</span>
+          <span className="font-medium text-amber-700 bg-amber-50 px-2 py-0.5 rounded border border-amber-200 text-[11px]">{leaveCount} Leave</span>
 
-          {/* Manual refresh */}
           <button
             onClick={fetchAttendance}
             disabled={isRefreshing}
-            className="rounded-md p-1 text-slate-400 hover:bg-slate-100 hover:text-indigo-600 transition-colors"
+            className="rounded p-1 text-slate-500 hover:bg-slate-200 hover:text-slate-900 transition"
             title="Refresh"
           >
-            <RefreshCw className={`h-4 w-4 ${isRefreshing ? 'animate-spin' : ''}`} />
+            <RefreshCw className={`h-3.5 w-3.5 ${isRefreshing ? 'animate-spin' : ''}`} />
           </button>
         </div>
       </div>
 
       {/* Loading state */}
       {loading && (
-        <div className="flex items-center justify-center py-12">
-          <RefreshCw className="h-6 w-6 animate-spin text-indigo-400" />
-          <span className="ml-2 text-sm text-slate-500">Loading feed...</span>
+        <div className="flex items-center justify-center py-10">
+          <RefreshCw className="h-5 w-5 animate-spin text-slate-400" />
+          <span className="ml-2 text-xs text-slate-500">Syncing terminal records...</span>
         </div>
       )}
 
       {/* Teacher cards grid */}
       {!loading && (
-        <div className="grid grid-cols-2 gap-3 p-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
-          {teachers.map((teacher, idx) => (
-            <div
-              key={teacher.id || idx}
-              className={`
-                animate-fade-in-up flex flex-col items-center gap-1.5 rounded-lg border-2 p-3
-                transition-all duration-300 hover:shadow-md
-                ${borderColor(teacher.status)}
-              `}
-              style={{ animationDelay: `${idx * 40}ms` }}
-            >
-              {/* Initials avatar */}
+        <div className="grid grid-cols-2 gap-2.5 p-3.5 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
+          {teachers.map((teacher, idx) => {
+            const isPresent = teacher.status === 'PRESENT';
+            const isAbsent = teacher.status === 'ABSENT';
+            const isLeave = teacher.status === 'ON_LEAVE';
+
+            return (
               <div
-                className={`flex h-10 w-10 items-center justify-center rounded-full text-sm font-bold text-white ${avatarColor(teacher.status)}`}
+                key={teacher.id || idx}
+                className={`
+                  flex flex-col gap-1.5 rounded border p-2.5 text-left transition
+                  ${isPresent ? 'bg-white border-slate-200 hover:border-slate-400' : ''}
+                  ${isAbsent ? 'bg-rose-50/40 border-rose-200 hover:border-rose-300' : ''}
+                  ${isLeave ? 'bg-amber-50/40 border-amber-200 hover:border-amber-300' : ''}
+                `}
               >
-                {getInitials(teacher.teacherName || teacher.name)}
-              </div>
+                <div className="flex items-center justify-between gap-1">
+                  <span className="text-[10px] font-mono font-medium text-slate-400">
+                    {teacher.teacherId || teacher.id}
+                  </span>
+                  <span className={`text-[10px] font-semibold px-1.5 py-0.2 rounded ${
+                    isPresent ? 'bg-emerald-100 text-emerald-800' :
+                    isAbsent ? 'bg-rose-100 text-rose-800' :
+                    'bg-amber-100 text-amber-800'
+                  }`}>
+                    {isPresent ? 'IN' : isAbsent ? 'OUT' : 'LV'}
+                  </span>
+                </div>
 
-              {/* Name */}
-              <p className="text-xs font-medium text-slate-800 dark:text-slate-200 text-center truncate w-full">
-                {teacher.teacherName || teacher.name}
-              </p>
-
-              {/* Department */}
-              <p className="text-[10px] text-slate-500 truncate w-full text-center">
-                {teacher.department}
-              </p>
-
-              {/* Status line */}
-              <div className="mt-auto text-center">
-                {teacher.status === 'PRESENT' && (
-                  <p className="text-[10px] font-medium text-green-700">
-                    🟢 Punched at {teacher.punchTime || '--:--'}
+                <div>
+                  <p className="text-xs font-semibold text-slate-900 truncate">
+                    {teacher.teacherName || teacher.name}
                   </p>
-                )}
-                {teacher.status === 'ABSENT' && (
-                  <p className="text-[10px] font-medium text-red-700">🔴 No Punch</p>
-                )}
-                {teacher.status === 'ON_LEAVE' && (
-                  <p className="text-[10px] font-medium text-amber-700">
-                    🟡 {teacher.leaveReason || 'On Leave'}
+                  <p className="text-[10px] text-slate-500 truncate">
+                    {teacher.department}
                   </p>
-                )}
+                </div>
+
+                <div className="pt-1 mt-auto border-t border-slate-100">
+                  {isPresent && (
+                    <span className="text-[10px] font-mono font-medium text-emerald-700">
+                      {teacher.punchTime || '--:--'}
+                    </span>
+                  )}
+                  {isAbsent && (
+                    <span className="text-[10px] font-medium text-rose-600">
+                      Unreported
+                    </span>
+                  )}
+                  {isLeave && (
+                    <span className="text-[10px] font-medium text-amber-700 truncate block">
+                      {teacher.leaveReason || 'Leave'}
+                    </span>
+                  )}
+                </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       )}
 
       {/* Footer */}
       {lastRefresh && (
-        <div className="border-t border-slate-100 px-5 py-2 text-right">
-          <span className="text-[10px] text-slate-400">
-            Last updated: {lastRefresh.toLocaleTimeString()}
-            {error && ` · ${error}`}
+        <div className="border-t border-slate-200 bg-slate-50 px-4 py-2 text-right">
+          <span className="text-[10px] text-slate-500 font-mono">
+            Last sync: {lastRefresh.toLocaleTimeString()} {error && ` · ${error}`}
           </span>
         </div>
       )}
